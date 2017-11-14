@@ -3,6 +3,7 @@
 	<%= p.input :type %>
 	<%= p.input :activity_level %>
 	<%= p.input :personality %>
-	<%= p.input :size %>
+	<%= p.label :size %>
+	<%= p.select :size, [['Big','big'],['Medium','medium'],['Small','small']] %>
 	<%= p.button :submit %>
 <% end %>
