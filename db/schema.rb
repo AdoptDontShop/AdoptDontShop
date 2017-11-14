@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171114010337) do
+ActiveRecord::Schema.define(version: 20171114014958) do
 
   create_table "favorites", force: :cascade do |t|
     t.datetime "created_at", null: false
@@ -21,10 +21,10 @@ ActiveRecord::Schema.define(version: 20171114010337) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "name"
-    t.string "type"
     t.string "activity_level"
     t.string "personality"
     t.string "size"
+    t.string "species"
   end
 
   create_table "shelters", force: :cascade do |t|
