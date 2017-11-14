@@ -771,3 +771,177 @@ Completed 400 Bad Request in 11ms (ActiveRecord: 0.9ms)
 ActionController::ParameterMissing (param is missing or the value is empty: pet):
   
 app/controllers/pets_controller.rb:5:in `create'
+Started PUT "/__web_console/repl_sessions/4a6387b2dacc38aa8c57f91175073f2b" for 127.0.0.1 at 2017-11-13 17:08:50 -0800
+Started PUT "/__web_console/repl_sessions/4a6387b2dacc38aa8c57f91175073f2b" for 127.0.0.1 at 2017-11-13 17:08:52 -0800
+Started PUT "/__web_console/repl_sessions/4a6387b2dacc38aa8c57f91175073f2b" for 127.0.0.1 at 2017-11-13 17:08:52 -0800
+Started PUT "/__web_console/repl_sessions/4a6387b2dacc38aa8c57f91175073f2b" for 127.0.0.1 at 2017-11-13 17:08:54 -0800
+Started PUT "/__web_console/repl_sessions/4a6387b2dacc38aa8c57f91175073f2b" for 127.0.0.1 at 2017-11-13 17:08:55 -0800
+Started PUT "/__web_console/repl_sessions/4a6387b2dacc38aa8c57f91175073f2b" for 127.0.0.1 at 2017-11-13 17:08:59 -0800
+Started PUT "/__web_console/repl_sessions/4a6387b2dacc38aa8c57f91175073f2b" for 127.0.0.1 at 2017-11-13 17:09:01 -0800
+Started PUT "/__web_console/repl_sessions/4a6387b2dacc38aa8c57f91175073f2b" for 127.0.0.1 at 2017-11-13 17:09:02 -0800
+Started GET "/" for 127.0.0.1 at 2017-11-13 17:10:47 -0800
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 40ms (Views: 36.7ms)
+
+
+Started GET "/pets/new" for 127.0.0.1 at 2017-11-13 17:10:50 -0800
+Processing by PetsController#new as HTML
+  Rendering pets/new.html.erb within layouts/application
+  Rendered pets/new.html.erb within layouts/application (13.5ms)
+Completed 200 OK in 37ms (Views: 34.9ms)
+
+
+Started POST "/pets/new" for 127.0.0.1 at 2017-11-13 17:10:56 -0800
+Processing by PetsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"LHowSOnK2mkZhkVwpqHRDMeK+nPxLAapxZJtCcydsb4PVlVAnY7xHM/ZjEfGugdsiF8POSiZrxGIrfm6ST1pmw==", "pets"=>{"name"=>"Nitin", "type"=>"s", "activity_level"=>"s", "personality"=>"sgo", "size"=>"gl;rajfg"}, "commit"=>"Save Pets"}
+Completed 400 Bad Request in 26ms (ActiveRecord: 2.7ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: pet):
+  
+app/controllers/pets_controller.rb:5:in `create'
+Started PUT "/__web_console/repl_sessions/f96e2c8c7cb2a5d6a4cfb0c7cc74b000" for 127.0.0.1 at 2017-11-13 17:13:42 -0800
+Started PUT "/__web_console/repl_sessions/f96e2c8c7cb2a5d6a4cfb0c7cc74b000" for 127.0.0.1 at 2017-11-13 17:13:43 -0800
+Started PUT "/__web_console/repl_sessions/f96e2c8c7cb2a5d6a4cfb0c7cc74b000" for 127.0.0.1 at 2017-11-13 17:13:45 -0800
+Started PUT "/__web_console/repl_sessions/f96e2c8c7cb2a5d6a4cfb0c7cc74b000" for 127.0.0.1 at 2017-11-13 17:13:48 -0800
+Started PUT "/__web_console/repl_sessions/f96e2c8c7cb2a5d6a4cfb0c7cc74b000" for 127.0.0.1 at 2017-11-13 17:13:48 -0800
+Started PUT "/__web_console/repl_sessions/f96e2c8c7cb2a5d6a4cfb0c7cc74b000" for 127.0.0.1 at 2017-11-13 17:13:50 -0800
+Started PUT "/__web_console/repl_sessions/f96e2c8c7cb2a5d6a4cfb0c7cc74b000" for 127.0.0.1 at 2017-11-13 17:13:51 -0800
+Started PUT "/__web_console/repl_sessions/f96e2c8c7cb2a5d6a4cfb0c7cc74b000" for 127.0.0.1 at 2017-11-13 17:20:53 -0800
+  [1m[35m (1.6ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPet Exists (1.4ms)[0m  [1m[34mSELECT  1 AS one FROM "pets" WHERE "pets"."name" = ? LIMIT ?[0m  [["name", "Nitin"], ["LIMIT", 1]]
+  [1m[35mSQL (1.6ms)[0m  [1m[32mINSERT INTO "pets" ("created_at", "updated_at", "name") VALUES (?, ?, ?)[0m  [["created_at", "2017-11-14 01:20:53.393656"], ["updated_at", "2017-11-14 01:20:53.393656"], ["name", "Nitin"]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+Started PUT "/__web_console/repl_sessions/f96e2c8c7cb2a5d6a4cfb0c7cc74b000" for 127.0.0.1 at 2017-11-13 17:20:54 -0800
+Started PUT "/__web_console/repl_sessions/f96e2c8c7cb2a5d6a4cfb0c7cc74b000" for 127.0.0.1 at 2017-11-13 17:20:55 -0800
+Started PUT "/__web_console/repl_sessions/f96e2c8c7cb2a5d6a4cfb0c7cc74b000" for 127.0.0.1 at 2017-11-13 17:20:56 -0800
+Started GET "/" for 127.0.0.1 at 2017-11-13 17:25:08 -0800
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 24ms (Views: 21.7ms)
+
+
+Started GET "/pets/new" for 127.0.0.1 at 2017-11-13 17:25:13 -0800
+Processing by PetsController#new as HTML
+  Rendering pets/new.html.erb within layouts/application
+  Rendered pets/new.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 30ms (Views: 27.9ms)
+
+
+Started POST "/pets/new" for 127.0.0.1 at 2017-11-13 17:25:20 -0800
+Processing by PetsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nkCKaVIbN0mbwh9pTCnVJgUu2FR5A3E+velRDYAzZ5y9bO9hJl8cPE2d1l4sMgNGSvstHqC22Ibw1sW+BZO/uQ==", "pets"=>{"name"=>"Wil", "type"=>"sick", "activity_level"=>"d", "personality"=>"dddd", "size"=>"kfj"}, "commit"=>"Save Pets"}
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 3.1ms)
+
+
+  
+ActionController::UnfilteredParameters (unable to convert unpermitted parameters to hash):
+  
+app/controllers/pets_controller.rb:4:in `create'
+Started PUT "/__web_console/repl_sessions/c43e3017d1be216eec05e91454de0f31" for 127.0.0.1 at 2017-11-13 17:28:23 -0800
+Started PUT "/__web_console/repl_sessions/c43e3017d1be216eec05e91454de0f31" for 127.0.0.1 at 2017-11-13 17:28:24 -0800
+Started PUT "/__web_console/repl_sessions/c43e3017d1be216eec05e91454de0f31" for 127.0.0.1 at 2017-11-13 17:28:42 -0800
+Started PUT "/__web_console/repl_sessions/c43e3017d1be216eec05e91454de0f31" for 127.0.0.1 at 2017-11-13 17:28:51 -0800
+Started PUT "/__web_console/repl_sessions/c43e3017d1be216eec05e91454de0f31" for 127.0.0.1 at 2017-11-13 17:28:57 -0800
+Started GET "/" for 127.0.0.1 at 2017-11-13 17:29:27 -0800
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 27ms (Views: 24.3ms)
+
+
+Started GET "/pets/new" for 127.0.0.1 at 2017-11-13 17:29:29 -0800
+Processing by PetsController#new as HTML
+  Rendering pets/new.html.erb within layouts/application
+  Rendered pets/new.html.erb within layouts/application (23.8ms)
+Completed 200 OK in 41ms (Views: 39.6ms)
+
+
+Started POST "/pets/new" for 127.0.0.1 at 2017-11-13 17:29:38 -0800
+Processing by PetsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jrUo8QAr/ZIYwCO03g/49y6UIsE8+x6wMKYr16HEujutmU35dG/W586f6oO+FC6XYUHXi+VOtwh9mb9kJGRiHg==", "pets"=>{"name"=>"Wils", "type"=>"fa", "activity_level"=>"dfdfa", "personality"=>"dfd", "size"=>"dfd"}, "commit"=>"Save Pets"}
+Unpermitted parameters: :type, :activity_level, :personality, :size
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPet Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "pets" WHERE "pets"."name" = ? LIMIT ?[0m  [["name", "Wils"], ["LIMIT", 1]]
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "pets" ("created_at", "updated_at", "name") VALUES (?, ?, ?)[0m  [["created_at", "2017-11-14 01:29:38.183197"], ["updated_at", "2017-11-14 01:29:38.183197"], ["name", "Wils"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPet Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "pets" WHERE "pets"."name" = ? AND ("pets"."id" != ?) LIMIT ?[0m  [["name", "Wils"], ["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+Completed 500 Internal Server Error in 178ms (ActiveRecord: 3.1ms)
+
+
+  
+NameError (undefined local variable or method `current_trainer' for #<PetsController:0x007ffdb2c3b358>
+Did you mean?  current_user):
+  
+app/controllers/pets_controller.rb:8:in `create'
+Started PUT "/__web_console/repl_sessions/35cdae2390da708280d2d3e12a5133d9" for 127.0.0.1 at 2017-11-13 17:29:45 -0800
+Started PUT "/__web_console/repl_sessions/35cdae2390da708280d2d3e12a5133d9" for 127.0.0.1 at 2017-11-13 17:29:45 -0800
+Started POST "/pets/new" for 127.0.0.1 at 2017-11-13 17:30:37 -0800
+Processing by PetsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jrUo8QAr/ZIYwCO03g/49y6UIsE8+x6wMKYr16HEujutmU35dG/W586f6oO+FC6XYUHXi+VOtwh9mb9kJGRiHg==", "pets"=>{"name"=>"Wils", "type"=>"fa", "activity_level"=>"dfdfa", "personality"=>"dfd", "size"=>"dfd"}, "commit"=>"Save Pets"}
+Unpermitted parameters: :type, :activity_level, :personality, :size
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPet Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "pets" WHERE "pets"."name" = ? LIMIT ?[0m  [["name", "Wils"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPet Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "pets" WHERE "pets"."name" = ? LIMIT ?[0m  [["name", "Wils"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 1.6ms)
+
+
+  
+NoMethodError (undefined method `errors' for nil:NilClass):
+  
+app/controllers/pets_controller.rb:10:in `create'
+Started GET "/" for 127.0.0.1 at 2017-11-13 17:30:42 -0800
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 22ms (Views: 20.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2017-11-13 17:30:44 -0800
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.0ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (16.9ms)
+Completed 200 OK in 54ms (Views: 36.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/pets/new" for 127.0.0.1 at 2017-11-13 17:30:46 -0800
+Processing by PetsController#new as HTML
+  Rendering pets/new.html.erb within layouts/application
+  Rendered pets/new.html.erb within layouts/application (7.9ms)
+Completed 200 OK in 25ms (Views: 23.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/pets/new" for 127.0.0.1 at 2017-11-13 17:30:53 -0800
+Processing by PetsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4sicFGyukW8sb+SaFQbSkDTMbTzQPB5AS39t445456fB5PkcGOq6GvowLa11HQTwexmYdgmJt/gGQPlQC9g/gg==", "pets"=>{"name"=>"sdf", "type"=>"k", "activity_level"=>"ik", "personality"=>"knlkn", "size"=>"lkjlkj"}, "commit"=>"Save Pets"}
+Unpermitted parameters: :type, :activity_level, :personality, :size
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPet Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "pets" WHERE "pets"."name" = ? LIMIT ?[0m  [["name", "sdf"], ["LIMIT", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "pets" ("created_at", "updated_at", "name") VALUES (?, ?, ?)[0m  [["created_at", "2017-11-14 01:30:53.319799"], ["updated_at", "2017-11-14 01:30:53.319799"], ["name", "sdf"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPet Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "pets" WHERE "pets"."name" = ? AND ("pets"."id" != ?) LIMIT ?[0m  [["name", "sdf"], ["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/pets/new?id=3
+Completed 302 Found in 11ms (ActiveRecord: 2.0ms)
+
+
+Started GET "/pets/new?id=3" for 127.0.0.1 at 2017-11-13 17:30:53 -0800
+Processing by PetsController#new as HTML
+  Parameters: {"id"=>"3"}
+  Rendering pets/new.html.erb within layouts/application
+  Rendered pets/new.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 22ms (Views: 19.9ms | ActiveRecord: 0.0ms)
+
+
+  [1m[36mPet Load (1.4ms)[0m  [1m[34mSELECT  "pets".* FROM "pets" LIMIT ?[0m  [["LIMIT", 11]]
