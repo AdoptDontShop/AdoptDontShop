@@ -10,16 +10,12 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 20171114003045) do
 
   create_table "favorites", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
-=======
-ActiveRecord::Schema.define(version: 20171113220710) do
->>>>>>> ebc13e322c61a6f32c05c8a84d372014292cf004
 
   create_table "pets", force: :cascade do |t|
     t.datetime "created_at", null: false
