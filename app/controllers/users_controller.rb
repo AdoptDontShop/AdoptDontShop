@@ -1,5 +1,6 @@
 class UsersController < ApplicationController
 
-  def adopt
-    
+  def favorite
+    favorite = Favorite.new #this needs to be added as a model
+
   end
