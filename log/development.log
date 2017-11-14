@@ -34,9 +34,9 @@ Migrating to CreatePets (20171108012039)
   [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
 Started GET "/" for 127.0.0.1 at 2017-11-08 12:39:53 -0800
   [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
-  
+
 ActionController::RoutingError (uninitialized constant HomeController):
-  
+
 activesupport (5.1.4) lib/active_support/inflector/methods.rb:269:in `const_get'
 activesupport (5.1.4) lib/active_support/inflector/methods.rb:269:in `block in constantize'
 activesupport (5.1.4) lib/active_support/inflector/methods.rb:267:in `each'
@@ -90,9 +90,9 @@ puma (3.10.0) lib/puma/server.rb:301:in `block in run'
 puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
 Started GET "/" for 127.0.0.1 at 2017-11-08 12:42:34 -0800
   [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
-  
+
 ActionController::RoutingError (uninitialized constant HomeController):
-  
+
 activesupport (5.1.4) lib/active_support/inflector/methods.rb:269:in `const_get'
 activesupport (5.1.4) lib/active_support/inflector/methods.rb:269:in `block in constantize'
 activesupport (5.1.4) lib/active_support/inflector/methods.rb:267:in `each'
@@ -153,11 +153,11 @@ Completed 200 OK in 261ms (Views: 251.0ms | ActiveRecord: 0.0ms)
 
 
 Started GET "/pets/new" for 127.0.0.1 at 2017-11-08 12:47:28 -0800
-  
+
 SyntaxError (/Users/wilsonwang/Desktop/rubydecal/proj/AdoptDontShop/app/controllers/pets_controller.rb:6: syntax error, unexpected '=', expecting '('
 		pet. = current_trainer.id
 		      ^):
-  
+
 app/controllers/pets_controller.rb:6: syntax error, unexpected '=', expecting '('
 Started GET "/" for 127.0.0.1 at 2017-11-08 12:48:11 -0800
 Processing by HomeController#index as HTML
@@ -167,11 +167,11 @@ Completed 200 OK in 15ms (Views: 13.4ms | ActiveRecord: 0.0ms)
 
 
 Started GET "/pets/new" for 127.0.0.1 at 2017-11-08 12:49:25 -0800
-  
+
 SyntaxError (/Users/wilsonwang/Desktop/rubydecal/proj/AdoptDontShop/app/controllers/pets_controller.rb:6: syntax error, unexpected '=', expecting '('
 		pet. = current_trainer.id
 		      ^):
-  
+
 app/controllers/pets_controller.rb:6: syntax error, unexpected '=', expecting '('
 Started GET "/pets/new" for 127.0.0.1 at 2017-11-08 12:50:00 -0800
 Processing by PetsController#new as HTML
@@ -180,14 +180,14 @@ Processing by PetsController#new as HTML
 Completed 500 Internal Server Error in 117ms
 
 
-  
+
 ActionView::Template::Error (undefined method `simple_form_for' for #<#<Class:0x007f9238234340>:0x007f923b05a440>
 Did you mean?  simple_format):
     1: <%= simple_form_for :pets do |p| %>
     2: 	<%= p.input :name, placeholder: 'Enter name' %>
     3: 	<%= p.input :type %>
     4: 	<%= p.input :activity_level %>
-  
+
 app/views/pets/new.html.erb:1:in `_app_views_pets_new_html_erb__636873882698987368_70133010571460'
 Started GET "/" for 127.0.0.1 at 2017-11-08 17:31:51 -0800
   [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
@@ -204,14 +204,14 @@ Processing by PetsController#new as HTML
 Completed 500 Internal Server Error in 109ms (ActiveRecord: 0.0ms)
 
 
-  
+
 ActionView::Template::Error (undefined method `simple_form_for' for #<#<Class:0x007fb8b8c0eb30>:0x007fb8b8c0cf88>
 Did you mean?  simple_format):
     1: <%= simple_form_for :pets do |p| %>
     2: 	<%= p.input :name, placeholder: 'Enter name' %>
     3: 	<%= p.input :type %>
     4: 	<%= p.input :activity_level %>
-  
+
 app/views/pets/new.html.erb:1:in `_app_views_pets_new_html_erb___2081020062704324054_70215675181540'
   [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
   [1m[36mActiveRecord::InternalMetadata Load (0.7ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
@@ -233,7 +233,7 @@ Processing by PetsController#new as HTML
 Completed 500 Internal Server Error in 66ms (ActiveRecord: 0.0ms)
 
 
-  
+
 ActionView::Template::Error (Couldn't find wrapper with name vertical_file_input):
     4: 	<%= p.input :activity_level %>
     5: 	<%= p.input :personality %>
@@ -241,7 +241,7 @@ ActionView::Template::Error (Couldn't find wrapper with name vertical_file_input
     7: 	<%= p.input :file, as: :file, wrapper: :vertical_file_input %>
     8: 	<%= p.button :submit %>
     9: <% end %>
-  
+
 app/views/pets/new.html.erb:7:in `block in _app_views_pets_new_html_erb___3272115957808574160_70287142062940'
 app/views/pets/new.html.erb:1:in `_app_views_pets_new_html_erb___3272115957808574160_70287142062940'
 Started GET "/pets/new" for 127.0.0.1 at 2017-11-08 17:34:19 -0800
@@ -257,23 +257,10 @@ Processing by PetsController#create as HTML
 Completed 400 Bad Request in 18ms (ActiveRecord: 1.0ms)
 
 
-  
+
 ActionController::ParameterMissing (param is missing or the value is empty: pet):
-  
+
 app/controllers/pets_controller.rb:5:in `create'
-<<<<<<< HEAD
-  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
-Migrating to CreateFavorites (20171114003045)
-  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
-  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
-  [1m[35m (1.2ms)[0m  [1m[35mCREATE TABLE "favorites" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
-  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20171114003045"]]
-  [1m[35m (2.7ms)[0m  [1m[36mcommit transaction[0m
-  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
-  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
-  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
-  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
-=======
   [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
 Migrating to AddDeviseToUsers (20171113220652)
   [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
@@ -396,14 +383,14 @@ Started GET "/" for 127.0.0.1 at 2017-11-13 14:37:37 -0800
 Started GET "/trainers/5" for 127.0.0.1 at 2017-11-13 14:37:37 -0800
 Processing by HomeController#index as HTML
 Started GET "/trainers" for 127.0.0.1 at 2017-11-13 14:37:37 -0800
-  
-  
+
+
   Rendering home/index.html.erb within layouts/application
 ActionController::RoutingError (No route matches [GET] "/trainers/5"):
 ActionController::RoutingError (No route matches [GET] "/trainers"):
   Rendered home/index.html.erb within layouts/application (0.4ms)
-  
-  
+
+
 actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
 web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
@@ -539,10 +526,9 @@ Completed 200 OK in 29ms (Views: 19.3ms | ActiveRecord: 0.4ms)
 
 
 =======
->>>>>>> ebc13e322c61a6f32c05c8a84d372014292cf004
 Started GET "/" for 127.0.0.1 at 2017-11-13 16:42:57 -0800
   [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
-  
+
 ActiveRecord::PendingMigrationError (
 
 Migrations are pending. To resolve this issue, run:
@@ -550,7 +536,7 @@ Migrations are pending. To resolve this issue, run:
         bin/rails db:migrate RAILS_ENV=development
 
 ):
-  
+
 activerecord (5.1.4) lib/active_record/migration.rb:576:in `check_pending!'
 activerecord (5.1.4) lib/active_record/migration.rb:553:in `call'
 actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
@@ -698,9 +684,9 @@ Processing by PetsController#create as HTML
 Completed 400 Bad Request in 18ms (ActiveRecord: 2.2ms)
 
 
-  
+
 ActionController::ParameterMissing (param is missing or the value is empty: pet):
-  
+
 app/controllers/pets_controller.rb:5:in `create'
 Started GET "/pets/new" for 127.0.0.1 at 2017-11-13 16:57:50 -0800
 Processing by PetsController#new as HTML
@@ -715,9 +701,9 @@ Processing by PetsController#create as HTML
 Completed 400 Bad Request in 9ms (ActiveRecord: 0.0ms)
 
 
-  
+
 ActionController::ParameterMissing (param is missing or the value is empty: pet):
-  
+
 app/controllers/pets_controller.rb:5:in `create'
   [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
 Migrating to AddNametoPets (20171114010253)
@@ -790,9 +776,9 @@ Processing by PetsController#create as HTML
 Completed 400 Bad Request in 16ms (ActiveRecord: 0.7ms)
 
 
-  
+
 ActionController::ParameterMissing (param is missing or the value is empty: pet):
-  
+
 app/controllers/pets_controller.rb:5:in `create'
 Started POST "/pets/new" for 127.0.0.1 at 2017-11-13 17:06:42 -0800
 Processing by PetsController#create as HTML
@@ -800,8 +786,8 @@ Processing by PetsController#create as HTML
 Completed 400 Bad Request in 11ms (ActiveRecord: 0.9ms)
 
 
-  
+
 ActionController::ParameterMissing (param is missing or the value is empty: pet):
-  
+
 app/controllers/pets_controller.rb:5:in `create'
 >>>>>>> ad1e5c35cad2722f180c2aee705c0cdb3a1e055e
