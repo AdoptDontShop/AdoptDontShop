@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171114014958) do
+ActiveRecord::Schema.define(version: 20171114215153) do
 
   create_table "favorites", force: :cascade do |t|
     t.datetime "created_at", null: false
@@ -25,6 +25,10 @@ ActiveRecord::Schema.define(version: 20171114014958) do
     t.string "personality"
     t.string "size"
     t.string "species"
+    t.string "image_file_name"
+    t.string "image_content_type"
+    t.integer "image_file_size"
+    t.datetime "image_updated_at"
   end
 
   create_table "shelters", force: :cascade do |t|
