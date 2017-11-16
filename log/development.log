@@ -503,3 +503,51 @@ Processing by HomeController#index as HTML
 Completed 200 OK in 276ms (Views: 232.0ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for 127.0.0.1 at 2017-11-15 18:28:16 -0800
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mPet Load (0.5ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  Rendered home/index.html.erb within layouts/application (269.2ms)
+Completed 200 OK in 322ms (Views: 299.2ms | ActiveRecord: 1.7ms)
+
+
+  [1m[36mPet Load (2.4ms)[0m  [1m[34mSELECT  "pets".* FROM "pets" LIMIT ?[0m  [["LIMIT", 11]]
+Started GET "/" for 127.0.0.1 at 2017-11-16 00:04:24 -0800
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mPet Load (9.1ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  Rendered home/index.html.erb within layouts/application (158.0ms)
+Completed 200 OK in 297ms (Views: 251.6ms | ActiveRecord: 9.1ms)
+
+
+Started GET "/pets/new" for 127.0.0.1 at 2017-11-16 00:04:28 -0800
+Processing by PetsController#new as HTML
+  Rendering pets/new.html.erb within layouts/application
+  Rendered pets/new.html.erb within layouts/application (172.0ms)
+Completed 200 OK in 245ms (Views: 241.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/pets/new" for 127.0.0.1 at 2017-11-16 00:05:01 -0800
+Processing by PetsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"FWwxgWNyJNnUpBDjIay/mLOu2VqsB11ljfEet0fmQIc2QFSJFzYPrAL72dRBt2n4/HssEHWy9N3AzooEwkaYog==", "pets"=>{"name"=>"Spot", "species"=>"Dog", "activity_level"=>"Hyper", "personality"=>"Happy", "size"=>"big", "image"=>#<ActionDispatch::Http::UploadedFile:0x007fc40b1c8050 @tempfile=#<Tempfile:/var/folders/3s/rv0hm4hj5ng9xkw5byb9z5fw0000gn/T/RackMultipart20171116-40414-14ntshj.png>, @original_filename="cal.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"pets[image]\"; filename=\"cal.png\"\r\nContent-Type: image/png\r\n">}, "commit"=>"Save Pets"}
+Unpermitted parameter: :image
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPet Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "pets" WHERE "pets"."name" = ? LIMIT ?[0m  [["name", "Spot"], ["LIMIT", 1]]
+  [1m[35mSQL (1.6ms)[0m  [1m[32mINSERT INTO "pets" ("created_at", "updated_at", "name", "activity_level", "personality", "size", "species") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", "2017-11-16 08:05:01.833851"], ["updated_at", "2017-11-16 08:05:01.833851"], ["name", "Spot"], ["activity_level", "Hyper"], ["personality", "Happy"], ["size", "big"], ["species", "Dog"]]
+  [1m[35m (3.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPet Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "pets" WHERE "pets"."name" = ? AND ("pets"."id" != ?) LIMIT ?[0m  [["name", "Spot"], ["id", 13], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 29ms (ActiveRecord: 5.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-16 00:05:01 -0800
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mPet Load (0.2ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  Rendered home/index.html.erb within layouts/application (15.3ms)
+Completed 200 OK in 56ms (Views: 53.6ms | ActiveRecord: 0.2ms)
+
+
