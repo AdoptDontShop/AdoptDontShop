@@ -1725,3 +1725,1541 @@ Processing by PetsController#show as HTML
 Completed 200 OK in 20ms (Views: 17.1ms | ActiveRecord: 0.1ms)
 
 
+Started GET "/" for 127.0.0.1 at 2017-11-23 00:20:45 -0800
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mPet Load (0.4ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  Rendered home/index.html.erb within layouts/application (204.5ms)
+Completed 200 OK in 254ms (Views: 235.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/pets/1" for 127.0.0.1 at 2017-11-23 00:20:48 -0800
+Processing by PetsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPet Load (4.0ms)[0m  [1m[34mSELECT  "pets".* FROM "pets" WHERE "pets"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pets/show.html.erb within layouts/application
+  Rendered pets/show.html.erb within layouts/application (20.0ms)
+Completed 200 OK in 69ms (Views: 56.9ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/pets/1" for 127.0.0.1 at 2017-11-23 00:29:11 -0800
+Processing by PetsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPet Load (0.2ms)[0m  [1m[34mSELECT  "pets".* FROM "pets" WHERE "pets"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pets/show.html.erb within layouts/application
+  Rendered pets/show.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 135ms (Views: 131.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/pets/12" for 127.0.0.1 at 2017-11-23 00:29:14 -0800
+Processing by PetsController#show as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mPet Load (1.1ms)[0m  [1m[34mSELECT  "pets".* FROM "pets" WHERE "pets"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  Rendering pets/show.html.erb within layouts/application
+  Rendered pets/show.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 81ms (Views: 75.9ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/pets/11" for 127.0.0.1 at 2017-11-23 00:29:17 -0800
+Processing by PetsController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mPet Load (0.3ms)[0m  [1m[34mSELECT  "pets".* FROM "pets" WHERE "pets"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  Rendering pets/show.html.erb within layouts/application
+  Rendered pets/show.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 74ms (Views: 68.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/pets/10" for 127.0.0.1 at 2017-11-23 00:29:21 -0800
+Processing by PetsController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mPet Load (0.4ms)[0m  [1m[34mSELECT  "pets".* FROM "pets" WHERE "pets"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  Rendering pets/show.html.erb within layouts/application
+  Rendered pets/show.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 90ms (Views: 86.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/pets/9" for 127.0.0.1 at 2017-11-23 00:29:25 -0800
+Processing by PetsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPet Load (0.2ms)[0m  [1m[34mSELECT  "pets".* FROM "pets" WHERE "pets"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  Rendering pets/show.html.erb within layouts/application
+  Rendered pets/show.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 71ms (Views: 66.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/pets/8" for 127.0.0.1 at 2017-11-23 00:29:30 -0800
+Processing by PetsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mPet Load (0.1ms)[0m  [1m[34mSELECT  "pets".* FROM "pets" WHERE "pets"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering pets/show.html.erb within layouts/application
+  Rendered pets/show.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 71ms (Views: 63.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/pets/1" for 127.0.0.1 at 2017-11-23 00:46:54 -0800
+Processing by PetsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPet Load (0.2ms)[0m  [1m[34mSELECT  "pets".* FROM "pets" WHERE "pets"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pets/show.html.erb within layouts/application
+  Rendered pets/show.html.erb within layouts/application (9.6ms)
+Completed 200 OK in 145ms (Views: 138.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/pets/1" for 127.0.0.1 at 2017-11-23 00:46:56 -0800
+Processing by PetsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPet Load (0.2ms)[0m  [1m[34mSELECT  "pets".* FROM "pets" WHERE "pets"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pets/show.html.erb within layouts/application
+  Rendered pets/show.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 86ms (Views: 79.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/pets/4" for 127.0.0.1 at 2017-11-23 00:47:02 -0800
+Processing by PetsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mPet Load (0.9ms)[0m  [1m[34mSELECT  "pets".* FROM "pets" WHERE "pets"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering pets/show.html.erb within layouts/application
+  Rendered pets/show.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 90ms (Views: 77.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/pets/10" for 127.0.0.1 at 2017-11-23 00:47:05 -0800
+Processing by PetsController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mPet Load (0.2ms)[0m  [1m[34mSELECT  "pets".* FROM "pets" WHERE "pets"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  Rendering pets/show.html.erb within layouts/application
+  Rendered pets/show.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 108ms (Views: 102.0ms | ActiveRecord: 0.2ms)
+
+
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddUserRefToPets (20171123090545)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (1.8ms)[0m  [1m[35mALTER TABLE "pets" ADD "user_id" integer[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE  INDEX "index_pets_on_user_id" ON "pets" ("user_id")[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20171123090545"]]
+  [1m[35m (3.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_pets_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_pets_on_user_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_shelters_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_shelters_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_shelters_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_shelters_on_email' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "favorites"[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE TABLE "favorites" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "pets"[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE TABLE "pets" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "name" varchar, "activity_level" varchar, "personality" varchar, "size" varchar, "species" varchar, "image_file_name" varchar, "image_content_type" varchar, "image_file_size" integer, "image_updated_at" datetime, "user_id" integer)[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE  INDEX "index_pets_on_user_id" ON "pets" ("user_id")[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "shelters"[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE TABLE "shelters" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar, "reset_password_sent_at" datetime, "remember_created_at" datetime, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" datetime, "last_sign_in_at" datetime, "current_sign_in_ip" varchar, "last_sign_in_ip" varchar)[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_shelters_on_email" ON "shelters" ("email")[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_shelters_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_shelters_on_email' AND type='index'
+[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_shelters_on_reset_password_token" ON "shelters" ("reset_password_token")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "users"[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar, "reset_password_sent_at" datetime, "remember_created_at" datetime, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" datetime, "last_sign_in_at" datetime, "current_sign_in_ip" varchar, "last_sign_in_ip" varchar)[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20171123090545)[0m
+  [1m[35m (0.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20171108012021),
+(20171108012028),
+(20171108012039),
+(20171113220652),
+(20171113220710),
+(20171114003045),
+(20171114010337),
+(20171114014958),
+(20171114215153);
+
+[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2017-11-23 09:11:21.538719"], ["updated_at", "2017-11-23 09:11:21.538719"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "favorites"[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE TABLE "favorites" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "pets"[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE TABLE "pets" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "name" varchar, "activity_level" varchar, "personality" varchar, "size" varchar, "species" varchar, "image_file_name" varchar, "image_content_type" varchar, "image_file_size" integer, "image_updated_at" datetime, "user_id" integer)[0m
+  [1m[35m (2.8ms)[0m  [1m[35mCREATE  INDEX "index_pets_on_user_id" ON "pets" ("user_id")[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "shelters"[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE TABLE "shelters" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar, "reset_password_sent_at" datetime, "remember_created_at" datetime, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" datetime, "last_sign_in_at" datetime, "current_sign_in_ip" varchar, "last_sign_in_ip" varchar)[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_shelters_on_email" ON "shelters" ("email")[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_shelters_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_shelters_on_email' AND type='index'
+[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_shelters_on_reset_password_token" ON "shelters" ("reset_password_token")[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "users"[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar, "reset_password_sent_at" datetime, "remember_created_at" datetime, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" datetime, "last_sign_in_at" datetime, "current_sign_in_ip" varchar, "last_sign_in_ip" varchar)[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20171123090545)[0m
+  [1m[35m (1.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20171108012021),
+(20171108012028),
+(20171108012039),
+(20171113220652),
+(20171113220710),
+(20171114003045),
+(20171114010337),
+(20171114014958),
+(20171114215153);
+
+[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2017-11-23 09:11:21.571767"], ["updated_at", "2017-11-23 09:11:21.571767"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_pets_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_pets_on_user_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_shelters_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_shelters_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_shelters_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_shelters_on_email' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
+Started GET "/" for 127.0.0.1 at 2017-11-23 01:11:36 -0800
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mPet Load (0.2ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  Rendered home/index.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 31ms (Views: 22.6ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/pets/new" for 127.0.0.1 at 2017-11-23 01:11:38 -0800
+Processing by PetsController#new as HTML
+  Rendering pets/new.html.erb within layouts/application
+  Rendered pets/new.html.erb within layouts/application (62.8ms)
+Completed 200 OK in 82ms (Views: 79.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/pets/new" for 127.0.0.1 at 2017-11-23 01:12:09 -0800
+Processing by PetsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"BPdxYb640NeXcxnzy1KKTSJHRr+4EHhUzLDPYOHosO0n2xRpyvz7okEs0MSrSVwtbZKz9WGl0eyBj1vTZEhoyA==", "pets"=>{"name"=>"Nitin", "species"=>"Dawg", "activity_level"=>"A lot", "personality"=>"Happy", "size"=>"big", "image"=>#<ActionDispatch::Http::UploadedFile:0x007fe355e70de8 @tempfile=#<Tempfile:/var/folders/3s/rv0hm4hj5ng9xkw5byb9z5fw0000gn/T/RackMultipart20171123-72616-zn82dd.png>, @original_filename="cal.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"pets[image]\"; filename=\"cal.png\"\r\nContent-Type: image/png\r\n">}, "commit"=>"Save Pets"}
+Unpermitted parameter: :image
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPet Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "pets" WHERE "pets"."name" = ? LIMIT ?[0m  [["name", "Nitin"], ["LIMIT", 1]]
+  [1m[35mSQL (1.7ms)[0m  [1m[32mINSERT INTO "pets" ("created_at", "updated_at", "name", "activity_level", "personality", "size", "species") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", "2017-11-23 09:12:09.152140"], ["updated_at", "2017-11-23 09:12:09.152140"], ["name", "Nitin"], ["activity_level", "A lot"], ["personality", "Happy"], ["size", "big"], ["species", "Dawg"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPet Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "pets" WHERE "pets"."name" = ? AND ("pets"."id" != ?) LIMIT ?[0m  [["name", "Nitin"], ["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 29ms (ActiveRecord: 3.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-23 01:12:09 -0800
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mPet Load (0.2ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  Rendered home/index.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 27ms (Views: 24.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/pets/new" for 127.0.0.1 at 2017-11-23 01:12:12 -0800
+Processing by PetsController#new as HTML
+  Rendering pets/new.html.erb within layouts/application
+  Rendered pets/new.html.erb within layouts/application (12.9ms)
+Completed 200 OK in 33ms (Views: 28.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/pets/new" for 127.0.0.1 at 2017-11-23 01:12:35 -0800
+Processing by PetsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5L1LshMJz3fvmVPI8A/we3BTqOZz2Nup5BlaOnyNnlDHkS66Z03kAjnGmv+QFCYbP4ZdrKptchGpJs6J+S1GdQ==", "pets"=>{"name"=>"Wilson", "species"=>"Cat", "activity_level"=>"Lazy", "personality"=>"Chill", "size"=>"medium", "image"=>#<ActionDispatch::Http::UploadedFile:0x007fe3531327c8 @tempfile=#<Tempfile:/var/folders/3s/rv0hm4hj5ng9xkw5byb9z5fw0000gn/T/RackMultipart20171123-72616-1l21exs.png>, @original_filename="Screen Shot 2017-11-21 at 12.53.22 PM.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"pets[image]\"; filename=\"Screen Shot 2017-11-21 at 12.53.22 PM.png\"\r\nContent-Type: image/png\r\n">}, "commit"=>"Save Pets"}
+Unpermitted parameter: :image
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPet Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "pets" WHERE "pets"."name" = ? LIMIT ?[0m  [["name", "Wilson"], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pets" ("created_at", "updated_at", "name", "activity_level", "personality", "size", "species") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", "2017-11-23 09:12:35.779093"], ["updated_at", "2017-11-23 09:12:35.779093"], ["name", "Wilson"], ["activity_level", "Lazy"], ["personality", "Chill"], ["size", "medium"], ["species", "Cat"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPet Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "pets" WHERE "pets"."name" = ? AND ("pets"."id" != ?) LIMIT ?[0m  [["name", "Wilson"], ["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 9ms (ActiveRecord: 2.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-23 01:12:35 -0800
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mPet Load (0.2ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  Rendered home/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 24ms (Views: 21.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/pets/1" for 127.0.0.1 at 2017-11-23 01:12:38 -0800
+Processing by PetsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPet Load (0.3ms)[0m  [1m[34mSELECT  "pets".* FROM "pets" WHERE "pets"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pets/show.html.erb within layouts/application
+  Rendered pets/show.html.erb within layouts/application (185.4ms)
+Completed 500 Internal Server Error in 198ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `adopt_path' for #<#<Class:0x007fe3518fc370>:0x007fe3519047c8>
+Did you mean?  pet_path):
+    6: <h2>Personality: <%= @pet.personality %></h2>
+    7: <h2>Size: <%= @pet.size%></h2>
+    8: 
+    9: <%= button_to "Adopt this pet!", adopt_path(id: @pet), :class => "button medium", :method => :patch %>
+  
+app/views/pets/show.html.erb:9:in `_app_views_pets_show_html_erb__1391385603678215816_70307151358300'
+Started GET "/pets/1" for 127.0.0.1 at 2017-11-23 01:13:03 -0800
+Processing by PetsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPet Load (0.2ms)[0m  [1m[34mSELECT  "pets".* FROM "pets" WHERE "pets"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pets/show.html.erb within layouts/application
+  Rendered pets/show.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 41ms (Views: 19.0ms | ActiveRecord: 1.1ms)
+
+
+Started PATCH "/adopt?id=1" for 127.0.0.1 at 2017-11-23 01:13:08 -0800
+Processing by PetsController#adopt as HTML
+  Parameters: {"authenticity_token"=>"SHk3FVXa7cxcUoGSyxGXL0IbpPIhjlAn4+goqrRU8i5rVVIdIZ7GuYoNSKWrCkFPDc5RuPg7+Z+u17wZMfQqCw==", "id"=>"1"}
+  [1m[36mPet Load (0.2ms)[0m  [1m[34mSELECT  "pets".* FROM "pets" WHERE "pets"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.2ms)
+
+
+  
+NoMethodError (undefined method `id' for nil:NilClass):
+  
+app/controllers/pets_controller.rb:17:in `adopt'
+Started GET "/" for 127.0.0.1 at 2017-11-23 01:13:15 -0800
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mPet Load (0.2ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  Rendered home/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 25ms (Views: 21.7ms | ActiveRecord: 0.2ms)
+
+
+  [1m[36mUser Load (2.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT ?[0m  [["LIMIT", 11]]
+Started GET "/users/sign_up" for 127.0.0.1 at 2017-11-23 01:13:27 -0800
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering users/registrations/new.html.erb within layouts/application
+  Rendered users/shared/_links.html.erb (0.9ms)
+  Rendered users/registrations/new.html.erb within layouts/application (11.4ms)
+Completed 200 OK in 44ms (Views: 29.0ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2017-11-23 01:13:37 -0800
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"dPnRUvsvBTHn+xqZRgjYVqAoSbKnq07XUD2OpjMwpipX1bRaj2suRDGk064mEw427/28+H4e528dAhoVtpB+Dw==", "user"=>{"email"=>"nitfremont@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (1.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "nitfremont@gmail.com"], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "users" ("created_at", "updated_at", "email", "encrypted_password") VALUES (?, ?, ?, ?)[0m  [["created_at", "2017-11-23 09:13:37.521353"], ["updated_at", "2017-11-23 09:13:37.521353"], ["email", "nitfremont@gmail.com"], ["encrypted_password", "$2a$11$c0QYdiUbClUtqS7j3Oco4ejUWErp17hAGz0HpbQh2vIWJZnxfdsEi"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "users" SET "updated_at" = ?, "sign_in_count" = ?, "current_sign_in_at" = ?, "last_sign_in_at" = ?, "current_sign_in_ip" = ?, "last_sign_in_ip" = ? WHERE "users"."id" = ?[0m  [["updated_at", "2017-11-23 09:13:37.524579"], ["sign_in_count", 1], ["current_sign_in_at", "2017-11-23 09:13:37.524050"], ["last_sign_in_at", "2017-11-23 09:13:37.524050"], ["current_sign_in_ip", "127.0.0.1"], ["last_sign_in_ip", "127.0.0.1"], ["id", 1]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 165ms (ActiveRecord: 3.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-23 01:13:37 -0800
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mPet Load (0.2ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  Rendered home/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 19ms (Views: 16.9ms | ActiveRecord: 0.2ms)
+
+
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT ?[0m  [["LIMIT", 11]]
+Started GET "/pets/1" for 127.0.0.1 at 2017-11-23 01:13:47 -0800
+Processing by PetsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPet Load (0.2ms)[0m  [1m[34mSELECT  "pets".* FROM "pets" WHERE "pets"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pets/show.html.erb within layouts/application
+  Rendered pets/show.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 86ms (Views: 77.4ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/adopt?id=1" for 127.0.0.1 at 2017-11-23 01:13:48 -0800
+Processing by PetsController#adopt as HTML
+  Parameters: {"authenticity_token"=>"bNlmRt9itUeTe1lFw76FiGkmVE+KAmlBMZ6C1SKHCs3AHM/6zyN5/n8ztSBVNp8N3UwG/f3fZt+9HktAItsN0w==", "id"=>"1"}
+  [1m[36mPet Load (0.1ms)[0m  [1m[34mSELECT  "pets".* FROM "pets" WHERE "pets"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPet Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "pets" WHERE "pets"."name" = ? AND ("pets"."id" != ?) LIMIT ?[0m  [["name", "Nitin"], ["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (1.6ms)[0m  [1m[33mUPDATE "pets" SET "user_id" = ?, "updated_at" = ? WHERE "pets"."id" = ?[0m  [["user_id", 1], ["updated_at", "2017-11-23 09:13:48.558021"], ["id", 1]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 11ms (ActiveRecord: 2.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-23 01:13:48 -0800
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mPet Load (0.2ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  Rendered home/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 28ms (Views: 25.9ms | ActiveRecord: 0.2ms)
+
+
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mPet Load (0.2ms)[0m  [1m[34mSELECT  "pets".* FROM "pets" LIMIT ?[0m  [["LIMIT", 11]]
+Started GET "/" for 127.0.0.1 at 2017-11-23 01:21:56 -0800
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mPet Load (0.2ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered home/index.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 29ms (Views: 25.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-23 01:22:40 -0800
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mPet Load (0.5ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered home/index.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 25ms (Views: 22.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-23 01:23:05 -0800
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mPet Load (0.2ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered home/index.html.erb within layouts/application (17.0ms)
+Completed 200 OK in 39ms (Views: 34.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-23 01:23:49 -0800
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mPet Load (0.2ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPet Load (0.3ms)[0m  [1m[34mSELECT "pets".* FROM "pets" WHERE "pets"."user_id" = ?[0m  [["user_id", 1]]
+  Rendered home/index.html.erb within layouts/application (15.9ms)
+Completed 200 OK in 36ms (Views: 32.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/pets/2" for 127.0.0.1 at 2017-11-23 01:23:55 -0800
+Processing by PetsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPet Load (0.2ms)[0m  [1m[34mSELECT  "pets".* FROM "pets" WHERE "pets"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering pets/show.html.erb within layouts/application
+  Rendered pets/show.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 80ms (Views: 75.6ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/adopt?id=2" for 127.0.0.1 at 2017-11-23 01:23:56 -0800
+Processing by PetsController#adopt as HTML
+  Parameters: {"authenticity_token"=>"DSwmA2e5GsrUQ1BwwRPvhs8KfBuppVEgllS8VSB0Pk6h6Y+/d/jWczgLvBVXm/UDe2Auqd54Xr4a1HXAICg5UA==", "id"=>"2"}
+  [1m[36mPet Load (0.1ms)[0m  [1m[34mSELECT  "pets".* FROM "pets" WHERE "pets"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPet Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "pets" WHERE "pets"."name" = ? AND ("pets"."id" != ?) LIMIT ?[0m  [["name", "Wilson"], ["id", 2], ["LIMIT", 1]]
+  [1m[35mSQL (1.5ms)[0m  [1m[33mUPDATE "pets" SET "user_id" = ?, "updated_at" = ? WHERE "pets"."id" = ?[0m  [["user_id", 1], ["updated_at", "2017-11-23 09:23:56.431526"], ["id", 2]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 9ms (ActiveRecord: 2.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-23 01:23:56 -0800
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mPet Load (0.2ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPet Load (0.1ms)[0m  [1m[34mSELECT "pets".* FROM "pets" WHERE "pets"."user_id" = ?[0m  [["user_id", 1]]
+  Rendered home/index.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 29ms (Views: 26.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-23 01:24:13 -0800
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mPet Load (0.4ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPet Load (0.2ms)[0m  [1m[34mSELECT "pets".* FROM "pets" WHERE "pets"."user_id" = ?[0m  [["user_id", 1]]
+  Rendered home/index.html.erb within layouts/application (10.2ms)
+Completed 200 OK in 29ms (Views: 26.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/pets/new" for 127.0.0.1 at 2017-11-23 01:25:16 -0800
+Processing by PetsController#new as HTML
+  Rendering pets/new.html.erb within layouts/application
+  Rendered pets/new.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 26ms (Views: 23.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/pets/new" for 127.0.0.1 at 2017-11-23 01:25:41 -0800
+Processing by PetsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8vvtvX52iQ9EmXWEDhJ7kJTmYlPau4pNCQo3NXVXI2bR14i1CjKiepLGvLNuCa3w2zOXGQMOI/VENaOG8Pf7Qw==", "pets"=>{"name"=>"Pupper", "species"=>"Doggo", "activity_level"=>"moderate", "personality"=>"funny", "size"=>"small"}, "commit"=>"Save Pets"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPet Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "pets" WHERE "pets"."name" = ? LIMIT ?[0m  [["name", "Pupper"], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "pets" ("created_at", "updated_at", "name", "activity_level", "personality", "size", "species") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", "2017-11-23 09:25:41.430309"], ["updated_at", "2017-11-23 09:25:41.430309"], ["name", "Pupper"], ["activity_level", "moderate"], ["personality", "funny"], ["size", "small"], ["species", "Doggo"]]
+  [1m[35m (3.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPet Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "pets" WHERE "pets"."name" = ? AND ("pets"."id" != ?) LIMIT ?[0m  [["name", "Pupper"], ["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 12ms (ActiveRecord: 4.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-23 01:25:41 -0800
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mPet Load (0.2ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPet Load (0.1ms)[0m  [1m[34mSELECT "pets".* FROM "pets" WHERE "pets"."user_id" = ?[0m  [["user_id", 1]]
+  Rendered home/index.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 26ms (Views: 23.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/pets/new" for 127.0.0.1 at 2017-11-23 01:25:45 -0800
+Processing by PetsController#new as HTML
+  Rendering pets/new.html.erb within layouts/application
+  Rendered pets/new.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 25ms (Views: 22.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/pets/new" for 127.0.0.1 at 2017-11-23 01:25:58 -0800
+Processing by PetsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DLaacmwdTnvB/SVePp5rDlIFhUVuTwS+s7YZOFCJRv8vmv96GFllDhei7Glehb1uHdBwD7f6rQb+iY2L1Sme2g==", "pets"=>{"name"=>"Dolphin", "species"=>"whale", "activity_level"=>"swim", "personality"=>"smart", "size"=>"medium"}, "commit"=>"Save Pets"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPet Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "pets" WHERE "pets"."name" = ? LIMIT ?[0m  [["name", "Dolphin"], ["LIMIT", 1]]
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "pets" ("created_at", "updated_at", "name", "activity_level", "personality", "size", "species") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", "2017-11-23 09:25:58.844416"], ["updated_at", "2017-11-23 09:25:58.844416"], ["name", "Dolphin"], ["activity_level", "swim"], ["personality", "smart"], ["size", "medium"], ["species", "whale"]]
+  [1m[35m (2.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPet Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "pets" WHERE "pets"."name" = ? AND ("pets"."id" != ?) LIMIT ?[0m  [["name", "Dolphin"], ["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 15ms (ActiveRecord: 4.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-23 01:25:58 -0800
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mPet Load (0.2ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPet Load (0.1ms)[0m  [1m[34mSELECT "pets".* FROM "pets" WHERE "pets"."user_id" = ?[0m  [["user_id", 1]]
+  Rendered home/index.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 25ms (Views: 21.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/pets/4" for 127.0.0.1 at 2017-11-23 01:26:07 -0800
+Processing by PetsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mPet Load (0.1ms)[0m  [1m[34mSELECT  "pets".* FROM "pets" WHERE "pets"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering pets/show.html.erb within layouts/application
+  Rendered pets/show.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 89ms (Views: 80.9ms | ActiveRecord: 0.1ms)
+
+
+Started PATCH "/adopt?id=4" for 127.0.0.1 at 2017-11-23 01:26:09 -0800
+Processing by PetsController#adopt as HTML
+  Parameters: {"authenticity_token"=>"/UPpTI7yRZwPIrDMIZKyL+4hFY/DWfQHKCGBodXE2VdRhkDwnrOJJeNqXKm3GqiqWktHPbSE+5mkoUg01ZjeSQ==", "id"=>"4"}
+  [1m[36mPet Load (0.2ms)[0m  [1m[34mSELECT  "pets".* FROM "pets" WHERE "pets"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPet Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "pets" WHERE "pets"."name" = ? AND ("pets"."id" != ?) LIMIT ?[0m  [["name", "Dolphin"], ["id", 4], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "pets" SET "user_id" = ?, "updated_at" = ? WHERE "pets"."id" = ?[0m  [["user_id", 1], ["updated_at", "2017-11-23 09:26:09.026610"], ["id", 4]]
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 9ms (ActiveRecord: 2.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-23 01:26:09 -0800
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mPet Load (0.3ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPet Load (0.2ms)[0m  [1m[34mSELECT "pets".* FROM "pets" WHERE "pets"."user_id" = ?[0m  [["user_id", 1]]
+  Rendered home/index.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 33ms (Views: 30.2ms | ActiveRecord: 0.7ms)
+
+
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddUserRefToFavorites (20171123100127)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.6ms)[0m  [1m[35mALTER TABLE "favorites" ADD "user_id" integer[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE  INDEX "index_favorites_on_user_id" ON "favorites" ("user_id")[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20171123100127"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+Migrating to AddPetRefToFavorites (20171123100143)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "favorites" ADD "pet_id" integer[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_favorites_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_favorites_on_user_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "index_favorites_on_pet_id" ON "favorites" ("pet_id")[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20171123100143"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_favorites_on_pet_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_favorites_on_pet_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_favorites_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_favorites_on_user_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_pets_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_pets_on_user_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_shelters_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_shelters_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_shelters_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_shelters_on_email' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
+Started GET "/pets/1" for 127.0.0.1 at 2017-11-23 02:04:49 -0800
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PetsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPet Load (0.2ms)[0m  [1m[34mSELECT  "pets".* FROM "pets" WHERE "pets"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pets/show.html.erb within layouts/application
+  Rendered pets/show.html.erb within layouts/application (176.3ms)
+Completed 200 OK in 244ms (Views: 206.7ms | ActiveRecord: 0.7ms)
+
+
+Started PATCH "/favorite?id=1" for 127.0.0.1 at 2017-11-23 02:05:02 -0800
+Processing by PetsController#favorite as HTML
+  Parameters: {"authenticity_token"=>"5GG8iqrY4GV/4EErGYlTQYHPTbFhRl0kW373v9J65Wx0RKJoqDdyqjo3hmwNQ+dW9E2TCo4aj6csFKT5gzYD5Q==", "id"=>"1"}
+  [1m[36mPet Load (0.1ms)[0m  [1m[34mSELECT  "pets".* FROM "pets" WHERE "pets"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 28ms (ActiveRecord: 1.5ms)
+
+
+  
+NameError (uninitialized constant PetsController::Favorites):
+  
+app/controllers/pets_controller.rb:27:in `favorite'
+Started GET "/" for 127.0.0.1 at 2017-11-23 02:07:35 -0800
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mPet Load (0.2ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPet Load (0.2ms)[0m  [1m[34mSELECT "pets".* FROM "pets" WHERE "pets"."user_id" = ?[0m  [["user_id", 1]]
+  Rendered home/index.html.erb within layouts/application (76.1ms)
+Completed 200 OK in 103ms (Views: 95.0ms | ActiveRecord: 7.3ms)
+
+
+Started GET "/pets/1" for 127.0.0.1 at 2017-11-23 02:07:38 -0800
+Processing by PetsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPet Load (0.3ms)[0m  [1m[34mSELECT  "pets".* FROM "pets" WHERE "pets"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pets/show.html.erb within layouts/application
+  Rendered pets/show.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 79ms (Views: 74.2ms | ActiveRecord: 0.3ms)
+
+
+Started PATCH "/favorite?id=1" for 127.0.0.1 at 2017-11-23 02:07:40 -0800
+Processing by PetsController#favorite as HTML
+  Parameters: {"authenticity_token"=>"/YgbGBmfg5paqKyxluYc8VvBOQrSkeiAe1I9rUHpj/1trQX6G3ARVR9/a/aCLKjmLkPnsT3NOgMMOG7rEKVpdA==", "id"=>"1"}
+  [1m[36mPet Load (0.2ms)[0m  [1m[34mSELECT  "pets".* FROM "pets" WHERE "pets"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.5ms)
+
+
+  
+NameError (uninitialized constant PetsController::Favorites):
+  
+app/controllers/pets_controller.rb:27:in `favorite'
+Started GET "/" for 127.0.0.1 at 2017-11-23 02:07:55 -0800
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mPet Load (0.1ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPet Load (0.2ms)[0m  [1m[34mSELECT "pets".* FROM "pets" WHERE "pets"."user_id" = ?[0m  [["user_id", 1]]
+  Rendered home/index.html.erb within layouts/application (32.4ms)
+Completed 200 OK in 52ms (Views: 46.5ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/pets/1" for 127.0.0.1 at 2017-11-23 02:07:56 -0800
+Processing by PetsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPet Load (0.4ms)[0m  [1m[34mSELECT  "pets".* FROM "pets" WHERE "pets"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pets/show.html.erb within layouts/application
+  Rendered pets/show.html.erb within layouts/application (15.6ms)
+Completed 200 OK in 76ms (Views: 72.1ms | ActiveRecord: 0.4ms)
+
+
+Started PATCH "/favorite?id=1" for 127.0.0.1 at 2017-11-23 02:07:58 -0800
+  
+AbstractController::ActionNotFound (The action 'favorite' could not be found for PetsController):
+  
+actionpack (5.1.4) lib/abstract_controller/base.rb:119:in `process'
+actionview (5.1.4) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.4) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.4) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:834:in `call'
+warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.7) lib/warden/manager.rb:35:in `catch'
+warden (1.2.7) lib/warden/manager.rb:35:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+rack (2.0.3) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.3) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.4) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.4) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2017-11-23 02:08:29 -0800
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mPet Load (0.2ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPet Load (0.2ms)[0m  [1m[34mSELECT "pets".* FROM "pets" WHERE "pets"."user_id" = ?[0m  [["user_id", 1]]
+  Rendered home/index.html.erb within layouts/application (35.3ms)
+Completed 200 OK in 65ms (Views: 59.3ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/pets/1" for 127.0.0.1 at 2017-11-23 02:08:31 -0800
+Processing by PetsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPet Load (0.2ms)[0m  [1m[34mSELECT  "pets".* FROM "pets" WHERE "pets"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pets/show.html.erb within layouts/application
+  Rendered pets/show.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 79ms (Views: 75.1ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/favorite?id=1" for 127.0.0.1 at 2017-11-23 02:08:32 -0800
+Processing by FavoritesController#favorite as HTML
+  Parameters: {"authenticity_token"=>"ZQE02Em51zC0YIRxyWLucYg71V43tdjVPlR/l1NEIFP1JCo6S1ZF//G3QzbdqFpm/bkL5djpClZJPizRAgjG2g==", "id"=>"1"}
+  [1m[36mPet Load (0.2ms)[0m  [1m[34mSELECT  "pets".* FROM "pets" WHERE "pets"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.3ms)
+
+
+  
+NameError (uninitialized constant FavoritesController::Favorites):
+  
+app/controllers/favorites_controller.rb:6:in `favorite'
+Started GET "/" for 127.0.0.1 at 2017-11-23 02:08:45 -0800
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mPet Load (0.2ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPet Load (0.2ms)[0m  [1m[34mSELECT "pets".* FROM "pets" WHERE "pets"."user_id" = ?[0m  [["user_id", 1]]
+  Rendered home/index.html.erb within layouts/application (230.4ms)
+Completed 200 OK in 275ms (Views: 258.3ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/pets/1" for 127.0.0.1 at 2017-11-23 02:08:47 -0800
+Processing by PetsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPet Load (0.2ms)[0m  [1m[34mSELECT  "pets".* FROM "pets" WHERE "pets"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pets/show.html.erb within layouts/application
+  Rendered pets/show.html.erb within layouts/application (8.6ms)
+Completed 200 OK in 74ms (Views: 69.1ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/favorite?id=1" for 127.0.0.1 at 2017-11-23 02:08:48 -0800
+Processing by FavoritesController#favorite as HTML
+  Parameters: {"authenticity_token"=>"3GC201JKe6jZA8IzKDQ1mPXn3iM6/XFTTeyTE/aR+65MRagxUKXpZ5zUBXQ8/oGPgGUAmNWho9A6hsBVp90dJw==", "id"=>"1"}
+  [1m[36mPet Load (0.1ms)[0m  [1m[34mSELECT  "pets".* FROM "pets" WHERE "pets"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.3ms)
+
+
+  
+NameError (uninitialized constant FavoritesController::Favorites):
+  
+app/controllers/favorites_controller.rb:6:in `favorite'
+Started PUT "/__web_console/repl_sessions/eab93397bc1b75901e6eb6da39c3c33e" for 127.0.0.1 at 2017-11-23 02:08:57 -0800
+Started PUT "/__web_console/repl_sessions/eab93397bc1b75901e6eb6da39c3c33e" for 127.0.0.1 at 2017-11-23 02:09:00 -0800
+Started PUT "/__web_console/repl_sessions/eab93397bc1b75901e6eb6da39c3c33e" for 127.0.0.1 at 2017-11-23 02:09:06 -0800
+Started PUT "/__web_console/repl_sessions/eab93397bc1b75901e6eb6da39c3c33e" for 127.0.0.1 at 2017-11-23 02:09:06 -0800
+  [1m[36mFavorite Load (1.4ms)[0m  [1m[34mSELECT  "favorites".* FROM "favorites" LIMIT ?[0m  [["LIMIT", 11]]
+Started PUT "/__web_console/repl_sessions/eab93397bc1b75901e6eb6da39c3c33e" for 127.0.0.1 at 2017-11-23 02:09:13 -0800
+Started PUT "/__web_console/repl_sessions/eab93397bc1b75901e6eb6da39c3c33e" for 127.0.0.1 at 2017-11-23 02:09:16 -0800
+Started GET "/" for 127.0.0.1 at 2017-11-23 02:10:16 -0800
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mPet Load (0.1ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPet Load (0.2ms)[0m  [1m[34mSELECT "pets".* FROM "pets" WHERE "pets"."user_id" = ?[0m  [["user_id", 1]]
+  Rendered home/index.html.erb within layouts/application (51.2ms)
+Completed 200 OK in 76ms (Views: 69.7ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/pets/1" for 127.0.0.1 at 2017-11-23 02:10:18 -0800
+Processing by PetsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPet Load (0.3ms)[0m  [1m[34mSELECT  "pets".* FROM "pets" WHERE "pets"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pets/show.html.erb within layouts/application
+  Rendered pets/show.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 93ms (Views: 88.2ms | ActiveRecord: 0.3ms)
+
+
+Started PATCH "/favorite?id=1" for 127.0.0.1 at 2017-11-23 02:10:20 -0800
+Processing by FavoritesController#favorite as HTML
+  Parameters: {"authenticity_token"=>"0L+l8vnN5srr40ExYSyknQ+lv5N9JOFDGzj+Y7ASY2VAmrsQ+yJ0Ba40hnZ15hCKeidhKJJ4M8BsUq0l4V6F7A==", "id"=>"1"}
+  [1m[36mPet Load (0.1ms)[0m  [1m[34mSELECT  "pets".* FROM "pets" WHERE "pets"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPet Load (0.1ms)[0m  [1m[34mSELECT  "pets".* FROM "pets" WHERE "pets"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "favorites" ("created_at", "updated_at", "user_id", "pet_id") VALUES (?, ?, ?, ?)[0m  [["created_at", "2017-11-23 10:10:20.073000"], ["updated_at", "2017-11-23 10:10:20.073000"], ["user_id", 1], ["pet_id", 1]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 20ms (ActiveRecord: 3.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-23 02:10:20 -0800
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mPet Load (0.2ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPet Load (0.1ms)[0m  [1m[34mSELECT "pets".* FROM "pets" WHERE "pets"."user_id" = ?[0m  [["user_id", 1]]
+  Rendered home/index.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 26ms (Views: 22.6ms | ActiveRecord: 0.5ms)
+
+
+  [1m[36mFavorite Load (1.9ms)[0m  [1m[34mSELECT  "favorites".* FROM "favorites" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mFavorite Load (1.8ms)[0m  [1m[34mSELECT  "favorites".* FROM "favorites" WHERE "favorites"."user_id" = ? LIMIT ?[0m  [["user_id", 1], ["LIMIT", 11]]
+Started GET "/" for 127.0.0.1 at 2017-11-23 02:14:22 -0800
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mPet Load (0.5ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPet Load (0.1ms)[0m  [1m[34mSELECT "pets".* FROM "pets" WHERE "pets"."user_id" = ?[0m  [["user_id", 1]]
+  Rendered home/index.html.erb within layouts/application (8.8ms)
+Completed 200 OK in 29ms (Views: 25.8ms | ActiveRecord: 0.8ms)
+
+
+  [1m[36mPet Load (0.3ms)[0m  [1m[34mSELECT  "pets".* FROM "pets" ORDER BY "pets"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+Started GET "/" for 127.0.0.1 at 2017-11-23 02:16:56 -0800
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mPet Load (0.1ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPet Load (0.2ms)[0m  [1m[34mSELECT "pets".* FROM "pets" WHERE "pets"."user_id" = ?[0m  [["user_id", 1]]
+  Rendered home/index.html.erb within layouts/application (31.8ms)
+Completed 200 OK in 53ms (Views: 48.1ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-23 02:17:05 -0800
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mPet Load (0.2ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPet Load (0.1ms)[0m  [1m[34mSELECT "pets".* FROM "pets" WHERE "pets"."user_id" = ?[0m  [["user_id", 1]]
+  Rendered home/index.html.erb within layouts/application (11.2ms)
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.6ms)
+
+
+  
+ActionView::Template::Error (undefined method `all' for nil:NilClass):
+    22: 		<p><%= pet.name %><p>
+    23: 	<% end %>
+    24: 	My Favorited Pets:
+    25: 	<%= @favorites.all %>
+    26: 
+    27: <%end %>
+  
+app/views/home/index.html.erb:25:in `_app_views_home_index_html_erb__1353794317030374198_70255618721920'
+Started PUT "/__web_console/repl_sessions/1321e0912aa158a275bd2cb5e8021e67" for 127.0.0.1 at 2017-11-23 02:17:16 -0800
+Started PUT "/__web_console/repl_sessions/1321e0912aa158a275bd2cb5e8021e67" for 127.0.0.1 at 2017-11-23 02:17:17 -0800
+Started PUT "/__web_console/repl_sessions/1321e0912aa158a275bd2cb5e8021e67" for 127.0.0.1 at 2017-11-23 02:17:20 -0800
+Started PUT "/__web_console/repl_sessions/1321e0912aa158a275bd2cb5e8021e67" for 127.0.0.1 at 2017-11-23 02:17:25 -0800
+Started PUT "/__web_console/repl_sessions/1321e0912aa158a275bd2cb5e8021e67" for 127.0.0.1 at 2017-11-23 02:17:25 -0800
+  [1m[36mFavorite Load (1.3ms)[0m  [1m[34mSELECT  "favorites".* FROM "favorites" LIMIT ?[0m  [["LIMIT", 11]]
+Started PUT "/__web_console/repl_sessions/1321e0912aa158a275bd2cb5e8021e67" for 127.0.0.1 at 2017-11-23 02:17:40 -0800
+Started PUT "/__web_console/repl_sessions/1321e0912aa158a275bd2cb5e8021e67" for 127.0.0.1 at 2017-11-23 02:17:44 -0800
+  [1m[36mFavorite Load (1.2ms)[0m  [1m[34mSELECT  "favorites".* FROM "favorites" WHERE "favorites"."user_id" = ? LIMIT ?[0m  [["user_id", 1], ["LIMIT", 11]]
+Started PUT "/__web_console/repl_sessions/1321e0912aa158a275bd2cb5e8021e67" for 127.0.0.1 at 2017-11-23 02:17:50 -0800
+Started PUT "/__web_console/repl_sessions/1321e0912aa158a275bd2cb5e8021e67" for 127.0.0.1 at 2017-11-23 02:17:53 -0800
+  [1m[36mFavorite Load (0.2ms)[0m  [1m[34mSELECT  "favorites".* FROM "favorites" WHERE "favorites"."user_id" = ? LIMIT ?[0m  [["user_id", 1], ["LIMIT", 11]]
+Started PUT "/__web_console/repl_sessions/1321e0912aa158a275bd2cb5e8021e67" for 127.0.0.1 at 2017-11-23 02:18:04 -0800
+  [1m[36mFavorite Load (0.2ms)[0m  [1m[34mSELECT  "favorites".* FROM "favorites" WHERE "favorites"."user_id" = ? LIMIT ?[0m  [["user_id", 1], ["LIMIT", 11]]
+Started PUT "/__web_console/repl_sessions/1321e0912aa158a275bd2cb5e8021e67" for 127.0.0.1 at 2017-11-23 02:19:22 -0800
+  [1m[36mFavorite Load (0.2ms)[0m  [1m[34mSELECT  "favorites".* FROM "favorites" WHERE "favorites"."user_id" = ? LIMIT ?[0m  [["user_id", 1], ["LIMIT", 11]]
+Started PUT "/__web_console/repl_sessions/1321e0912aa158a275bd2cb5e8021e67" for 127.0.0.1 at 2017-11-23 02:19:32 -0800
+  [1m[36mFavorite Load (0.2ms)[0m  [1m[34mSELECT  "favorites".* FROM "favorites" WHERE "favorites"."user_id" = ? LIMIT ?[0m  [["user_id", 1], ["LIMIT", 11]]
+Started PUT "/__web_console/repl_sessions/1321e0912aa158a275bd2cb5e8021e67" for 127.0.0.1 at 2017-11-23 02:19:33 -0800
+  [1m[36mFavorite Load (0.2ms)[0m  [1m[34mSELECT  "favorites".* FROM "favorites" WHERE "favorites"."user_id" = ? LIMIT ?[0m  [["user_id", 1], ["LIMIT", 11]]
+Started PUT "/__web_console/repl_sessions/1321e0912aa158a275bd2cb5e8021e67" for 127.0.0.1 at 2017-11-23 02:19:34 -0800
+Started PUT "/__web_console/repl_sessions/1321e0912aa158a275bd2cb5e8021e67" for 127.0.0.1 at 2017-11-23 02:19:36 -0800
+  [1m[36mFavorite Load (0.2ms)[0m  [1m[34mSELECT  "favorites".* FROM "favorites" WHERE "favorites"."user_id" = ? LIMIT ?[0m  [["user_id", 1], ["LIMIT", 11]]
+Started PUT "/__web_console/repl_sessions/1321e0912aa158a275bd2cb5e8021e67" for 127.0.0.1 at 2017-11-23 02:19:38 -0800
+  [1m[36mFavorite Load (0.2ms)[0m  [1m[34mSELECT  "favorites".* FROM "favorites" WHERE "favorites"."user_id" = ? LIMIT ?[0m  [["user_id", 1], ["LIMIT", 11]]
+Started PUT "/__web_console/repl_sessions/1321e0912aa158a275bd2cb5e8021e67" for 127.0.0.1 at 2017-11-23 02:19:59 -0800
+Started PUT "/__web_console/repl_sessions/1321e0912aa158a275bd2cb5e8021e67" for 127.0.0.1 at 2017-11-23 02:20:00 -0800
+  [1m[36mFavorite Load (0.2ms)[0m  [1m[34mSELECT  "favorites".* FROM "favorites" WHERE "favorites"."user_id" = ? LIMIT ?[0m  [["user_id", 1], ["LIMIT", 11]]
+Started PUT "/__web_console/repl_sessions/1321e0912aa158a275bd2cb5e8021e67" for 127.0.0.1 at 2017-11-23 02:20:06 -0800
+Started PUT "/__web_console/repl_sessions/1321e0912aa158a275bd2cb5e8021e67" for 127.0.0.1 at 2017-11-23 02:20:07 -0800
+  [1m[36mFavorite Load (0.2ms)[0m  [1m[34mSELECT  "favorites".* FROM "favorites" WHERE "favorites"."user_id" = ? LIMIT ?[0m  [["user_id", 1], ["LIMIT", 11]]
+Started PUT "/__web_console/repl_sessions/1321e0912aa158a275bd2cb5e8021e67" for 127.0.0.1 at 2017-11-23 02:20:18 -0800
+  [1m[36mFavorite Load (0.2ms)[0m  [1m[34mSELECT  "favorites".* FROM "favorites" WHERE "favorites"."user_id" = ? LIMIT ?[0m  [["user_id", 1], ["LIMIT", 11]]
+Started PUT "/__web_console/repl_sessions/1321e0912aa158a275bd2cb5e8021e67" for 127.0.0.1 at 2017-11-23 02:20:53 -0800
+Started PUT "/__web_console/repl_sessions/1321e0912aa158a275bd2cb5e8021e67" for 127.0.0.1 at 2017-11-23 02:20:55 -0800
+Started PUT "/__web_console/repl_sessions/1321e0912aa158a275bd2cb5e8021e67" for 127.0.0.1 at 2017-11-23 02:21:02 -0800
+  [1m[36mFavorite Load (0.2ms)[0m  [1m[34mSELECT  "favorites".* FROM "favorites" WHERE "favorites"."user_id" = ? LIMIT ?[0m  [["user_id", 1], ["LIMIT", 11]]
+Started PUT "/__web_console/repl_sessions/1321e0912aa158a275bd2cb5e8021e67" for 127.0.0.1 at 2017-11-23 02:21:13 -0800
+Started PUT "/__web_console/repl_sessions/1321e0912aa158a275bd2cb5e8021e67" for 127.0.0.1 at 2017-11-23 02:21:18 -0800
+Started PUT "/__web_console/repl_sessions/1321e0912aa158a275bd2cb5e8021e67" for 127.0.0.1 at 2017-11-23 02:21:35 -0800
+Started PUT "/__web_console/repl_sessions/1321e0912aa158a275bd2cb5e8021e67" for 127.0.0.1 at 2017-11-23 02:21:44 -0800
+  [1m[36mFavorite Load (0.2ms)[0m  [1m[34mSELECT  "favorites".* FROM "favorites" WHERE "favorites"."user_id" = ? LIMIT ?[0m  [["user_id", 1], ["LIMIT", 11]]
+Started PUT "/__web_console/repl_sessions/1321e0912aa158a275bd2cb5e8021e67" for 127.0.0.1 at 2017-11-23 02:21:52 -0800
+Started PUT "/__web_console/repl_sessions/1321e0912aa158a275bd2cb5e8021e67" for 127.0.0.1 at 2017-11-23 02:22:16 -0800
+Started PUT "/__web_console/repl_sessions/1321e0912aa158a275bd2cb5e8021e67" for 127.0.0.1 at 2017-11-23 02:22:22 -0800
+  [1m[36mFavorite Load (0.2ms)[0m  [1m[34mSELECT "favorites".* FROM "favorites" WHERE "favorites"."user_id" = ?[0m  [["user_id", 1]]
+Started PUT "/__web_console/repl_sessions/1321e0912aa158a275bd2cb5e8021e67" for 127.0.0.1 at 2017-11-23 02:22:25 -0800
+Started PUT "/__web_console/repl_sessions/1321e0912aa158a275bd2cb5e8021e67" for 127.0.0.1 at 2017-11-23 02:22:30 -0800
+Started PUT "/__web_console/repl_sessions/1321e0912aa158a275bd2cb5e8021e67" for 127.0.0.1 at 2017-11-23 02:22:37 -0800
+Started PUT "/__web_console/repl_sessions/1321e0912aa158a275bd2cb5e8021e67" for 127.0.0.1 at 2017-11-23 02:23:17 -0800
+Started PUT "/__web_console/repl_sessions/1321e0912aa158a275bd2cb5e8021e67" for 127.0.0.1 at 2017-11-23 02:23:31 -0800
+Started PUT "/__web_console/repl_sessions/1321e0912aa158a275bd2cb5e8021e67" for 127.0.0.1 at 2017-11-23 02:23:53 -0800
+Started PUT "/__web_console/repl_sessions/1321e0912aa158a275bd2cb5e8021e67" for 127.0.0.1 at 2017-11-23 02:23:54 -0800
+  [1m[36mFavorite Load (0.2ms)[0m  [1m[34mSELECT  "favorites".* FROM "favorites" LIMIT ?[0m  [["LIMIT", 11]]
+Started PUT "/__web_console/repl_sessions/1321e0912aa158a275bd2cb5e8021e67" for 127.0.0.1 at 2017-11-23 02:23:55 -0800
+Started PUT "/__web_console/repl_sessions/1321e0912aa158a275bd2cb5e8021e67" for 127.0.0.1 at 2017-11-23 02:23:57 -0800
+Started PUT "/__web_console/repl_sessions/1321e0912aa158a275bd2cb5e8021e67" for 127.0.0.1 at 2017-11-23 02:23:58 -0800
+  [1m[36mFavorite Load (0.2ms)[0m  [1m[34mSELECT  "favorites".* FROM "favorites" ORDER BY "favorites"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+Started PUT "/__web_console/repl_sessions/1321e0912aa158a275bd2cb5e8021e67" for 127.0.0.1 at 2017-11-23 02:24:03 -0800
+Started PUT "/__web_console/repl_sessions/1321e0912aa158a275bd2cb5e8021e67" for 127.0.0.1 at 2017-11-23 02:24:04 -0800
+Started PUT "/__web_console/repl_sessions/1321e0912aa158a275bd2cb5e8021e67" for 127.0.0.1 at 2017-11-23 02:24:10 -0800
+  [1m[36mFavorite Load (0.2ms)[0m  [1m[34mSELECT  "favorites".* FROM "favorites" ORDER BY "favorites"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+Started PUT "/__web_console/repl_sessions/1321e0912aa158a275bd2cb5e8021e67" for 127.0.0.1 at 2017-11-23 02:24:16 -0800
+Started PUT "/__web_console/repl_sessions/1321e0912aa158a275bd2cb5e8021e67" for 127.0.0.1 at 2017-11-23 02:24:18 -0800
+Started PUT "/__web_console/repl_sessions/1321e0912aa158a275bd2cb5e8021e67" for 127.0.0.1 at 2017-11-23 02:24:19 -0800
+  [1m[36mFavorite Load (0.2ms)[0m  [1m[34mSELECT  "favorites".* FROM "favorites" ORDER BY "favorites"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+Started PUT "/__web_console/repl_sessions/1321e0912aa158a275bd2cb5e8021e67" for 127.0.0.1 at 2017-11-23 02:24:22 -0800
+Started PUT "/__web_console/repl_sessions/1321e0912aa158a275bd2cb5e8021e67" for 127.0.0.1 at 2017-11-23 02:24:25 -0800
+Started PUT "/__web_console/repl_sessions/1321e0912aa158a275bd2cb5e8021e67" for 127.0.0.1 at 2017-11-23 02:24:36 -0800
+Started PUT "/__web_console/repl_sessions/1321e0912aa158a275bd2cb5e8021e67" for 127.0.0.1 at 2017-11-23 02:24:38 -0800
+Started PUT "/__web_console/repl_sessions/1321e0912aa158a275bd2cb5e8021e67" for 127.0.0.1 at 2017-11-23 02:24:39 -0800
+  [1m[36mPet Load (0.2ms)[0m  [1m[34mSELECT  "pets".* FROM "pets" LIMIT ?[0m  [["LIMIT", 11]]
+Started PUT "/__web_console/repl_sessions/1321e0912aa158a275bd2cb5e8021e67" for 127.0.0.1 at 2017-11-23 02:24:41 -0800
+Started PUT "/__web_console/repl_sessions/1321e0912aa158a275bd2cb5e8021e67" for 127.0.0.1 at 2017-11-23 02:25:32 -0800
+Started PUT "/__web_console/repl_sessions/1321e0912aa158a275bd2cb5e8021e67" for 127.0.0.1 at 2017-11-23 02:25:34 -0800
+Started PUT "/__web_console/repl_sessions/1321e0912aa158a275bd2cb5e8021e67" for 127.0.0.1 at 2017-11-23 02:26:27 -0800
+Started PUT "/__web_console/repl_sessions/1321e0912aa158a275bd2cb5e8021e67" for 127.0.0.1 at 2017-11-23 02:26:37 -0800
+Started PUT "/__web_console/repl_sessions/1321e0912aa158a275bd2cb5e8021e67" for 127.0.0.1 at 2017-11-23 02:26:45 -0800
+Started PUT "/__web_console/repl_sessions/1321e0912aa158a275bd2cb5e8021e67" for 127.0.0.1 at 2017-11-23 02:26:45 -0800
+Started PUT "/__web_console/repl_sessions/1321e0912aa158a275bd2cb5e8021e67" for 127.0.0.1 at 2017-11-23 02:26:50 -0800
+Started PUT "/__web_console/repl_sessions/1321e0912aa158a275bd2cb5e8021e67" for 127.0.0.1 at 2017-11-23 02:27:10 -0800
+Started PUT "/__web_console/repl_sessions/1321e0912aa158a275bd2cb5e8021e67" for 127.0.0.1 at 2017-11-23 02:27:12 -0800
+Started PUT "/__web_console/repl_sessions/1321e0912aa158a275bd2cb5e8021e67" for 127.0.0.1 at 2017-11-23 02:27:14 -0800
+Started PUT "/__web_console/repl_sessions/1321e0912aa158a275bd2cb5e8021e67" for 127.0.0.1 at 2017-11-23 02:27:20 -0800
+  [1m[36mPet Load (0.2ms)[0m  [1m[34mSELECT  "pets".* FROM "pets" WHERE "pets"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 11]]
+Started PUT "/__web_console/repl_sessions/1321e0912aa158a275bd2cb5e8021e67" for 127.0.0.1 at 2017-11-23 02:27:31 -0800
+Started PUT "/__web_console/repl_sessions/1321e0912aa158a275bd2cb5e8021e67" for 127.0.0.1 at 2017-11-23 02:27:33 -0800
+Started PUT "/__web_console/repl_sessions/1321e0912aa158a275bd2cb5e8021e67" for 127.0.0.1 at 2017-11-23 02:27:44 -0800
+  [1m[36mPet Load (0.2ms)[0m  [1m[34mSELECT  "pets".* FROM "pets" WHERE "pets"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 11]]
+Started PUT "/__web_console/repl_sessions/1321e0912aa158a275bd2cb5e8021e67" for 127.0.0.1 at 2017-11-23 02:28:03 -0800
+  [1m[36mPet Load (0.2ms)[0m  [1m[34mSELECT "pets".* FROM "pets" WHERE "pets"."id" = ?[0m  [["id", 1]]
+Started PUT "/__web_console/repl_sessions/1321e0912aa158a275bd2cb5e8021e67" for 127.0.0.1 at 2017-11-23 02:28:18 -0800
+  [1m[36mPet Load (0.2ms)[0m  [1m[34mSELECT "pets".* FROM "pets" WHERE "pets"."id" = ?[0m  [["id", 1]]
+Started PUT "/__web_console/repl_sessions/1321e0912aa158a275bd2cb5e8021e67" for 127.0.0.1 at 2017-11-23 02:28:20 -0800
+  [1m[36mFavorite Load (0.2ms)[0m  [1m[34mSELECT  "favorites".* FROM "favorites" WHERE "favorites"."user_id" = ? LIMIT ?[0m  [["user_id", 1], ["LIMIT", 11]]
+Started PUT "/__web_console/repl_sessions/1321e0912aa158a275bd2cb5e8021e67" for 127.0.0.1 at 2017-11-23 02:28:29 -0800
+Started PUT "/__web_console/repl_sessions/1321e0912aa158a275bd2cb5e8021e67" for 127.0.0.1 at 2017-11-23 02:28:39 -0800
+Started PUT "/__web_console/repl_sessions/1321e0912aa158a275bd2cb5e8021e67" for 127.0.0.1 at 2017-11-23 02:28:48 -0800
+  [1m[36mPet Load (0.2ms)[0m  [1m[34mSELECT  "pets".* FROM "pets" WHERE "pets"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 11]]
+Started PUT "/__web_console/repl_sessions/1321e0912aa158a275bd2cb5e8021e67" for 127.0.0.1 at 2017-11-23 02:28:49 -0800
+  [1m[36mPet Load (0.2ms)[0m  [1m[34mSELECT  "pets".* FROM "pets" WHERE "pets"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 11]]
+Started PUT "/__web_console/repl_sessions/1321e0912aa158a275bd2cb5e8021e67" for 127.0.0.1 at 2017-11-23 02:28:55 -0800
+  [1m[36mPet Load (0.2ms)[0m  [1m[34mSELECT "pets".* FROM "pets" WHERE "pets"."id" = ?[0m  [["id", 1]]
+Started PUT "/__web_console/repl_sessions/1321e0912aa158a275bd2cb5e8021e67" for 127.0.0.1 at 2017-11-23 02:29:01 -0800
+Started PUT "/__web_console/repl_sessions/1321e0912aa158a275bd2cb5e8021e67" for 127.0.0.1 at 2017-11-23 02:29:02 -0800
+Started PUT "/__web_console/repl_sessions/1321e0912aa158a275bd2cb5e8021e67" for 127.0.0.1 at 2017-11-23 02:29:08 -0800
+Started PUT "/__web_console/repl_sessions/1321e0912aa158a275bd2cb5e8021e67" for 127.0.0.1 at 2017-11-23 02:29:08 -0800
+Started PUT "/__web_console/repl_sessions/1321e0912aa158a275bd2cb5e8021e67" for 127.0.0.1 at 2017-11-23 02:29:10 -0800
+Started PUT "/__web_console/repl_sessions/1321e0912aa158a275bd2cb5e8021e67" for 127.0.0.1 at 2017-11-23 02:29:12 -0800
+Started PUT "/__web_console/repl_sessions/1321e0912aa158a275bd2cb5e8021e67" for 127.0.0.1 at 2017-11-23 02:29:19 -0800
+Started PUT "/__web_console/repl_sessions/1321e0912aa158a275bd2cb5e8021e67" for 127.0.0.1 at 2017-11-23 02:29:19 -0800
+Started PUT "/__web_console/repl_sessions/1321e0912aa158a275bd2cb5e8021e67" for 127.0.0.1 at 2017-11-23 02:29:22 -0800
+Started PUT "/__web_console/repl_sessions/1321e0912aa158a275bd2cb5e8021e67" for 127.0.0.1 at 2017-11-23 02:29:23 -0800
+Started PUT "/__web_console/repl_sessions/1321e0912aa158a275bd2cb5e8021e67" for 127.0.0.1 at 2017-11-23 02:29:32 -0800
+Started PUT "/__web_console/repl_sessions/1321e0912aa158a275bd2cb5e8021e67" for 127.0.0.1 at 2017-11-23 02:29:45 -0800
+Started PUT "/__web_console/repl_sessions/1321e0912aa158a275bd2cb5e8021e67" for 127.0.0.1 at 2017-11-23 02:29:45 -0800
+Started PUT "/__web_console/repl_sessions/1321e0912aa158a275bd2cb5e8021e67" for 127.0.0.1 at 2017-11-23 02:29:48 -0800
+Started PUT "/__web_console/repl_sessions/1321e0912aa158a275bd2cb5e8021e67" for 127.0.0.1 at 2017-11-23 02:29:49 -0800
+Started PUT "/__web_console/repl_sessions/1321e0912aa158a275bd2cb5e8021e67" for 127.0.0.1 at 2017-11-23 02:29:50 -0800
+Started PUT "/__web_console/repl_sessions/1321e0912aa158a275bd2cb5e8021e67" for 127.0.0.1 at 2017-11-23 02:29:53 -0800
+Started PUT "/__web_console/repl_sessions/1321e0912aa158a275bd2cb5e8021e67" for 127.0.0.1 at 2017-11-23 02:29:54 -0800
+Started PUT "/__web_console/repl_sessions/1321e0912aa158a275bd2cb5e8021e67" for 127.0.0.1 at 2017-11-23 02:29:54 -0800
+Started PUT "/__web_console/repl_sessions/1321e0912aa158a275bd2cb5e8021e67" for 127.0.0.1 at 2017-11-23 02:29:55 -0800
+Started PUT "/__web_console/repl_sessions/1321e0912aa158a275bd2cb5e8021e67" for 127.0.0.1 at 2017-11-23 02:29:55 -0800
+Started PUT "/__web_console/repl_sessions/1321e0912aa158a275bd2cb5e8021e67" for 127.0.0.1 at 2017-11-23 02:30:06 -0800
+Started PUT "/__web_console/repl_sessions/1321e0912aa158a275bd2cb5e8021e67" for 127.0.0.1 at 2017-11-23 02:30:06 -0800
+Started PUT "/__web_console/repl_sessions/1321e0912aa158a275bd2cb5e8021e67" for 127.0.0.1 at 2017-11-23 02:30:16 -0800
+Started PUT "/__web_console/repl_sessions/1321e0912aa158a275bd2cb5e8021e67" for 127.0.0.1 at 2017-11-23 02:30:17 -0800
+Started PUT "/__web_console/repl_sessions/1321e0912aa158a275bd2cb5e8021e67" for 127.0.0.1 at 2017-11-23 02:30:17 -0800
+Started PUT "/__web_console/repl_sessions/1321e0912aa158a275bd2cb5e8021e67" for 127.0.0.1 at 2017-11-23 02:30:26 -0800
+Started PUT "/__web_console/repl_sessions/1321e0912aa158a275bd2cb5e8021e67" for 127.0.0.1 at 2017-11-23 02:30:26 -0800
+Started PUT "/__web_console/repl_sessions/1321e0912aa158a275bd2cb5e8021e67" for 127.0.0.1 at 2017-11-23 02:30:28 -0800
+Started PUT "/__web_console/repl_sessions/1321e0912aa158a275bd2cb5e8021e67" for 127.0.0.1 at 2017-11-23 02:30:32 -0800
+Started PUT "/__web_console/repl_sessions/1321e0912aa158a275bd2cb5e8021e67" for 127.0.0.1 at 2017-11-23 02:30:44 -0800
+Started PUT "/__web_console/repl_sessions/1321e0912aa158a275bd2cb5e8021e67" for 127.0.0.1 at 2017-11-23 02:30:44 -0800
+Started GET "/" for 127.0.0.1 at 2017-11-23 02:30:59 -0800
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mPet Load (0.1ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPet Load (0.2ms)[0m  [1m[34mSELECT "pets".* FROM "pets" WHERE "pets"."user_id" = ?[0m  [["user_id", 1]]
+  Rendered home/index.html.erb within layouts/application (37.7ms)
+Completed 500 Internal Server Error in 49ms (ActiveRecord: 1.9ms)
+
+
+  
+ActionView::Template::Error (undefined method `all' for nil:NilClass):
+    22: 		<p><%= pet.name %><p>
+    23: 	<% end %>
+    24: 	My Favorited Pets:
+    25: 	<%= @favorites.all %>
+    26: 
+    27: <%end %>
+  
+app/views/home/index.html.erb:25:in `_app_views_home_index_html_erb__1353794317030374198_70255619396700'
+Started GET "/" for 127.0.0.1 at 2017-11-23 02:31:09 -0800
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mPet Load (0.2ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPet Load (0.1ms)[0m  [1m[34mSELECT "pets".* FROM "pets" WHERE "pets"."user_id" = ?[0m  [["user_id", 1]]
+  Rendered home/index.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 31ms (Views: 26.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/pets/1" for 127.0.0.1 at 2017-11-23 02:31:11 -0800
+Processing by PetsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPet Load (0.4ms)[0m  [1m[34mSELECT  "pets".* FROM "pets" WHERE "pets"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pets/show.html.erb within layouts/application
+  Rendered pets/show.html.erb within layouts/application (21.5ms)
+Completed 200 OK in 80ms (Views: 74.9ms | ActiveRecord: 0.4ms)
+
+
+Started PATCH "/favorite?id=1" for 127.0.0.1 at 2017-11-23 02:31:14 -0800
+Processing by FavoritesController#favorite as HTML
+  Parameters: {"authenticity_token"=>"sKl3G59i8xME9mOW0QmlMZ8kZCqSJjw78AEwBdQS9IQgjGn5nY1h3EEhpNHFwxEm6qa6kX167riHa2NDhV4SDQ==", "id"=>"1"}
+  [1m[36mPet Load (0.1ms)[0m  [1m[34mSELECT  "pets".* FROM "pets" WHERE "pets"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPet Load (0.1ms)[0m  [1m[34mSELECT  "pets".* FROM "pets" WHERE "pets"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (1.5ms)[0m  [1m[32mINSERT INTO "favorites" ("created_at", "updated_at", "user_id", "pet_id") VALUES (?, ?, ?, ?)[0m  [["created_at", "2017-11-23 10:31:14.277462"], ["updated_at", "2017-11-23 10:31:14.277462"], ["user_id", 1], ["pet_id", 1]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 25ms (ActiveRecord: 3.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-23 02:31:14 -0800
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mPet Load (0.2ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPet Load (0.2ms)[0m  [1m[34mSELECT "pets".* FROM "pets" WHERE "pets"."user_id" = ?[0m  [["user_id", 1]]
+  Rendered home/index.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 21ms (Views: 18.6ms | ActiveRecord: 0.5ms)
+
+
+  [1m[36mFavorite Load (0.3ms)[0m  [1m[34mSELECT  "favorites".* FROM "favorites" LIMIT ?[0m  [["LIMIT", 11]]
+Started GET "/" for 127.0.0.1 at 2017-11-23 02:32:58 -0800
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mPet Load (0.2ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPet Load (0.1ms)[0m  [1m[34mSELECT "pets".* FROM "pets" WHERE "pets"."user_id" = ?[0m  [["user_id", 1]]
+  Rendered home/index.html.erb within layouts/application (8.8ms)
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.5ms)
+
+
+  
+ActionView::Template::Error (undefined method `first' for nil:NilClass):
+    22: 		<p><%= pet.name %><p>
+    23: 	<% end %>
+    24: 	My Favorited Pets:
+    25: 	<%= @favorites.first %>
+    26: 
+    27: <%end %>
+  
+app/views/home/index.html.erb:25:in `_app_views_home_index_html_erb__1353794317030374198_70255605345900'
+Started PUT "/__web_console/repl_sessions/89f89b317ffb8251238bd6b3e063dc40" for 127.0.0.1 at 2017-11-23 02:33:05 -0800
+Started PUT "/__web_console/repl_sessions/89f89b317ffb8251238bd6b3e063dc40" for 127.0.0.1 at 2017-11-23 02:33:06 -0800
+Started GET "/" for 127.0.0.1 at 2017-11-23 02:33:37 -0800
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mPet Load (0.2ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPet Load (0.1ms)[0m  [1m[34mSELECT "pets".* FROM "pets" WHERE "pets"."user_id" = ?[0m  [["user_id", 1]]
+  [1m[36mFavorite Load (0.2ms)[0m  [1m[34mSELECT  "favorites".* FROM "favorites" ORDER BY "favorites"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendered home/index.html.erb within layouts/application (8.9ms)
+Completed 200 OK in 37ms (Views: 33.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-23 02:35:03 -0800
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mPet Load (0.4ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPet Load (0.1ms)[0m  [1m[34mSELECT "pets".* FROM "pets" WHERE "pets"."user_id" = ?[0m  [["user_id", 1]]
+  [1m[36mFavorite Load (0.2ms)[0m  [1m[34mSELECT  "favorites".* FROM "favorites" ORDER BY "favorites"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendered home/index.html.erb within layouts/application (12.9ms)
+Completed 200 OK in 44ms (Views: 41.1ms | ActiveRecord: 0.9ms)
+
+
+  [1m[35mSQL (2.9ms)[0m  [1m[31mDELETE FROM "favorites" WHERE "favorites"."id" = ?[0m  [["id", 1]]
+  [1m[36mFavorite Load (0.2ms)[0m  [1m[34mSELECT  "favorites".* FROM "favorites" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[35mSQL (2.3ms)[0m  [1m[31mDELETE FROM "favorites" WHERE "favorites"."id" = ?[0m  [["id", 2]]
+  [1m[36mFavorite Load (0.2ms)[0m  [1m[34mSELECT  "favorites".* FROM "favorites" LIMIT ?[0m  [["LIMIT", 11]]
+Started GET "/" for 127.0.0.1 at 2017-11-23 02:35:36 -0800
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mPet Load (0.2ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPet Load (0.8ms)[0m  [1m[34mSELECT "pets".* FROM "pets" WHERE "pets"."user_id" = ?[0m  [["user_id", 1]]
+  [1m[36mFavorite Load (0.2ms)[0m  [1m[34mSELECT  "favorites".* FROM "favorites" ORDER BY "favorites"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendered home/index.html.erb within layouts/application (14.9ms)
+Completed 200 OK in 61ms (Views: 56.6ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-23 02:38:47 -0800
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mPet Load (0.1ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPet Load (0.2ms)[0m  [1m[34mSELECT "pets".* FROM "pets" WHERE "pets"."user_id" = ?[0m  [["user_id", 1]]
+  Rendered home/index.html.erb within layouts/application (37.1ms)
+Completed 500 Internal Server Error in 47ms (ActiveRecord: 1.8ms)
+
+
+  
+ActionView::Template::Error (undefined method `empty?' for nil:NilClass):
+    22: 		<p><%= pet.name %><p>
+    23: 	<% end %>
+    24: 
+    25: 	<% unless @fav.empty? %>
+    26: 	My Favorited Pets:
+    27: 	
+    28: 	<% end %>
+  
+app/views/home/index.html.erb:25:in `_app_views_home_index_html_erb__1353794317030374198_70255606727940'
+Started PUT "/__web_console/repl_sessions/d98f88fa34b1491e022fb0f6ed521361" for 127.0.0.1 at 2017-11-23 02:38:58 -0800
+Started PUT "/__web_console/repl_sessions/d98f88fa34b1491e022fb0f6ed521361" for 127.0.0.1 at 2017-11-23 02:38:59 -0800
+Started PUT "/__web_console/repl_sessions/d98f88fa34b1491e022fb0f6ed521361" for 127.0.0.1 at 2017-11-23 02:39:01 -0800
+Started PUT "/__web_console/repl_sessions/d98f88fa34b1491e022fb0f6ed521361" for 127.0.0.1 at 2017-11-23 02:39:03 -0800
+Started GET "/" for 127.0.0.1 at 2017-11-23 02:41:05 -0800
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mPet Load (0.1ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPet Load (0.2ms)[0m  [1m[34mSELECT "pets".* FROM "pets" WHERE "pets"."user_id" = ?[0m  [["user_id", 1]]
+  Rendered home/index.html.erb within layouts/application (33.5ms)
+Completed 500 Internal Server Error in 43ms (ActiveRecord: 1.7ms)
+
+
+  
+ActionView::Template::Error (undefined method `empty?' for nil:NilClass):
+    22: 		<p><%= pet.name %><p>
+    23: 	<% end %>
+    24: 
+    25: 	<% unless @fav.empty? %>
+    26: 	My Favorited Pets:
+    27: 	
+    28: 	<% end %>
+  
+app/views/home/index.html.erb:25:in `_app_views_home_index_html_erb__1353794317030374198_70255628079740'
+Started GET "/" for 127.0.0.1 at 2017-11-23 02:41:22 -0800
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mPet Load (0.1ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPet Load (0.2ms)[0m  [1m[34mSELECT "pets".* FROM "pets" WHERE "pets"."user_id" = ?[0m  [["user_id", 1]]
+  Rendered home/index.html.erb within layouts/application (44.9ms)
+Completed 500 Internal Server Error in 54ms (ActiveRecord: 1.8ms)
+
+
+  
+ActionView::Template::Error (undefined method `empty?' for nil:NilClass):
+    22: 		<p><%= pet.name %><p>
+    23: 	<% end %>
+    24: 
+    25: 	<% unless @fav.empty? %>
+    26: 	My Favorited Pets:
+    27: 	
+    28: 	<% end %>
+  
+app/views/home/index.html.erb:25:in `_app_views_home_index_html_erb__1353794317030374198_70255582585300'
+Started PUT "/__web_console/repl_sessions/be58d28c691a3d7bd2c265170d06e54d" for 127.0.0.1 at 2017-11-23 02:41:28 -0800
+Started PUT "/__web_console/repl_sessions/be58d28c691a3d7bd2c265170d06e54d" for 127.0.0.1 at 2017-11-23 02:41:29 -0800
+Started PUT "/__web_console/repl_sessions/be58d28c691a3d7bd2c265170d06e54d" for 127.0.0.1 at 2017-11-23 02:42:23 -0800
+Started PUT "/__web_console/repl_sessions/be58d28c691a3d7bd2c265170d06e54d" for 127.0.0.1 at 2017-11-23 02:42:27 -0800
+  [1m[36mFavorite Load (0.1ms)[0m  [1m[34mSELECT  "favorites".* FROM "favorites" WHERE "favorites"."user_id" = ? LIMIT ?[0m  [["user_id", 1], ["LIMIT", 11]]
+Started PUT "/__web_console/repl_sessions/be58d28c691a3d7bd2c265170d06e54d" for 127.0.0.1 at 2017-11-23 02:42:30 -0800
+Started PUT "/__web_console/repl_sessions/be58d28c691a3d7bd2c265170d06e54d" for 127.0.0.1 at 2017-11-23 02:42:30 -0800
+  [1m[36mFavorite Load (0.2ms)[0m  [1m[34mSELECT  "favorites".* FROM "favorites" WHERE "favorites"."user_id" = ? ORDER BY "favorites"."id" ASC LIMIT ?[0m  [["user_id", 1], ["LIMIT", 1]]
+Started GET "/" for 127.0.0.1 at 2017-11-23 02:42:43 -0800
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mPet Load (0.1ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPet Load (0.2ms)[0m  [1m[34mSELECT "pets".* FROM "pets" WHERE "pets"."user_id" = ?[0m  [["user_id", 1]]
+  [1m[36mFavorite Load (0.1ms)[0m  [1m[34mSELECT  "favorites".* FROM "favorites" WHERE "favorites"."user_id" = ? ORDER BY "favorites"."id" ASC LIMIT ?[0m  [["user_id", 1], ["LIMIT", 1]]
+  Rendered home/index.html.erb within layouts/application (35.2ms)
+Completed 200 OK in 57ms (Views: 51.5ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/pets/2" for 127.0.0.1 at 2017-11-23 02:42:49 -0800
+Processing by PetsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPet Load (0.3ms)[0m  [1m[34mSELECT  "pets".* FROM "pets" WHERE "pets"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering pets/show.html.erb within layouts/application
+  Rendered pets/show.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 79ms (Views: 70.2ms | ActiveRecord: 0.3ms)
+
+
+Started PATCH "/favorite?id=2" for 127.0.0.1 at 2017-11-23 02:42:50 -0800
+Processing by FavoritesController#favorite as HTML
+  Parameters: {"authenticity_token"=>"tTrQlJBnpZlApT6aGawO8CNOWxNX5aivZ8J9zlv7nHElH852kog3VgVy+d0NZrrnVsyFqLi5eiwQqC6ICrd6+A==", "id"=>"2"}
+  [1m[36mPet Load (0.1ms)[0m  [1m[34mSELECT  "pets".* FROM "pets" WHERE "pets"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPet Load (0.1ms)[0m  [1m[34mSELECT  "pets".* FROM "pets" WHERE "pets"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "favorites" ("created_at", "updated_at", "user_id", "pet_id") VALUES (?, ?, ?, ?)[0m  [["created_at", "2017-11-23 10:42:50.450994"], ["updated_at", "2017-11-23 10:42:50.450994"], ["user_id", 1], ["pet_id", 2]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 16ms (ActiveRecord: 1.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-23 02:42:50 -0800
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mPet Load (0.3ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPet Load (0.1ms)[0m  [1m[34mSELECT "pets".* FROM "pets" WHERE "pets"."user_id" = ?[0m  [["user_id", 1]]
+  [1m[36mFavorite Load (0.2ms)[0m  [1m[34mSELECT  "favorites".* FROM "favorites" WHERE "favorites"."user_id" = ? ORDER BY "favorites"."id" ASC LIMIT ?[0m  [["user_id", 1], ["LIMIT", 1]]
+  [1m[36mFavorite Load (0.2ms)[0m  [1m[34mSELECT  "favorites".* FROM "favorites" ORDER BY "favorites"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendered home/index.html.erb within layouts/application (9.5ms)
+Completed 200 OK in 28ms (Views: 25.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-23 02:45:14 -0800
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mPet Load (0.2ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPet Load (0.1ms)[0m  [1m[34mSELECT "pets".* FROM "pets" WHERE "pets"."user_id" = ?[0m  [["user_id", 1]]
+  [1m[36mFavorite Load (0.1ms)[0m  [1m[34mSELECT  "favorites".* FROM "favorites" WHERE "favorites"."user_id" = ? ORDER BY "favorites"."id" ASC LIMIT ?[0m  [["user_id", 1], ["LIMIT", 1]]
+  [1m[36mFavorite Load (0.1ms)[0m  [1m[34mSELECT "favorites".* FROM "favorites" WHERE "favorites"."user_id" = ?[0m  [["user_id", 1]]
+  Rendered home/index.html.erb within layouts/application (9.3ms)
+Completed 500 Internal Server Error in 25ms (ActiveRecord: 0.8ms)
+
+
+  
+ActionView::Template::Error (no implicit conversion of Symbol into Integer):
+    26: 	My Favorited Pets:
+    27: 	<% f = Favorite.where(:user_id => current_user.id)  %>
+    28: 		<% f.each do |fav| %>
+    29: 			<%= Pet.where(:id => f[:pet_id]) %>
+    30: 
+    31: 		<% end %>
+    32: 
+  
+app/views/home/index.html.erb:29:in `block in _app_views_home_index_html_erb__1353794317030374198_70255586549640'
+app/views/home/index.html.erb:28:in `_app_views_home_index_html_erb__1353794317030374198_70255586549640'
+Started PUT "/__web_console/repl_sessions/702dae4db0d7ec9c15ccd543728138ae" for 127.0.0.1 at 2017-11-23 02:45:27 -0800
+Started PUT "/__web_console/repl_sessions/702dae4db0d7ec9c15ccd543728138ae" for 127.0.0.1 at 2017-11-23 02:45:27 -0800
+  [1m[36mFavorite Load (0.2ms)[0m  [1m[34mSELECT  "favorites".* FROM "favorites" WHERE "favorites"."user_id" = ? LIMIT ?[0m  [["user_id", 1], ["LIMIT", 11]]
+Started PUT "/__web_console/repl_sessions/702dae4db0d7ec9c15ccd543728138ae" for 127.0.0.1 at 2017-11-23 02:45:36 -0800
+  [1m[36mFavorite Load (0.2ms)[0m  [1m[34mSELECT  "favorites".* FROM "favorites" WHERE "favorites"."user_id" = ? LIMIT ?[0m  [["user_id", 1], ["LIMIT", 11]]
+Started PUT "/__web_console/repl_sessions/702dae4db0d7ec9c15ccd543728138ae" for 127.0.0.1 at 2017-11-23 02:45:37 -0800
+Started PUT "/__web_console/repl_sessions/702dae4db0d7ec9c15ccd543728138ae" for 127.0.0.1 at 2017-11-23 02:45:52 -0800
+Started PUT "/__web_console/repl_sessions/702dae4db0d7ec9c15ccd543728138ae" for 127.0.0.1 at 2017-11-23 02:45:53 -0800
+  [1m[36mFavorite Load (0.2ms)[0m  [1m[34mSELECT  "favorites".* FROM "favorites" WHERE "favorites"."user_id" = ? ORDER BY "favorites"."id" ASC LIMIT ?[0m  [["user_id", 1], ["LIMIT", 1]]
+Started PUT "/__web_console/repl_sessions/702dae4db0d7ec9c15ccd543728138ae" for 127.0.0.1 at 2017-11-23 02:45:56 -0800
+Started PUT "/__web_console/repl_sessions/702dae4db0d7ec9c15ccd543728138ae" for 127.0.0.1 at 2017-11-23 02:46:01 -0800
+Started PUT "/__web_console/repl_sessions/702dae4db0d7ec9c15ccd543728138ae" for 127.0.0.1 at 2017-11-23 02:46:10 -0800
+Started PUT "/__web_console/repl_sessions/702dae4db0d7ec9c15ccd543728138ae" for 127.0.0.1 at 2017-11-23 02:46:20 -0800
+Started PUT "/__web_console/repl_sessions/702dae4db0d7ec9c15ccd543728138ae" for 127.0.0.1 at 2017-11-23 02:46:28 -0800
+  [1m[36mPet Load (0.3ms)[0m  [1m[34mSELECT  "pets".* FROM "pets" WHERE "pets"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 11]]
+Started PUT "/__web_console/repl_sessions/702dae4db0d7ec9c15ccd543728138ae" for 127.0.0.1 at 2017-11-23 02:46:49 -0800
+Started PUT "/__web_console/repl_sessions/702dae4db0d7ec9c15ccd543728138ae" for 127.0.0.1 at 2017-11-23 02:46:50 -0800
+  [1m[36mPet Load (0.3ms)[0m  [1m[34mSELECT  "pets".* FROM "pets" WHERE "pets"."id" = ? ORDER BY "pets"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Started PUT "/__web_console/repl_sessions/702dae4db0d7ec9c15ccd543728138ae" for 127.0.0.1 at 2017-11-23 02:46:58 -0800
+  [1m[36mPet Load (0.2ms)[0m  [1m[34mSELECT  "pets".* FROM "pets" WHERE "pets"."id" = ? ORDER BY "pets"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Started GET "/" for 127.0.0.1 at 2017-11-23 02:48:00 -0800
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mPet Load (0.2ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPet Load (0.1ms)[0m  [1m[34mSELECT "pets".* FROM "pets" WHERE "pets"."user_id" = ?[0m  [["user_id", 1]]
+  [1m[36mFavorite Load (0.4ms)[0m  [1m[34mSELECT  "favorites".* FROM "favorites" WHERE "favorites"."user_id" = ? ORDER BY "favorites"."id" ASC LIMIT ?[0m  [["user_id", 1], ["LIMIT", 1]]
+  [1m[36mFavorite Load (0.2ms)[0m  [1m[34mSELECT "favorites".* FROM "favorites" WHERE "favorites"."user_id" = ?[0m  [["user_id", 1]]
+  [1m[36mPet Load (0.2ms)[0m  [1m[34mSELECT  "pets".* FROM "pets" WHERE "pets"."id" = ? ORDER BY "pets"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered home/index.html.erb within layouts/application (11.7ms)
+Completed 200 OK in 36ms (Views: 32.3ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-23 02:48:27 -0800
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mPet Load (0.2ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPet Load (0.1ms)[0m  [1m[34mSELECT "pets".* FROM "pets" WHERE "pets"."user_id" = ?[0m  [["user_id", 1]]
+  [1m[36mFavorite Load (0.2ms)[0m  [1m[34mSELECT  "favorites".* FROM "favorites" WHERE "favorites"."user_id" = ? ORDER BY "favorites"."id" ASC LIMIT ?[0m  [["user_id", 1], ["LIMIT", 1]]
+  [1m[36mFavorite Load (0.6ms)[0m  [1m[34mSELECT "favorites".* FROM "favorites" WHERE "favorites"."user_id" = ?[0m  [["user_id", 1]]
+  [1m[36mPet Load (0.2ms)[0m  [1m[34mSELECT  "pets".* FROM "pets" WHERE "pets"."id" = ? ORDER BY "pets"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered home/index.html.erb within layouts/application (11.2ms)
+Completed 200 OK in 31ms (Views: 27.2ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/pets/1" for 127.0.0.1 at 2017-11-23 02:48:34 -0800
+Processing by PetsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPet Load (0.2ms)[0m  [1m[34mSELECT  "pets".* FROM "pets" WHERE "pets"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pets/show.html.erb within layouts/application
+  Rendered pets/show.html.erb within layouts/application (46.6ms)
+Completed 200 OK in 101ms (Views: 96.4ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/favorite?id=1" for 127.0.0.1 at 2017-11-23 02:48:36 -0800
+Processing by FavoritesController#favorite as HTML
+  Parameters: {"authenticity_token"=>"AE67bKJYw5Ow/UaVLMDcICbOcHGY9We8QHYnkLFlohKQa6WOoLdRXPUqgdI4Cmg3U0yuyneptT83HHTW4ClEmw==", "id"=>"1"}
+  [1m[36mPet Load (0.1ms)[0m  [1m[34mSELECT  "pets".* FROM "pets" WHERE "pets"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPet Load (0.1ms)[0m  [1m[34mSELECT  "pets".* FROM "pets" WHERE "pets"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (1.6ms)[0m  [1m[32mINSERT INTO "favorites" ("created_at", "updated_at", "user_id", "pet_id") VALUES (?, ?, ?, ?)[0m  [["created_at", "2017-11-23 10:48:36.138136"], ["updated_at", "2017-11-23 10:48:36.138136"], ["user_id", 1], ["pet_id", 1]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 13ms (ActiveRecord: 3.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-23 02:48:36 -0800
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mPet Load (0.4ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPet Load (0.1ms)[0m  [1m[34mSELECT "pets".* FROM "pets" WHERE "pets"."user_id" = ?[0m  [["user_id", 1]]
+  [1m[36mFavorite Load (0.2ms)[0m  [1m[34mSELECT  "favorites".* FROM "favorites" WHERE "favorites"."user_id" = ? ORDER BY "favorites"."id" ASC LIMIT ?[0m  [["user_id", 1], ["LIMIT", 1]]
+  [1m[36mFavorite Load (0.1ms)[0m  [1m[34mSELECT "favorites".* FROM "favorites" WHERE "favorites"."user_id" = ?[0m  [["user_id", 1]]
+  [1m[36mPet Load (0.3ms)[0m  [1m[34mSELECT  "pets".* FROM "pets" WHERE "pets"."id" = ? ORDER BY "pets"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mPet Load (0.2ms)[0m  [1m[34mSELECT  "pets".* FROM "pets" WHERE "pets"."id" = ? ORDER BY "pets"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered home/index.html.erb within layouts/application (12.4ms)
+Completed 200 OK in 35ms (Views: 30.2ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-23 02:48:41 -0800
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mPet Load (0.5ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPet Load (0.1ms)[0m  [1m[34mSELECT "pets".* FROM "pets" WHERE "pets"."user_id" = ?[0m  [["user_id", 1]]
+  [1m[36mFavorite Load (0.2ms)[0m  [1m[34mSELECT  "favorites".* FROM "favorites" WHERE "favorites"."user_id" = ? ORDER BY "favorites"."id" ASC LIMIT ?[0m  [["user_id", 1], ["LIMIT", 1]]
+  [1m[36mFavorite Load (0.1ms)[0m  [1m[34mSELECT "favorites".* FROM "favorites" WHERE "favorites"."user_id" = ?[0m  [["user_id", 1]]
+  [1m[36mPet Load (0.2ms)[0m  [1m[34mSELECT  "pets".* FROM "pets" WHERE "pets"."id" = ? ORDER BY "pets"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mPet Load (0.2ms)[0m  [1m[34mSELECT  "pets".* FROM "pets" WHERE "pets"."id" = ? ORDER BY "pets"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered home/index.html.erb within layouts/application (12.7ms)
+Completed 200 OK in 34ms (Views: 30.4ms | ActiveRecord: 1.5ms)
+
+
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]

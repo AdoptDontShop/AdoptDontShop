@@ -5,3 +5,7 @@
 <h2>Activity Level: <%= @pet.activity_level%></h2>
 <h2>Personality: <%= @pet.personality %></h2>
 <h2>Size: <%= @pet.size%></h2>
+
+<%= button_to "Adopt this pet!", adopt_path(id: @pet), :class => "button medium", :method => :patch %>
+
+<%= button_to "Add to favorites", favorite_path(id: @pet), :class => "button medium", :method => :patch %>

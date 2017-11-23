@@ -9,4 +9,9 @@ devise_for :users
   # get 'shelters/sign_up', as: 'new_shelter'
 
   get 'pets/:id', to: "pets#show", as: "pet"
+
+  patch 'adopt', to: "pets#adopt", as: "adopt"
+  patch 'favorite', to: "favorites#favorite", as: "favorite"
+
+
 end

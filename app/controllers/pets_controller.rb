@@ -13,16 +13,15 @@ class PetsController < ApplicationController
 	end
 
 	def adopt
-		@pet = Pet.find params[:id] #this will depend on how we implement the adoption button etc.
-		@pet.user_id = user.id
-		@pet.save
+		pet = Pet.find(params[:id])
+		pet.user_id = current_user.id
 
-		redirect_to "/"
+		pet.save
+
+		redirect_to root_path
 	end
 
-	def new
 
-	end
 
 	def show
 		@pet = Pet.find(params[:id])
