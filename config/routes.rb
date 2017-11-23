@@ -7,4 +7,6 @@ devise_for :users
   post 'pets/new', to: "pets#create"
   # get 'users/sign_up', as: 'new_user'
   # get 'shelters/sign_up', as: 'new_shelter'
+
+  get 'pets/:id', to: "pets#show", as: "pet"
 end

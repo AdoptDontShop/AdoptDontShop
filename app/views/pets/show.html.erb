@@ -1,1 +1,7 @@
-<%= link_to image_tag(@pet.image.url(:med)), @pet.image.url %>
+<h2>Name: <%= @pet.name if @pet.name %></h2>
+<%= image_tag(@pet.image.url(:med)) %>
+
+<h2>Species: <%= @pet.species%></h2>
+<h2>Activity Level: <%= @pet.activity_level%></h2>
+<h2>Personality: <%= @pet.personality %></h2>
+<h2>Size: <%= @pet.size%></h2>

@@ -5,7 +5,10 @@
 
 <p>Pets:
 	<% @pets.each do |pet| %>
-		<p><%= pet.name %></p><br />
-		<%= link_to image_tag(pet.image.url(:med)), pet.image.url %>
+		<p><%= link_to pet.name, pet %></p>
+		 <%= link_to image_tag(pet.image.url(:med)), pet %>
+		 <br>
+		 <br>
+
 	<% end %>
 </p>

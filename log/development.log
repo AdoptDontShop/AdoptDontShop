@@ -1273,3 +1273,455 @@ Processing by Devise::RegistrationsController#new as HTML
 Completed 200 OK in 28ms (Views: 26.3ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for 127.0.0.1 at 2017-11-22 21:53:45 -0800
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mPet Load (0.1ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  Rendered home/index.html.erb within layouts/application (18.7ms)
+Completed 200 OK in 43ms (Views: 37.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2017-11-22 21:53:48 -0800
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering users/registrations/new.html.erb within layouts/application
+  Rendered users/shared/_links.html.erb (0.9ms)
+  Rendered users/registrations/new.html.erb within layouts/application (8.4ms)
+Completed 200 OK in 38ms (Views: 25.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/shelters/sign_up" for 127.0.0.1 at 2017-11-22 21:53:50 -0800
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering shelters/registrations/new.html.erb within layouts/application
+  Rendered shelters/shared/_links.html.erb (1.3ms)
+  Rendered shelters/registrations/new.html.erb within layouts/application (8.4ms)
+Completed 200 OK in 43ms (Views: 27.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/dog.jpg" for 127.0.0.1 at 2017-11-22 23:02:18 -0800
+  
+ActionController::RoutingError (No route matches [GET] "/dog.jpg"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/users/sign_up" for 127.0.0.1 at 2017-11-22 23:02:26 -0800
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering users/registrations/new.html.erb within layouts/application
+  Rendered users/shared/_links.html.erb (1.8ms)
+  Rendered users/registrations/new.html.erb within layouts/application (12.7ms)
+Completed 200 OK in 47ms (Views: 43.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/shelters/sign_up" for 127.0.0.1 at 2017-11-22 23:02:29 -0800
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering shelters/registrations/new.html.erb within layouts/application
+  Rendered shelters/shared/_links.html.erb (1.2ms)
+  Rendered shelters/registrations/new.html.erb within layouts/application (8.8ms)
+Completed 200 OK in 31ms (Views: 29.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/dog.jpg" for 127.0.0.1 at 2017-11-22 23:46:21 -0800
+  
+ActionController::RoutingError (No route matches [GET] "/dog.jpg"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  [1m[36mPet Load (1.9ms)[0m  [1m[34mSELECT  "pets".* FROM "pets" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mPet Load (0.3ms)[0m  [1m[34mSELECT  "pets".* FROM "pets" ORDER BY "pets"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+Started GET "/" for 127.0.0.1 at 2017-11-22 23:59:43 -0800
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mPet Load (0.2ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  Rendered home/index.html.erb within layouts/application (218.7ms)
+Completed 200 OK in 270ms (Views: 250.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-23 00:00:15 -0800
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mPet Load (0.2ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  Rendered home/index.html.erb within layouts/application (10.5ms)
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (The asset "" is not present in the asset pipeline.):
+     6: <p>Pets:
+     7: 	<% @pets.each do |pet| %>
+     8: 		<p><%= pet.name %></p><br />
+     9: 		<%= link_to image_tag(pet), pet.image.url %>
+    10: 	<% end %>
+    11: </p>
+  
+app/views/home/index.html.erb:9:in `block in _app_views_home_index_html_erb__4427210576477091815_70176639547400'
+app/views/home/index.html.erb:7:in `_app_views_home_index_html_erb__4427210576477091815_70176639547400'
+Started GET "/" for 127.0.0.1 at 2017-11-23 00:02:13 -0800
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mPet Load (0.2ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  Rendered home/index.html.erb within layouts/application (9.2ms)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"pets"}, missing required keys: [:id]):
+     6: <p>Pets:
+     7: 	<% @pets.each do |pet| %>
+     8: 		<p><%= pet.name %></p><br />
+     9: 		<%= link_to image_tag(pet.image.url(:med)), pet_path %>
+    10: 	<% end %>
+    11: </p>
+  
+app/views/home/index.html.erb:9:in `block in _app_views_home_index_html_erb__4427210576477091815_70176631741780'
+app/views/home/index.html.erb:7:in `_app_views_home_index_html_erb__4427210576477091815_70176631741780'
+Started PUT "/__web_console/repl_sessions/2b40a32a38ce3147cc01764e19f90ed9" for 127.0.0.1 at 2017-11-23 00:02:35 -0800
+Started PUT "/__web_console/repl_sessions/2b40a32a38ce3147cc01764e19f90ed9" for 127.0.0.1 at 2017-11-23 00:02:36 -0800
+Started PUT "/__web_console/repl_sessions/2b40a32a38ce3147cc01764e19f90ed9" for 127.0.0.1 at 2017-11-23 00:02:36 -0800
+  [1m[36mPet Load (0.2ms)[0m  [1m[34mSELECT  "pets".* FROM "pets" LIMIT ?[0m  [["LIMIT", 11]]
+Started PUT "/__web_console/repl_sessions/2b40a32a38ce3147cc01764e19f90ed9" for 127.0.0.1 at 2017-11-23 00:02:42 -0800
+Started PUT "/__web_console/repl_sessions/2b40a32a38ce3147cc01764e19f90ed9" for 127.0.0.1 at 2017-11-23 00:02:42 -0800
+Started PUT "/__web_console/repl_sessions/2b40a32a38ce3147cc01764e19f90ed9" for 127.0.0.1 at 2017-11-23 00:02:49 -0800
+Started PUT "/__web_console/repl_sessions/2b40a32a38ce3147cc01764e19f90ed9" for 127.0.0.1 at 2017-11-23 00:03:00 -0800
+Started PUT "/__web_console/repl_sessions/2b40a32a38ce3147cc01764e19f90ed9" for 127.0.0.1 at 2017-11-23 00:03:05 -0800
+Started PUT "/__web_console/repl_sessions/2b40a32a38ce3147cc01764e19f90ed9" for 127.0.0.1 at 2017-11-23 00:03:06 -0800
+Started GET "/" for 127.0.0.1 at 2017-11-23 00:05:20 -0800
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mPet Load (0.2ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  Rendered home/index.html.erb within layouts/application (5.9ms)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"pets"}, missing required keys: [:id]):
+     7: 	<% @pets.each do |pet| %>
+     8: 		<p><%= pet.name %></p><br />
+     9: 		 <!--<%= link_to image_tag(pet.image.url(:med)), pet.image.url %>-->
+    10: 		 <%= link_to(image_tag(pet.image.url(:med)), pet_path) %>
+    11: 	<% end %>
+    12: </p>
+  
+app/views/home/index.html.erb:10:in `block in _app_views_home_index_html_erb__4427210576477091815_70176639610840'
+app/views/home/index.html.erb:7:in `_app_views_home_index_html_erb__4427210576477091815_70176639610840'
+Started GET "/" for 127.0.0.1 at 2017-11-23 00:07:11 -0800
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mPet Load (0.4ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  Rendered home/index.html.erb within layouts/application (10.6ms)
+Completed 200 OK in 33ms (Views: 30.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/pets/1" for 127.0.0.1 at 2017-11-23 00:07:14 -0800
+Processing by PetsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPet Load (0.4ms)[0m  [1m[34mSELECT  "pets".* FROM "pets" WHERE "pets"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pets/show.html.erb within layouts/application
+  Rendered pets/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 26ms (Views: 17.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/pets/2" for 127.0.0.1 at 2017-11-23 00:07:20 -0800
+Processing by PetsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPet Load (0.2ms)[0m  [1m[34mSELECT  "pets".* FROM "pets" WHERE "pets"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering pets/show.html.erb within layouts/application
+  Rendered pets/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 85ms (Views: 79.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/pets/2" for 127.0.0.1 at 2017-11-23 00:07:53 -0800
+Processing by PetsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPet Load (0.2ms)[0m  [1m[34mSELECT  "pets".* FROM "pets" WHERE "pets"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering pets/show.html.erb within layouts/application
+  Rendered pets/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 137ms (Views: 133.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/pets/3" for 127.0.0.1 at 2017-11-23 00:07:55 -0800
+Processing by PetsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPet Load (0.3ms)[0m  [1m[34mSELECT  "pets".* FROM "pets" WHERE "pets"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering pets/show.html.erb within layouts/application
+  Rendered pets/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 109ms (Views: 102.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-23 00:08:20 -0800
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mPet Load (0.2ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  Rendered home/index.html.erb within layouts/application (8.6ms)
+Completed 200 OK in 34ms (Views: 32.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/pets/1" for 127.0.0.1 at 2017-11-23 00:08:22 -0800
+Processing by PetsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPet Load (0.3ms)[0m  [1m[34mSELECT  "pets".* FROM "pets" WHERE "pets"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pets/show.html.erb within layouts/application
+  Rendered pets/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 125ms (Views: 112.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-23 00:09:06 -0800
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mPet Load (0.2ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  Rendered home/index.html.erb within layouts/application (227.6ms)
+Completed 500 Internal Server Error in 234ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `show_pet' for #<#<Class:0x007fa68ae52788>:0x007fa68a683d40>):
+     5: 
+     6: <p>Pets:
+     7: 	<% @pets.each do |pet| %>
+     8: 		<p><%= link_to pet.name, show_pet %></p><br />
+     9: 		 <%= link_to image_tag(pet.image.url(:med)), show_pet %>
+    10: 
+    11: 	<% end %>
+  
+app/views/home/index.html.erb:8:in `block in _app_views_home_index_html_erb__4427210576477091815_70176631706140'
+app/views/home/index.html.erb:7:in `_app_views_home_index_html_erb__4427210576477091815_70176631706140'
+Started GET "/" for 127.0.0.1 at 2017-11-23 00:09:30 -0800
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mPet Load (0.2ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  Rendered home/index.html.erb within layouts/application (21.6ms)
+Completed 200 OK in 47ms (Views: 39.4ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/pets/1" for 127.0.0.1 at 2017-11-23 00:09:31 -0800
+Processing by PetsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPet Load (0.3ms)[0m  [1m[34mSELECT  "pets".* FROM "pets" WHERE "pets"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pets/show.html.erb within layouts/application
+  Rendered pets/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 105ms (Views: 100.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-23 00:10:05 -0800
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mPet Load (0.2ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  Rendered home/index.html.erb within layouts/application (9.6ms)
+Completed 200 OK in 32ms (Views: 28.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-23 00:10:17 -0800
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mPet Load (0.4ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  Rendered home/index.html.erb within layouts/application (10.4ms)
+Completed 200 OK in 32ms (Views: 28.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-23 00:10:24 -0800
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mPet Load (0.4ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  Rendered home/index.html.erb within layouts/application (12.7ms)
+Completed 200 OK in 35ms (Views: 32.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-23 00:10:37 -0800
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mPet Load (0.2ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  Rendered home/index.html.erb within layouts/application (14.7ms)
+Completed 200 OK in 32ms (Views: 29.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/pets/1" for 127.0.0.1 at 2017-11-23 00:10:42 -0800
+Processing by PetsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPet Load (0.3ms)[0m  [1m[34mSELECT  "pets".* FROM "pets" WHERE "pets"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pets/show.html.erb within layouts/application
+  Rendered pets/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 83ms (Views: 75.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-23 00:10:51 -0800
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mPet Load (0.2ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  Rendered home/index.html.erb within layouts/application (132.2ms)
+Completed 500 Internal Server Error in 144ms (ActiveRecord: 1.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `pet_path' for #<#<Class:0x007fa68dec20d0>:0x007fa68dec00c8>
+Did you mean?  pets_new_path):
+     5: 
+     6: <p>Pets:
+     7: 	<% @pets.each do |pet| %>
+     8: 		<p><%= link_to pet.name, pet %></p>
+     9: 		 <%= link_to image_tag(pet.image.url(:med)), pet %>
+    10: 		 <br>
+    11: 		 <br>
+  
+app/views/home/index.html.erb:8:in `block in _app_views_home_index_html_erb__4427210576477091815_70176661181620'
+app/views/home/index.html.erb:7:in `_app_views_home_index_html_erb__4427210576477091815_70176661181620'
+Started GET "/" for 127.0.0.1 at 2017-11-23 00:11:33 -0800
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mPet Load (0.2ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  Rendered home/index.html.erb within layouts/application (18.2ms)
+Completed 200 OK in 41ms (Views: 35.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/pets/1" for 127.0.0.1 at 2017-11-23 00:11:35 -0800
+Processing by PetsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPet Load (0.3ms)[0m  [1m[34mSELECT  "pets".* FROM "pets" WHERE "pets"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pets/show.html.erb within layouts/application
+  Rendered pets/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 36ms (Views: 29.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-23 00:13:37 -0800
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mPet Load (0.4ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  Rendered home/index.html.erb within layouts/application (9.5ms)
+Completed 200 OK in 31ms (Views: 27.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/pets/1" for 127.0.0.1 at 2017-11-23 00:13:39 -0800
+Processing by PetsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPet Load (0.2ms)[0m  [1m[34mSELECT  "pets".* FROM "pets" WHERE "pets"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pets/show.html.erb within layouts/application
+  Rendered pets/show.html.erb within layouts/application (245.4ms)
+Completed 500 Internal Server Error in 263ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `pet' for #<#<Class:0x007fa68dea38b0>:0x007fa68dd93ee8>
+Did you mean?  @pet):
+    1: <h2>Name: <%= @pet.name if @pet.name %></h2>
+    2: <%= image_tag(pet.image.url(:med)) %>
+  
+app/views/pets/show.html.erb:2:in `_app_views_pets_show_html_erb___2780847837769040385_70176660573140'
+Started GET "/pets/1" for 127.0.0.1 at 2017-11-23 00:13:49 -0800
+Processing by PetsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPet Load (0.1ms)[0m  [1m[34mSELECT  "pets".* FROM "pets" WHERE "pets"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pets/show.html.erb within layouts/application
+  Rendered pets/show.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 37ms (Views: 34.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/pets/1" for 127.0.0.1 at 2017-11-23 00:16:24 -0800
+Processing by PetsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPet Load (0.3ms)[0m  [1m[34mSELECT  "pets".* FROM "pets" WHERE "pets"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pets/show.html.erb within layouts/application
+  Rendered pets/show.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 32ms (Views: 27.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/pets/1" for 127.0.0.1 at 2017-11-23 00:17:13 -0800
+Processing by PetsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPet Load (0.1ms)[0m  [1m[34mSELECT  "pets".* FROM "pets" WHERE "pets"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pets/show.html.erb within layouts/application
+  Rendered pets/show.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 30ms (Views: 26.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-23 00:17:28 -0800
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mPet Load (0.2ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  Rendered home/index.html.erb within layouts/application (18.3ms)
+Completed 200 OK in 35ms (Views: 32.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/pets/2" for 127.0.0.1 at 2017-11-23 00:17:30 -0800
+Processing by PetsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPet Load (0.2ms)[0m  [1m[34mSELECT  "pets".* FROM "pets" WHERE "pets"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering pets/show.html.erb within layouts/application
+  Rendered pets/show.html.erb within layouts/application (35.9ms)
+Completed 200 OK in 90ms (Views: 86.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/pets/13" for 127.0.0.1 at 2017-11-23 00:17:33 -0800
+Processing by PetsController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mPet Load (0.2ms)[0m  [1m[34mSELECT  "pets".* FROM "pets" WHERE "pets"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  Rendering pets/show.html.erb within layouts/application
+  Rendered pets/show.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 76ms (Views: 69.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/pets/13" for 127.0.0.1 at 2017-11-23 00:18:33 -0800
+Processing by PetsController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mPet Load (0.2ms)[0m  [1m[34mSELECT  "pets".* FROM "pets" WHERE "pets"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  Rendering pets/show.html.erb within layouts/application
+  Rendered pets/show.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 91ms (Views: 84.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/pets/13" for 127.0.0.1 at 2017-11-23 00:18:49 -0800
+Processing by PetsController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mPet Load (0.1ms)[0m  [1m[34mSELECT  "pets".* FROM "pets" WHERE "pets"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  Rendering pets/show.html.erb within layouts/application
+  Rendered pets/show.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 20ms (Views: 17.1ms | ActiveRecord: 0.1ms)
+
+
