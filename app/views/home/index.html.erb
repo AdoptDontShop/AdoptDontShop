@@ -1,7 +1,7 @@
 <h3><center>Adopt Don't Shop</center></h3>
 <%= button_to "Add A Pet", new_pet_path, :class => "button medium", :method => :get %>
-<%= button_to "Adopters Log In Here", new_user_path, :class => "button medium", :method => :get %>
-<%= button_to "Shelters Log In Here", new_shelter_path, :class => "button medium", :method => :get %>
+<%= button_to "Adopters Sign Up/Login", new_user_registration_path, :class => "button medium", :method => :get %>
+<%= button_to "Shelters Sign Up/Login", new_shelter_registration_path, :class => "button medium", :method => :get %>
 
 <p>Pets:
 	<% @pets.each do |pet| %>

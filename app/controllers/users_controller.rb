@@ -4,3 +4,4 @@ class UsersController < ApplicationController
     favorite = Favorite.new #this needs to be added as a model
 
   end
+end
