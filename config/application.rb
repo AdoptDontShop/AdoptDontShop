@@ -6,6 +6,8 @@ require 'rails/all'
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
 
+Paperclip.options[:command_path] = "/usr/local/bin/identify"
+
 module Adoptdontshop
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
