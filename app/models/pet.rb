@@ -12,4 +12,12 @@ class Pet < ApplicationRecord
 	validates_attachment_content_type :image, 
 		:content_type => ["image/jpg", "image/jpeg", "image/png", "image/gif"]
 		#:matches => [/png\Z/, /jpe?g\Z/, /gif\Z/]
+
+	def self.search(search)
+		if search
+			where(["name LIKE ?","%#{search}%"])
+		else
+			all
+		end
+	end
 end
