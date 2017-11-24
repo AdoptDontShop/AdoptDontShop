@@ -3277,3 +3277,494 @@ Processing by HomeController#index as HTML
 Completed 200 OK in 82ms (Views: 75.9ms | ActiveRecord: 2.8ms)
 
 
+Started GET "/" for 127.0.0.1 at 2017-11-24 11:50:16 -0800
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mPet Load (0.5ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  Rendered home/index.html.erb within layouts/application (220.7ms)
+Completed 200 OK in 396ms (Views: 351.5ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-24 11:53:10 -0800
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mPet Load (0.0ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  Rendered home/index.html.erb within layouts/application (21.0ms)
+Completed 200 OK in 142ms (Views: 122.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pets/new" for 127.0.0.1 at 2017-11-24 11:53:13 -0800
+Processing by PetsController#new as HTML
+  Rendering pets/new.html.erb within layouts/application
+  Rendered pets/new.html.erb within layouts/application (145.9ms)
+Completed 200 OK in 264ms (Views: 248.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/pets/new" for 127.0.0.1 at 2017-11-24 11:53:45 -0800
+Processing by PetsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"49rfBO3So9y9QsRQqFrBsYwpJV21wqJYJ40ymKpkbDmYOUHqWPk6OQrHdXBTkXQD8IMJksGVZElBEaIwKi6Qjw==", "pets"=>{"name"=>"a", "species"=>"b", "activity_level"=>"c", "personality"=>"d", "size"=>"big", "image"=>#<ActionDispatch::Http::UploadedFile:0xd759d88 @tempfile=#<Tempfile:C:/Users/Selina/AppData/Local/Temp/RackMultipart20171124-3788-17x482.jpg>, @original_filename="12.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"pets[image]\"; filename=\"12.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Save Pets"}
+Unpermitted parameter: :image
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPet Exists (1.1ms)[0m  [1m[34mSELECT  1 AS one FROM "pets" WHERE "pets"."name" = ? LIMIT ?[0m  [["name", "a"], ["LIMIT", 1]]
+  [1m[35mSQL (2.0ms)[0m  [1m[32mINSERT INTO "pets" ("created_at", "updated_at", "name", "activity_level", "personality", "size", "species") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", "2017-11-24 19:53:45.150319"], ["updated_at", "2017-11-24 19:53:45.150319"], ["name", "a"], ["activity_level", "c"], ["personality", "d"], ["size", "big"], ["species", "b"]]
+  [1m[35m (7.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPet Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "pets" WHERE "pets"."name" = ? AND ("pets"."id" != ?) LIMIT ?[0m  [["name", "a"], ["id", 5], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 25ms (ActiveRecord: 10.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-24 11:53:45 -0800
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mPet Load (0.0ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  Rendered home/index.html.erb within layouts/application (8.5ms)
+Completed 200 OK in 125ms (Views: 108.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pets/5" for 127.0.0.1 at 2017-11-24 11:53:49 -0800
+Processing by PetsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mPet Load (0.5ms)[0m  [1m[34mSELECT  "pets".* FROM "pets" WHERE "pets"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering pets/show.html.erb within layouts/application
+  Rendered pets/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 140ms (Views: 103.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-24 11:55:14 -0800
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mPet Load (1.0ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  Rendered home/index.html.erb within layouts/application (22.1ms)
+Completed 200 OK in 147ms (Views: 121.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/pets/new" for 127.0.0.1 at 2017-11-24 11:55:18 -0800
+Processing by PetsController#new as HTML
+  Rendering pets/new.html.erb within layouts/application
+  Rendered pets/new.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 139ms (Views: 123.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/pets/new" for 127.0.0.1 at 2017-11-24 11:55:48 -0800
+Processing by PetsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Yx8AGXLtUIYfE9SR57sq7xeVVWABubgqahUAAjd+3CkY/J73x8bJY6iWZbEccJ9daz95r3XufjsMiZCqtzQgnw==", "pets"=>{"name"=>"this", "species"=>"is", "activity_level"=>"a", "personality"=>"dog", "size"=>"big", "image"=>#<ActionDispatch::Http::UploadedFile:0xd17f948 @tempfile=#<Tempfile:C:/Users/Selina/AppData/Local/Temp/RackMultipart20171124-3788-g6l1hk.jpg>, @original_filename="0.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"pets[image]\"; filename=\"0.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Save Pets"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.0ms)
+
+
+  
+Paperclip::Errors::MissingRequiredValidatorError (Paperclip::Errors::MissingRequiredValidatorError):
+  
+app/controllers/pets_controller.rb:5:in `create'
+Started POST "/pets/new" for 127.0.0.1 at 2017-11-24 11:57:29 -0800
+Processing by PetsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Yx8AGXLtUIYfE9SR57sq7xeVVWABubgqahUAAjd+3CkY/J73x8bJY6iWZbEccJ9daz95r3XufjsMiZCqtzQgnw==", "pets"=>{"name"=>"this", "species"=>"is", "activity_level"=>"a", "personality"=>"dog", "size"=>"big", "image"=>#<ActionDispatch::Http::UploadedFile:0xcc7dc70 @tempfile=#<Tempfile:C:/Users/Selina/AppData/Local/Temp/RackMultipart20171124-3788-3nzez3.jpg>, @original_filename="0.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"pets[image]\"; filename=\"0.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Save Pets"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Command :: file -b --mime "C:/Users/Selina/AppData/Local/Temp/cfcd208495d565ef66e7dff9f98764da20171124-3788-13j9n3x.jpg"
+Command :: identify -format '%wx%h,%[exif:orientation]' "C:/Users/Selina/AppData/Local/Temp/cfcd208495d565ef66e7dff9f98764da20171124-3788-gf4r1c.jpg[0]" 2>NUL
+[paperclip] An error was received while processing: #<Paperclip::Errors::NotIdentifiedByImageMagickError: Paperclip::Errors::NotIdentifiedByImageMagickError>
+Command :: identify -format '%wx%h,%[exif:orientation]' "C:/Users/Selina/AppData/Local/Temp/cfcd208495d565ef66e7dff9f98764da20171124-3788-gf4r1c.jpg[0]" 2>NUL
+[paperclip] An error was received while processing: #<Paperclip::Errors::NotIdentifiedByImageMagickError: Paperclip::Errors::NotIdentifiedByImageMagickError>
+Command :: identify -format '%wx%h,%[exif:orientation]' "C:/Users/Selina/AppData/Local/Temp/cfcd208495d565ef66e7dff9f98764da20171124-3788-gf4r1c.jpg[0]" 2>NUL
+[paperclip] An error was received while processing: #<Paperclip::Errors::NotIdentifiedByImageMagickError: Paperclip::Errors::NotIdentifiedByImageMagickError>
+  [1m[36mPet Exists (1.0ms)[0m  [1m[34mSELECT  1 AS one FROM "pets" WHERE "pets"."name" = ? LIMIT ?[0m  [["name", "this"], ["LIMIT", 1]]
+Command :: file -b --mime "C:/Users/Selina/AppData/Local/Temp/cfcd208495d565ef66e7dff9f98764da20171124-3788-13a6c5.jpg"
+  [1m[35m (1.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPet Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "pets" WHERE "pets"."name" = ? LIMIT ?[0m  [["name", "this"], ["LIMIT", 1]]
+Command :: file -b --mime "C:/Users/Selina/AppData/Local/Temp/cfcd208495d565ef66e7dff9f98764da20171124-3788-12xwuxq.jpg"
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+Completed 500 Internal Server Error in 500ms (ActiveRecord: 3.0ms)
+
+
+  
+NoMethodError (undefined method `errors' for nil:NilClass):
+  
+app/controllers/pets_controller.rb:10:in `create'
+Started GET "/" for 127.0.0.1 at 2017-11-24 11:57:51 -0800
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mPet Load (0.0ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  Rendered home/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 142ms (Views: 116.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pets/new" for 127.0.0.1 at 2017-11-24 11:57:52 -0800
+Processing by PetsController#new as HTML
+  Rendering pets/new.html.erb within layouts/application
+  Rendered pets/new.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 127ms (Views: 110.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/pets/new" for 127.0.0.1 at 2017-11-24 11:58:10 -0800
+Processing by PetsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5t0lfe4QCoE5yjPgy2h/tZo0wsIraRnBKNiH0wjBi6adPruTWzuTZI5PgsAwo8oH5p7uDV8+39BORBd7iIt3EA==", "pets"=>{"name"=>"one", "species"=>"more", "activity_level"=>"try", "personality"=>"s", "size"=>"big", "image"=>#<ActionDispatch::Http::UploadedFile:0xe24fdf0 @tempfile=#<Tempfile:C:/Users/Selina/AppData/Local/Temp/RackMultipart20171124-3788-11eherb.jpg>, @original_filename="0.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"pets[image]\"; filename=\"0.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Save Pets"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Command :: file -b --mime "C:/Users/Selina/AppData/Local/Temp/cfcd208495d565ef66e7dff9f98764da20171124-3788-r34j5v.jpg"
+Command :: identify -format '%wx%h,%[exif:orientation]' "C:/Users/Selina/AppData/Local/Temp/cfcd208495d565ef66e7dff9f98764da20171124-3788-41dt72.jpg[0]" 2>NUL
+[paperclip] An error was received while processing: #<Paperclip::Errors::NotIdentifiedByImageMagickError: Paperclip::Errors::NotIdentifiedByImageMagickError>
+Command :: identify -format '%wx%h,%[exif:orientation]' "C:/Users/Selina/AppData/Local/Temp/cfcd208495d565ef66e7dff9f98764da20171124-3788-41dt72.jpg[0]" 2>NUL
+[paperclip] An error was received while processing: #<Paperclip::Errors::NotIdentifiedByImageMagickError: Paperclip::Errors::NotIdentifiedByImageMagickError>
+Command :: identify -format '%wx%h,%[exif:orientation]' "C:/Users/Selina/AppData/Local/Temp/cfcd208495d565ef66e7dff9f98764da20171124-3788-41dt72.jpg[0]" 2>NUL
+[paperclip] An error was received while processing: #<Paperclip::Errors::NotIdentifiedByImageMagickError: Paperclip::Errors::NotIdentifiedByImageMagickError>
+  [1m[36mPet Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "pets" WHERE "pets"."name" = ? LIMIT ?[0m  [["name", "one"], ["LIMIT", 1]]
+Command :: file -b --mime "C:/Users/Selina/AppData/Local/Temp/cfcd208495d565ef66e7dff9f98764da20171124-3788-1caafs.jpg"
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPet Exists (1.0ms)[0m  [1m[34mSELECT  1 AS one FROM "pets" WHERE "pets"."name" = ? LIMIT ?[0m  [["name", "one"], ["LIMIT", 1]]
+Command :: file -b --mime "C:/Users/Selina/AppData/Local/Temp/cfcd208495d565ef66e7dff9f98764da20171124-3788-163ewt1.jpg"
+  [1m[35m (1.0ms)[0m  [1m[31mrollback transaction[0m
+Completed 500 Internal Server Error in 285ms (ActiveRecord: 2.5ms)
+
+
+  
+NoMethodError (undefined method `errors' for nil:NilClass):
+  
+app/controllers/pets_controller.rb:10:in `create'
+Started GET "/" for 127.0.0.1 at 2017-11-24 11:59:05 -0800
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mPet Load (0.0ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  Rendered home/index.html.erb within layouts/application (20.1ms)
+Completed 200 OK in 136ms (Views: 116.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/pets/new" for 127.0.0.1 at 2017-11-24 11:59:07 -0800
+Processing by PetsController#new as HTML
+  Rendering pets/new.html.erb within layouts/application
+  Rendered pets/new.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 170ms (Views: 144.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/pets/new" for 127.0.0.1 at 2017-11-24 11:59:30 -0800
+Processing by PetsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CKLMyZQUG8sEikaEidIvxJhTlc5ehA+QJ4k+elGCSmZzQVInIT+CLrMP96RyGZp25Pm5ASrTyYFBFa7S0ci20A==", "pets"=>{"name"=>"h", "species"=>"e", "activity_level"=>"y", "personality"=>"y", "size"=>"big", "image"=>#<ActionDispatch::Http::UploadedFile:0x7266d38 @tempfile=#<Tempfile:C:/Users/Selina/AppData/Local/Temp/RackMultipart20171124-3788-vkcb2u.jpg>, @original_filename="0.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"pets[image]\"; filename=\"0.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Save Pets"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Command :: file -b --mime "C:/Users/Selina/AppData/Local/Temp/cfcd208495d565ef66e7dff9f98764da20171124-3788-2be6w5.jpg"
+Command :: identify -format '%wx%h,%[exif:orientation]' "C:/Users/Selina/AppData/Local/Temp/cfcd208495d565ef66e7dff9f98764da20171124-3788-68o7tk.jpg[0]" 2>NUL
+[paperclip] An error was received while processing: #<Paperclip::Errors::NotIdentifiedByImageMagickError: Paperclip::Errors::NotIdentifiedByImageMagickError>
+Command :: identify -format '%wx%h,%[exif:orientation]' "C:/Users/Selina/AppData/Local/Temp/cfcd208495d565ef66e7dff9f98764da20171124-3788-68o7tk.jpg[0]" 2>NUL
+[paperclip] An error was received while processing: #<Paperclip::Errors::NotIdentifiedByImageMagickError: Paperclip::Errors::NotIdentifiedByImageMagickError>
+Command :: identify -format '%wx%h,%[exif:orientation]' "C:/Users/Selina/AppData/Local/Temp/cfcd208495d565ef66e7dff9f98764da20171124-3788-68o7tk.jpg[0]" 2>NUL
+[paperclip] An error was received while processing: #<Paperclip::Errors::NotIdentifiedByImageMagickError: Paperclip::Errors::NotIdentifiedByImageMagickError>
+  [1m[36mPet Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "pets" WHERE "pets"."name" = ? LIMIT ?[0m  [["name", "h"], ["LIMIT", 1]]
+Command :: file -b --mime "C:/Users/Selina/AppData/Local/Temp/cfcd208495d565ef66e7dff9f98764da20171124-3788-146885q.jpg"
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPet Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "pets" WHERE "pets"."name" = ? LIMIT ?[0m  [["name", "h"], ["LIMIT", 1]]
+Command :: file -b --mime "C:/Users/Selina/AppData/Local/Temp/cfcd208495d565ef66e7dff9f98764da20171124-3788-11kugqj.jpg"
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+Completed 500 Internal Server Error in 303ms (ActiveRecord: 0.5ms)
+
+
+  
+NoMethodError (undefined method `errors' for nil:NilClass):
+  
+app/controllers/pets_controller.rb:10:in `create'
+Started GET "/" for 127.0.0.1 at 2017-11-24 11:59:59 -0800
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mPet Load (0.5ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  Rendered home/index.html.erb within layouts/application (21.9ms)
+Completed 200 OK in 139ms (Views: 118.0ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/pets/new" for 127.0.0.1 at 2017-11-24 12:00:00 -0800
+Processing by PetsController#new as HTML
+  Rendering pets/new.html.erb within layouts/application
+  Rendered pets/new.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 123ms (Views: 103.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/pets/new" for 127.0.0.1 at 2017-11-24 12:00:13 -0800
+Processing by PetsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"LhDI1Vz7BruwU7vxTqejxGYEtVTw4t1KJAWqlYUUW4dV81Y76dCfXgfWCtG1bBZ2Gq6Zm4S1G1tCmTo9BV6nMQ==", "pets"=>{"name"=>"a", "species"=>"s", "activity_level"=>"d", "personality"=>"f", "size"=>"big", "image"=>#<ActionDispatch::Http::UploadedFile:0xd3667b8 @tempfile=#<Tempfile:C:/Users/Selina/AppData/Local/Temp/RackMultipart20171124-3788-w85yg3.jpg>, @original_filename="0.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"pets[image]\"; filename=\"0.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Save Pets"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Command :: file -b --mime "C:/Users/Selina/AppData/Local/Temp/cfcd208495d565ef66e7dff9f98764da20171124-3788-e9i8hq.jpg"
+Command :: identify -format '%wx%h,%[exif:orientation]' "C:/Users/Selina/AppData/Local/Temp/cfcd208495d565ef66e7dff9f98764da20171124-3788-1mvifnn.jpg[0]" 2>NUL
+[paperclip] An error was received while processing: #<Paperclip::Errors::NotIdentifiedByImageMagickError: Paperclip::Errors::NotIdentifiedByImageMagickError>
+Command :: identify -format '%wx%h,%[exif:orientation]' "C:/Users/Selina/AppData/Local/Temp/cfcd208495d565ef66e7dff9f98764da20171124-3788-1mvifnn.jpg[0]" 2>NUL
+[paperclip] An error was received while processing: #<Paperclip::Errors::NotIdentifiedByImageMagickError: Paperclip::Errors::NotIdentifiedByImageMagickError>
+Command :: identify -format '%wx%h,%[exif:orientation]' "C:/Users/Selina/AppData/Local/Temp/cfcd208495d565ef66e7dff9f98764da20171124-3788-1mvifnn.jpg[0]" 2>NUL
+[paperclip] An error was received while processing: #<Paperclip::Errors::NotIdentifiedByImageMagickError: Paperclip::Errors::NotIdentifiedByImageMagickError>
+  [1m[36mPet Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "pets" WHERE "pets"."name" = ? LIMIT ?[0m  [["name", "a"], ["LIMIT", 1]]
+Command :: file -b --mime "C:/Users/Selina/AppData/Local/Temp/cfcd208495d565ef66e7dff9f98764da20171124-3788-16mxewh.jpg"
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPet Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "pets" WHERE "pets"."name" = ? LIMIT ?[0m  [["name", "a"], ["LIMIT", 1]]
+Command :: file -b --mime "C:/Users/Selina/AppData/Local/Temp/cfcd208495d565ef66e7dff9f98764da20171124-3788-7isjv3.jpg"
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+Completed 500 Internal Server Error in 285ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `errors' for nil:NilClass):
+  
+app/controllers/pets_controller.rb:10:in `create'
+Started GET "/" for 127.0.0.1 at 2017-11-24 12:01:09 -0800
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mPet Load (1.0ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  Rendered home/index.html.erb within layouts/application (21.1ms)
+Completed 200 OK in 137ms (Views: 116.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/pets/new" for 127.0.0.1 at 2017-11-24 12:01:11 -0800
+Processing by PetsController#new as HTML
+  Rendering pets/new.html.erb within layouts/application
+  Rendered pets/new.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 118ms (Views: 102.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/pets/new" for 127.0.0.1 at 2017-11-24 12:01:25 -0800
+Processing by PetsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"i4iVYYbBp1I6VMitLAOxGxluQC5rUp7rpsg8Vz35Y1DwawuPM+o+t43ReY3XyASpZcRs4R8FWPrAVKz/vbOf5g==", "pets"=>{"name"=>"a", "species"=>"s", "activity_level"=>"f", "personality"=>"d", "size"=>"big", "image"=>#<ActionDispatch::Http::UploadedFile:0x8885a30 @tempfile=#<Tempfile:C:/Users/Selina/AppData/Local/Temp/RackMultipart20171124-3788-f1n18m.jpg>, @original_filename="0.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"pets[image]\"; filename=\"0.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Save Pets"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Command :: file -b --mime "C:/Users/Selina/AppData/Local/Temp/cfcd208495d565ef66e7dff9f98764da20171124-3788-19z066l.jpg"
+Command :: identify -format '%wx%h,%[exif:orientation]' "C:/Users/Selina/AppData/Local/Temp/cfcd208495d565ef66e7dff9f98764da20171124-3788-k693dm.jpg[0]" 2>NUL
+[paperclip] An error was received while processing: #<Paperclip::Errors::NotIdentifiedByImageMagickError: Paperclip::Errors::NotIdentifiedByImageMagickError>
+Command :: identify -format '%wx%h,%[exif:orientation]' "C:/Users/Selina/AppData/Local/Temp/cfcd208495d565ef66e7dff9f98764da20171124-3788-k693dm.jpg[0]" 2>NUL
+[paperclip] An error was received while processing: #<Paperclip::Errors::NotIdentifiedByImageMagickError: Paperclip::Errors::NotIdentifiedByImageMagickError>
+Command :: identify -format '%wx%h,%[exif:orientation]' "C:/Users/Selina/AppData/Local/Temp/cfcd208495d565ef66e7dff9f98764da20171124-3788-k693dm.jpg[0]" 2>NUL
+[paperclip] An error was received while processing: #<Paperclip::Errors::NotIdentifiedByImageMagickError: Paperclip::Errors::NotIdentifiedByImageMagickError>
+  [1m[36mPet Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "pets" WHERE "pets"."name" = ? LIMIT ?[0m  [["name", "a"], ["LIMIT", 1]]
+Command :: file -b --mime "C:/Users/Selina/AppData/Local/Temp/cfcd208495d565ef66e7dff9f98764da20171124-3788-4vhubc.jpg"
+  [1m[35m (0.5ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPet Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "pets" WHERE "pets"."name" = ? LIMIT ?[0m  [["name", "a"], ["LIMIT", 1]]
+Command :: file -b --mime "C:/Users/Selina/AppData/Local/Temp/cfcd208495d565ef66e7dff9f98764da20171124-3788-emomfx.jpg"
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+Completed 500 Internal Server Error in 266ms (ActiveRecord: 0.5ms)
+
+
+  
+NoMethodError (undefined method `errors' for nil:NilClass):
+  
+app/controllers/pets_controller.rb:10:in `create'
+Started GET "/" for 127.0.0.1 at 2017-11-24 12:02:28 -0800
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mPet Load (0.0ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  Rendered home/index.html.erb within layouts/application (22.1ms)
+Completed 200 OK in 138ms (Views: 119.7ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/pets/new" for 127.0.0.1 at 2017-11-24 12:02:30 -0800
+Processing by PetsController#new as HTML
+  Rendering pets/new.html.erb within layouts/application
+  Rendered pets/new.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 122ms (Views: 103.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/pets/new" for 127.0.0.1 at 2017-11-24 12:02:41 -0800
+Processing by PetsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"pxfp9j9McjwIdY75AgHdkZXR1q8rs1N5UFgZ+S+V4Rnc9HcYimfr2b/wP9n5ymgj6Xv6YF/klWg2xIlRr98drw==", "pets"=>{"name"=>"d", "species"=>"f", "activity_level"=>"g", "personality"=>"w", "size"=>"big", "image"=>#<ActionDispatch::Http::UploadedFile:0xe92b090 @tempfile=#<Tempfile:C:/Users/Selina/AppData/Local/Temp/RackMultipart20171124-3788-190fme.jpg>, @original_filename="0.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"pets[image]\"; filename=\"0.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Save Pets"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Command :: file -b --mime "C:/Users/Selina/AppData/Local/Temp/cfcd208495d565ef66e7dff9f98764da20171124-3788-9lkgq1.jpg"
+Command :: identify -format '%wx%h,%[exif:orientation]' "C:/Users/Selina/AppData/Local/Temp/cfcd208495d565ef66e7dff9f98764da20171124-3788-4y66p1.jpg[0]" 2>NUL
+[paperclip] An error was received while processing: #<Paperclip::Errors::NotIdentifiedByImageMagickError: Paperclip::Errors::NotIdentifiedByImageMagickError>
+Command :: identify -format '%wx%h,%[exif:orientation]' "C:/Users/Selina/AppData/Local/Temp/cfcd208495d565ef66e7dff9f98764da20171124-3788-4y66p1.jpg[0]" 2>NUL
+[paperclip] An error was received while processing: #<Paperclip::Errors::NotIdentifiedByImageMagickError: Paperclip::Errors::NotIdentifiedByImageMagickError>
+Command :: identify -format '%wx%h,%[exif:orientation]' "C:/Users/Selina/AppData/Local/Temp/cfcd208495d565ef66e7dff9f98764da20171124-3788-4y66p1.jpg[0]" 2>NUL
+[paperclip] An error was received while processing: #<Paperclip::Errors::NotIdentifiedByImageMagickError: Paperclip::Errors::NotIdentifiedByImageMagickError>
+  [1m[36mPet Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "pets" WHERE "pets"."name" = ? LIMIT ?[0m  [["name", "d"], ["LIMIT", 1]]
+Command :: file -b --mime "C:/Users/Selina/AppData/Local/Temp/cfcd208495d565ef66e7dff9f98764da20171124-3788-1h9gqn9.jpg"
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPet Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "pets" WHERE "pets"."name" = ? LIMIT ?[0m  [["name", "d"], ["LIMIT", 1]]
+Command :: file -b --mime "C:/Users/Selina/AppData/Local/Temp/cfcd208495d565ef66e7dff9f98764da20171124-3788-ccv38i.jpg"
+  [1m[35m (1.0ms)[0m  [1m[31mrollback transaction[0m
+Redirected to http://localhost:3000/pets/new
+Completed 302 Found in 278ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/pets/new" for 127.0.0.1 at 2017-11-24 12:02:41 -0800
+Processing by PetsController#new as HTML
+  Rendering pets/new.html.erb within layouts/application
+  Rendered pets/new.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 120ms (Views: 103.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-24 12:02:50 -0800
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mPet Load (0.0ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  Rendered home/index.html.erb within layouts/application (37.6ms)
+Completed 200 OK in 164ms (Views: 139.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pets/new" for 127.0.0.1 at 2017-11-24 12:02:54 -0800
+Processing by PetsController#new as HTML
+  Rendering pets/new.html.erb within layouts/application
+  Rendered pets/new.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 126ms (Views: 108.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/pets/new" for 127.0.0.1 at 2017-11-24 12:11:59 -0800
+Processing by PetsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ymzjddrHAC0KNCSqWOinK/JXuu6FAvx5NKjxL7THu8qxj32bb+yZyL2xlYqjIxKZjv2WIfFVOmhSNGGHNI1HfA==", "pets"=>{"name"=>"a", "species"=>"b", "activity_level"=>"c", "personality"=>"s", "size"=>"big", "image"=>#<ActionDispatch::Http::UploadedFile:0xd95bc10 @tempfile=#<Tempfile:C:/Users/Selina/AppData/Local/Temp/RackMultipart20171124-3788-13lv83a.jpg>, @original_filename="0.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"pets[image]\"; filename=\"0.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Save Pets"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Command :: file -b --mime "C:/Users/Selina/AppData/Local/Temp/cfcd208495d565ef66e7dff9f98764da20171124-3788-18lwfy9.jpg"
+Command :: identify -format '%wx%h,%[exif:orientation]' "C:/Users/Selina/AppData/Local/Temp/cfcd208495d565ef66e7dff9f98764da20171124-3788-jmtbqv.jpg[0]" 2>NUL
+[paperclip] An error was received while processing: #<Paperclip::Errors::NotIdentifiedByImageMagickError: Paperclip::Errors::NotIdentifiedByImageMagickError>
+Command :: identify -format '%wx%h,%[exif:orientation]' "C:/Users/Selina/AppData/Local/Temp/cfcd208495d565ef66e7dff9f98764da20171124-3788-jmtbqv.jpg[0]" 2>NUL
+[paperclip] An error was received while processing: #<Paperclip::Errors::NotIdentifiedByImageMagickError: Paperclip::Errors::NotIdentifiedByImageMagickError>
+Command :: identify -format '%wx%h,%[exif:orientation]' "C:/Users/Selina/AppData/Local/Temp/cfcd208495d565ef66e7dff9f98764da20171124-3788-jmtbqv.jpg[0]" 2>NUL
+[paperclip] An error was received while processing: #<Paperclip::Errors::NotIdentifiedByImageMagickError: Paperclip::Errors::NotIdentifiedByImageMagickError>
+  [1m[36mPet Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "pets" WHERE "pets"."name" = ? LIMIT ?[0m  [["name", "a"], ["LIMIT", 1]]
+Command :: file -b --mime "C:/Users/Selina/AppData/Local/Temp/cfcd208495d565ef66e7dff9f98764da20171124-3788-11wun42.jpg"
+  [1m[35m (0.5ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPet Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "pets" WHERE "pets"."name" = ? LIMIT ?[0m  [["name", "a"], ["LIMIT", 1]]
+Command :: file -b --mime "C:/Users/Selina/AppData/Local/Temp/cfcd208495d565ef66e7dff9f98764da20171124-3788-y56qyz.jpg"
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+Completed 500 Internal Server Error in 326ms (ActiveRecord: 2.0ms)
+
+
+  
+NoMethodError (undefined method `errors' for nil:NilClass):
+  
+app/controllers/pets_controller.rb:10:in `create'
+Started GET "/" for 127.0.0.1 at 2017-11-24 13:02:29 -0800
+Processing by HomeController#index as HTML
+Completed 500 Internal Server Error in 4ms
+
+
+  
+SyntaxError (C:/Users/Selina/Documents/rails/AdoptDontShop-new/AdoptDontShop/app/models/pet.rb:14: syntax error, unexpected tSYMBEG, expecting keyword_do or '{' or '('
+...alidates_attachment_file_name :image, :matches => [/png\Z/, ...
+...                               ^):
+  
+app/models/pet.rb:14: syntax error, unexpected tSYMBEG, expecting keyword_do or '{' or '('
+app/controllers/home_controller.rb:3:in `index'
+Started GET "/" for 127.0.0.1 at 2017-11-24 13:02:51 -0800
+Processing by HomeController#index as HTML
+Completed 500 Internal Server Error in 6ms
+
+
+  
+ArgumentError (You must pass in either :content_type or :not to the validator):
+  
+app/models/pet.rb:12:in `<class:Pet>'
+app/models/pet.rb:1:in `<top (required)>'
+app/controllers/home_controller.rb:3:in `index'
+Started GET "/" for 127.0.0.1 at 2017-11-24 13:03:21 -0800
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mPet Load (0.0ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  Rendered home/index.html.erb within layouts/application (22.1ms)
+Completed 200 OK in 143ms (Views: 122.5ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-24 13:16:52 -0800
+Processing by HomeController#index as HTML
+Completed 500 Internal Server Error in 3ms
+
+
+  
+SyntaxError (C:/Users/Selina/Documents/rails/AdoptDontShop-new/AdoptDontShop/app/models/pet.rb:13: syntax error, unexpected ',', expecting =>
+...	:content_type => {"image/jpg", "image/jpeg", "image/png", "...
+...	                              ^
+C:/Users/Selina/Documents/rails/AdoptDontShop-new/AdoptDontShop/app/models/pet.rb:13: syntax error, unexpected ',', expecting keyword_end
+... => {"image/jpg", "image/jpeg", "image/png", "image/gif"}
+...                               ^
+C:/Users/Selina/Documents/rails/AdoptDontShop-new/AdoptDontShop/app/models/pet.rb:13: syntax error, unexpected ',', expecting keyword_end
+...pg", "image/jpeg", "image/png", "image/gif"}
+...                               ^
+C:/Users/Selina/Documents/rails/AdoptDontShop-new/AdoptDontShop/app/models/pet.rb:13: syntax error, unexpected '}', expecting keyword_end
+...peg", "image/png", "image/gif"}
+...                               ^):
+  
+app/models/pet.rb:13: syntax error, unexpected ',', expecting =>
+app/models/pet.rb:13: syntax error, unexpected ',', expecting keyword_end
+app/models/pet.rb:13: syntax error, unexpected ',', expecting keyword_end
+app/models/pet.rb:13: syntax error, unexpected '}', expecting keyword_end
+app/controllers/home_controller.rb:3:in `index'
+Started GET "/" for 127.0.0.1 at 2017-11-24 13:17:28 -0800
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mPet Load (0.0ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  Rendered home/index.html.erb within layouts/application (23.6ms)
+Completed 200 OK in 145ms (Views: 125.3ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/pets/new" for 127.0.0.1 at 2017-11-24 13:17:30 -0800
+Processing by PetsController#new as HTML
+  Rendering pets/new.html.erb within layouts/application
+  Rendered pets/new.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 152ms (Views: 134.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/pets/new" for 127.0.0.1 at 2017-11-24 13:17:48 -0800
+Processing by PetsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"FNb8S6C5H+oEaK5gOenLbX1MMYemUS1bY7VEQBUXQLZvNWKlFZKGD7PtH0DCIn7fAeYdSNIG60oFKdTolV28AA==", "pets"=>{"name"=>"w", "species"=>"w", "activity_level"=>"w", "personality"=>"w", "size"=>"big", "image"=>#<ActionDispatch::Http::UploadedFile:0xe864358 @tempfile=#<Tempfile:C:/Users/Selina/AppData/Local/Temp/RackMultipart20171124-3788-1wamdhr.jpg>, @original_filename="0.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"pets[image]\"; filename=\"0.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Save Pets"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Command :: file -b --mime "C:/Users/Selina/AppData/Local/Temp/cfcd208495d565ef66e7dff9f98764da20171124-3788-13l16ls.jpg"
+Command :: identify -format '%wx%h,%[exif:orientation]' "C:/Users/Selina/AppData/Local/Temp/cfcd208495d565ef66e7dff9f98764da20171124-3788-kew28m.jpg[0]" 2>NUL
+[paperclip] An error was received while processing: #<Paperclip::Errors::NotIdentifiedByImageMagickError: Paperclip::Errors::NotIdentifiedByImageMagickError>
+Command :: identify -format '%wx%h,%[exif:orientation]' "C:/Users/Selina/AppData/Local/Temp/cfcd208495d565ef66e7dff9f98764da20171124-3788-kew28m.jpg[0]" 2>NUL
+[paperclip] An error was received while processing: #<Paperclip::Errors::NotIdentifiedByImageMagickError: Paperclip::Errors::NotIdentifiedByImageMagickError>
+Command :: identify -format '%wx%h,%[exif:orientation]' "C:/Users/Selina/AppData/Local/Temp/cfcd208495d565ef66e7dff9f98764da20171124-3788-kew28m.jpg[0]" 2>NUL
+[paperclip] An error was received while processing: #<Paperclip::Errors::NotIdentifiedByImageMagickError: Paperclip::Errors::NotIdentifiedByImageMagickError>
+  [1m[36mPet Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "pets" WHERE "pets"."name" = ? LIMIT ?[0m  [["name", "w"], ["LIMIT", 1]]
+Command :: file -b --mime "C:/Users/Selina/AppData/Local/Temp/cfcd208495d565ef66e7dff9f98764da20171124-3788-1oiqwye.jpg"
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPet Exists (1.0ms)[0m  [1m[34mSELECT  1 AS one FROM "pets" WHERE "pets"."name" = ? LIMIT ?[0m  [["name", "w"], ["LIMIT", 1]]
+Command :: file -b --mime "C:/Users/Selina/AppData/Local/Temp/cfcd208495d565ef66e7dff9f98764da20171124-3788-1w30y83.jpg"
+  [1m[35m (1.0ms)[0m  [1m[31mrollback transaction[0m
+Completed 500 Internal Server Error in 296ms (ActiveRecord: 2.5ms)
+
+
+  
+NoMethodError (undefined method `errors' for nil:NilClass):
+  
+app/controllers/pets_controller.rb:10:in `create'
+Started GET "/" for 127.0.0.1 at 2017-11-24 13:21:22 -0800
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mPet Load (0.0ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  Rendered home/index.html.erb within layouts/application (20.1ms)
+Completed 200 OK in 135ms (Views: 114.5ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/pets/new" for 127.0.0.1 at 2017-11-24 13:21:24 -0800
+Processing by PetsController#new as HTML
+  Rendering pets/new.html.erb within layouts/application
+  Rendered pets/new.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 121ms (Views: 103.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/pets/new" for 127.0.0.1 at 2017-11-24 13:21:38 -0800
+Processing by PetsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"MRsyTxCSIYVUjCB+0SbZXAdoUnmswnjzwjYTongG3GxK+Kyhpbm4YOMJkV4q7Wzue8J+ttiVvuKkqoMK+Ewg2g==", "pets"=>{"name"=>"s", "species"=>"s", "activity_level"=>"s", "personality"=>"s", "size"=>"big", "image"=>#<ActionDispatch::Http::UploadedFile:0xd8e2a58 @tempfile=#<Tempfile:C:/Users/Selina/AppData/Local/Temp/RackMultipart20171124-3788-84rllk.jpg>, @original_filename="0.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"pets[image]\"; filename=\"0.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Save Pets"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Command :: file -b --mime "C:/Users/Selina/AppData/Local/Temp/cfcd208495d565ef66e7dff9f98764da20171124-3788-gneetw.jpg"
+Command :: identify -format '%wx%h,%[exif:orientation]' "C:/Users/Selina/AppData/Local/Temp/cfcd208495d565ef66e7dff9f98764da20171124-3788-3arr9y.jpg[0]" 2>NUL
+[paperclip] An error was received while processing: #<Paperclip::Errors::NotIdentifiedByImageMagickError: Paperclip::Errors::NotIdentifiedByImageMagickError>
+Command :: identify -format '%wx%h,%[exif:orientation]' "C:/Users/Selina/AppData/Local/Temp/cfcd208495d565ef66e7dff9f98764da20171124-3788-3arr9y.jpg[0]" 2>NUL
+[paperclip] An error was received while processing: #<Paperclip::Errors::NotIdentifiedByImageMagickError: Paperclip::Errors::NotIdentifiedByImageMagickError>
+Command :: identify -format '%wx%h,%[exif:orientation]' "C:/Users/Selina/AppData/Local/Temp/cfcd208495d565ef66e7dff9f98764da20171124-3788-3arr9y.jpg[0]" 2>NUL
+[paperclip] An error was received while processing: #<Paperclip::Errors::NotIdentifiedByImageMagickError: Paperclip::Errors::NotIdentifiedByImageMagickError>
+  [1m[36mPet Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "pets" WHERE "pets"."name" = ? LIMIT ?[0m  [["name", "s"], ["LIMIT", 1]]
+Command :: file -b --mime "C:/Users/Selina/AppData/Local/Temp/cfcd208495d565ef66e7dff9f98764da20171124-3788-140cs26.jpg"
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPet Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "pets" WHERE "pets"."name" = ? LIMIT ?[0m  [["name", "s"], ["LIMIT", 1]]
+Command :: file -b --mime "C:/Users/Selina/AppData/Local/Temp/cfcd208495d565ef66e7dff9f98764da20171124-3788-1gzmufv.jpg"
+  [1m[35m (0.5ms)[0m  [1m[31mrollback transaction[0m
+Redirected to http://localhost:3000/pets/new
+Completed 302 Found in 311ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/pets/new" for 127.0.0.1 at 2017-11-24 13:21:38 -0800
+Processing by PetsController#new as HTML
+  Rendering pets/new.html.erb within layouts/application
+  Rendered pets/new.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 122ms (Views: 104.2ms | ActiveRecord: 0.0ms)
+
+

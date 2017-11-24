@@ -8,4 +8,8 @@ class Pet < ApplicationRecord
 		:url => "/system/:attachment/:id/:style/:filename",
 		:styles => { small: "64x64", med: "100x100", large: "200x200" },
 		:default_url => "dog.jpg"
+
+	validates_attachment_content_type :image, 
+		:content_type => ["image/jpg", "image/jpeg", "image/png", "image/gif"]
+		#:matches => [/png\Z/, /jpe?g\Z/, /gif\Z/]
 end
