@@ -21,8 +21,6 @@ class PetsController < ApplicationController
 		redirect_to root_path
 	end
 
-
-
 	def show
 		@pet = Pet.find(params[:id])
 	end

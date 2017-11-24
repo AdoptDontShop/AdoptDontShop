@@ -3,6 +3,12 @@
 <%= button_to "Adopters Sign Up/Login", new_user_registration_path, :class => "button medium", :method => :get %>
 <%= button_to "Shelters Sign Up/Login", new_shelter_registration_path, :class => "button medium", :method => :get %>
 
+<%= form_tag pets_path, :method => 'get' do %>
+    <%= text_field_tag :search, params[:search], placeholder: "Search Pets" %>
+    <%= submit_tag "Search" %>
+<% end %>
+
+
 <p>Pets:
 	<% @pets.each do |pet| %>
 		<p><%= link_to pet.name, pet %></p>

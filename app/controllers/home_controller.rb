@@ -1,5 +1,5 @@
 class HomeController < ApplicationController
 	def index
-		@pets = Pet.all
+		@pets = Pet.where(["name LIKE ?","%#{params[:search]}%"])
 	end
 end
