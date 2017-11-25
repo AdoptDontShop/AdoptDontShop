@@ -12,6 +12,6 @@ devise_for :users
 
   patch 'adopt', to: "pets#adopt", as: "adopt"
   patch 'favorite', to: "favorites#favorite", as: "favorite"
-
+  resources :searches
 
 end
