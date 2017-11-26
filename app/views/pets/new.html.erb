@@ -1,10 +1,13 @@
 <%= simple_form_for :pets, html: { multipart: true } do |p| %>
 	<%= p.input :name, placeholder: 'Enter name' %>
-	<%= p.input :species %>
-	<%= p.input :activity_level %>
-	<%= p.input :personality %>
+	<%= p.label :species %>
+	<%= p.select :species, [['Cat','Cat'],['Dog','Dog'],['Rabbit','Rabbit'],['Hamster','Hamster'],['Mouse','Mouse']] %>
+	<%= p.label :activity_level %>
+	<%= p.select :activity_level, [['High','High'],['Medium','Medium'],['Low','Low']]%>
+	<%= p.label :personality %>
+	<%= p.select :personality, [['Friendly','Friendly'],['Sassy','Sassy'],['Introverted','Introverted'],['Loud','Loud']]%>
 	<%= p.label :size %>
-	<%= p.select :size, [['Big','big'],['Medium','medium'],['Small','small']] %>
+	<%= p.select :size, [['Big','Big'],['Medium','Medium'],['Small','Small']] %>
 	<%= p.file_field :image %>
 	<%= p.button :submit %>
 <% end %>

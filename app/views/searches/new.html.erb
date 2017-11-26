@@ -2,25 +2,46 @@
 
 <%= form_for @search, html: {class: "pure form"} do |s| %>
 
+<% if false %>
 <div class = "field">
 	<%= s.label :name %><br />
 	<%= s.text_field :name %>
 </div>
+<% end %>
 
 <div class = "field">
-	<%= s.label :species %><br />
+	<% if false %>
+	<%= s.label :species %> (Cat, Dog, Rabbit, Hamster, Mouse)<br />
 	<%= s.text_field :species %>
+	<% end %>
+	<%= s.label :species %>
+	<%= s.select :species, [['',''],['Cat','cat'],['Dog','dog'],['Rabbit','rabbit'],['Hamster','hamster'],['Mouse','mouse']] %>
 </div>
 
 <div class = "field">
-	<%= s.label :activity_level %><br />
+	<% if false %>
+	<%= s.label :activity_level %> (High, Medium, Low)<br />
 	<%= s.text_field :activity_level %>
+	<% end %>
+	<%= s.label :activity_level %>
+	<%= s.select :activity_level, [['',''],['High','high'],['Medium','medium'],['Low','low']]%>
 </div>
 
 <div class = "field">
-	<%= s.label :personality %><br />
+	<% if false %>
+	<%= s.label :personality %> (Friendly, Sassy, Loud, Introverted)<br />
 	<%= s.text_field :personality %>
+	<% end %>
+	<%= s.label :personality %>
+	<%= s.select :personality, [['',''],['Friendly','friendly'],['Sassy','sassy'],['Introverted','introverted'],['Loud','loud']]%>
 </div>
+
+<% if false %>
+<div class = "field">
+	<%= s.label :size %>
+	<%= s.select :size, [['',''],['Big','big'],['Medium','medium'],['Small','small']] %>
+</div>
+<% end %>
 
 <div class="action"><%= s.submit "Search", class: "pure-button pure-button-primary"%></div>
 
