@@ -1,0 +1,15 @@
+<h1>Search Results</h1>
+<p><%= link_to 'Back', new_search_path%></p>
+
+<% if @search.search_pets.empty? %>
+	<p>No Records Found</p>
+<%else%>
+	<% @search.search_pets.each do |pet|%>
+	<br>
+	<div class = "div">
+		<p><%= link_to pet.name, pet %></p>
+		 <%= link_to image_tag(pet.image.url(:med)), pet %>
+		 <br>
+	</div>
+	<%end%>
+<%end%>
