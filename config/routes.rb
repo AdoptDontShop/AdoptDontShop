@@ -10,6 +10,9 @@ devise_for :users
   get 'pets', to: "home#index", as: "pets"
   get 'pets/:id', to: "pets#show", as: "pet"
 
+  delete 'users/sign_out', to: redirect('root')
+  delete 'shelters/sign_out', to: redirect('root')
+
   patch 'adopt', to: "pets#adopt", as: "adopt"
   patch 'favorite', to: "favorites#favorite", as: "favorite"
   resources :searches
