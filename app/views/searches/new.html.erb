@@ -36,12 +36,10 @@
 	<%= s.select :personality, [['',''],['Friendly','friendly'],['Sassy','sassy'],['Introverted','introverted'],['Loud','loud']]%>
 </div>
 
-<% if false %>
 <div class = "field">
 	<%= s.label :size %>
 	<%= s.select :size, [['',''],['Big','big'],['Medium','medium'],['Small','small']] %>
 </div>
-<% end %>
 
 <div class="action"><%= s.submit "Search", class: "pure-button pure-button-primary"%></div>
 

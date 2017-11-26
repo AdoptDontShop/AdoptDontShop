@@ -7,7 +7,7 @@ class Search < ApplicationRecord
 		pets = pets.where(["species LIKE ?", species]) if species.present?
 		pets = pets.where(["activity_level LIKE ?", activity_level]) if activity_level.present?
 		pets = pets.where(["personality LIKE ?", personality]) if personality.present?
-
+		pets = pets.where(["size LIKE ?", size]) if size.present?
 		return pets
 	end
 
