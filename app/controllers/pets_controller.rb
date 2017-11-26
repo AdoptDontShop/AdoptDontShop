@@ -29,4 +29,9 @@ class PetsController < ApplicationController
   		@new_pet = Pet.new
 	end
 
+	# def pet_params
+	# 	params.require(:post).permit(:title, :content, :image)
+	# end
+
+
 end

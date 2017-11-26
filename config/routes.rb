@@ -17,6 +17,4 @@ devise_for :users
   patch 'favorite', to: "favorites#favorite", as: "favorite"
   resources :searches
 
-  #get 'users/:id', to: "users#show", as: "users"
-
 end
