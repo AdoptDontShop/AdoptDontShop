@@ -1,20 +1,18 @@
 <h3><center>Adopt Don't Shop</center></h3>
 
-<% if shelter_signed_in? %>
-	<%= button_to "Add A Pet", new_pet_path, :class => "button medium", :method => :get %>
-<% end %>
-
 <% if !shelter_signed_in? && ! user_signed_in? %>
-<%= button_to "Adopters Sign Up/Login", new_user_registration_path, :class => "button medium", :method => :get %>
-<%= button_to "Shelters Sign Up/Login", new_shelter_registration_path, :class => "button medium", :method => :get %>
+	<span style="float: right;"><%= button_to "Adopters Sign Up/Login", new_user_registration_path, :class => "button medium", :method => :get %></span>
+	<span style="float: left;"><%= button_to "Shelters Sign Up/Login", new_shelter_registration_path, :class => "button medium", :method => :get %></span>
 <% end %>
-
+<% if shelter_signed_in? %>
+	<span style="float: right;"><%= button_to "Add A Pet", new_pet_path, :class => "button medium", :method => :get %> </span>
+<% end %>
 <% if user_signed_in? %>
-	<%= button_to "Logout", destroy_user_session_path, :class => "button medium", :method => :delete %>
+	<span style="float: left;"><%= button_to "Logout", destroy_user_session_path, :class => "button medium", :method => :delete %></span>
 <%end %>
 
 <% if shelter_signed_in? %>
-	<%= button_to "Logout", destroy_shelter_session_path, :class => "button medium", :method => :delete %>
+	<span style="float: left;"><%= button_to "Logout", destroy_shelter_session_path, :class => "button medium", :method => :delete %></span>
 <%end %>
 
 
