@@ -1844,3 +1844,45 @@ Processing by HomeController#index as HTML
 Completed 200 OK in 22ms (Views: 19.1ms | ActiveRecord: 0.2ms)
 
 
+Started GET "/" for 127.0.0.1 at 2017-11-25 23:03:13 -0800
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mPet Load (0.0ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  Rendered home/index.html.erb within layouts/application (24.1ms)
+Completed 200 OK in 403ms (Views: 367.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2017-11-25 23:03:27 -0800
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering users/registrations/new.html.erb within layouts/application
+  Rendered users/shared/_links.html.erb (1.0ms)
+  Rendered users/registrations/new.html.erb within layouts/application (103.3ms)
+Completed 200 OK in 252ms (Views: 236.6ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2017-11-25 23:03:32 -0800
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"N2TEfhLJg0jbVZFnj/TfVtBmPCUOETS06kQ8qTVOPrNMh1qQp+IarWzQIEd0P2rkrMwQ6npG8qWM2KwBtQTCBQ==", "user"=>{"email"=>"selina@email.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "selina@email.com"], ["LIMIT", 1]]
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "users" ("created_at", "updated_at", "email", "encrypted_password") VALUES (?, ?, ?, ?)[0m  [["created_at", "2017-11-26 07:03:32.710464"], ["updated_at", "2017-11-26 07:03:32.710464"], ["email", "selina@email.com"], ["encrypted_password", "$2a$11$8PWumI3u7vHpBJlDU0hEBukgq4yE7eOFrQoPMtSSRg2BLV0oWHGYG"]]
+  [1m[35m (4.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[33mUPDATE "users" SET "updated_at" = ?, "sign_in_count" = ?, "current_sign_in_at" = ?, "last_sign_in_at" = ?, "current_sign_in_ip" = ?, "last_sign_in_ip" = ? WHERE "users"."id" = ?[0m  [["updated_at", "2017-11-26 07:03:32.719714"], ["sign_in_count", 1], ["current_sign_in_at", "2017-11-26 07:03:32.719214"], ["last_sign_in_at", "2017-11-26 07:03:32.719214"], ["current_sign_in_ip", "127.0.0.1"], ["last_sign_in_ip", "127.0.0.1"], ["id", 2]]
+  [1m[35m (7.5ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 334ms (ActiveRecord: 14.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-25 23:03:32 -0800
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mPet Load (0.0ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  [1m[36mPet Load (0.5ms)[0m  [1m[34mSELECT "pets".* FROM "pets" WHERE "pets"."user_id" = ?[0m  [["user_id", 2]]
+  [1m[36mFavorite Load (0.0ms)[0m  [1m[34mSELECT  "favorites".* FROM "favorites" WHERE "favorites"."user_id" = ? ORDER BY "favorites"."id" ASC LIMIT ?[0m  [["user_id", 2], ["LIMIT", 1]]
+  Rendered home/index.html.erb within layouts/application (42.2ms)
+Completed 200 OK in 163ms (Views: 144.1ms | ActiveRecord: 1.5ms)
+
+
