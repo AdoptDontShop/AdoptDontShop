@@ -1886,3 +1886,168 @@ Processing by HomeController#index as HTML
 Completed 200 OK in 163ms (Views: 144.1ms | ActiveRecord: 1.5ms)
 
 
+Started GET "/pets/1" for 127.0.0.1 at 2017-11-25 23:33:56 -0800
+Processing by PetsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPet Load (0.0ms)[0m  [1m[34mSELECT  "pets".* FROM "pets" WHERE "pets"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pets/show.html.erb within layouts/application
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered pets/show.html.erb within layouts/application (15.6ms)
+Completed 200 OK in 149ms (Views: 115.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-25 23:53:13 -0800
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered home/index.html.erb within layouts/application (45.3ms)
+Completed 500 Internal Server Error in 147ms (ActiveRecord: 1.0ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"users"}, missing required keys: [:id]):
+    10: 	<%= button_to "Logout", destroy_shelter_session_path, :class => "button medium", :method => :delete %>
+    11: <%end %>
+    12: 
+    13: <%= button_to "View Your Profile", users_path, :class => "button medium", :method => :get %>
+    14: 
+    15: 
+    16: 
+  
+app/views/home/index.html.erb:13:in `_app_views_home_index_html_erb__809786825_59427804'
+Started GET "/" for 127.0.0.1 at 2017-11-26 00:00:58 -0800
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mPet Load (1.0ms)[0m  [1m[34mSELECT  "pets".* FROM "pets" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Pet Load (0.0ms)[0m  [1m[34mSELECT  "pets".* FROM "pets" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Pet Load (0.0ms)[0m  [1m[34mSELECT  "pets".* FROM "pets" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Pet Load (0.0ms)[0m  [1m[34mSELECT  "pets".* FROM "pets" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Pet Load (0.0ms)[0m  [1m[34mSELECT  "pets".* FROM "pets" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Pet Load (0.0ms)[0m  [1m[34mSELECT  "pets".* FROM "pets" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Pet Load (0.0ms)[0m  [1m[34mSELECT  "pets".* FROM "pets" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Pet Load (0.0ms)[0m  [1m[34mSELECT  "pets".* FROM "pets" LIMIT ?[0m  [["LIMIT", 11]]
+  Rendered home/index.html.erb within layouts/application (334.7ms)
+Completed 500 Internal Server Error in 441ms (ActiveRecord: 6.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `users_path' for #<#<Class:0x8c61e10>:0x92d7080>
+Did you mean?  user_session_path):
+    10: 	<%= button_to "Logout", destroy_shelter_session_path, :class => "button medium", :method => :delete %>
+    11: <%end %>
+    12: 
+    13: <%= button_to "View Your Profile", users_path, :class => "button medium", :method => :get %>
+    14: 
+    15: 
+    16: 
+  
+app/views/home/index.html.erb:13:in `_app_views_home_index_html_erb__777656539_73601856'
+Started GET "/" for 127.0.0.1 at 2017-11-26 00:02:09 -0800
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mPet Load (0.0ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  [1m[36mPet Load (1.0ms)[0m  [1m[34mSELECT "pets".* FROM "pets" WHERE "pets"."user_id" = ?[0m  [["user_id", 2]]
+  [1m[36mFavorite Load (1.0ms)[0m  [1m[34mSELECT  "favorites".* FROM "favorites" WHERE "favorites"."user_id" = ? ORDER BY "favorites"."id" ASC LIMIT ?[0m  [["user_id", 2], ["LIMIT", 1]]
+  Rendered home/index.html.erb within layouts/application (73.8ms)
+Completed 200 OK in 432ms (Views: 392.9ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2017-11-26 00:02:28 -0800
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 14ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-26 00:02:28 -0800
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mPet Load (0.0ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  [1m[36mPet Load (0.0ms)[0m  [1m[34mSELECT "pets".* FROM "pets" WHERE "pets"."user_id" = ?[0m  [["user_id", 2]]
+  [1m[36mFavorite Load (1.0ms)[0m  [1m[34mSELECT  "favorites".* FROM "favorites" WHERE "favorites"."user_id" = ? ORDER BY "favorites"."id" ASC LIMIT ?[0m  [["user_id", 2], ["LIMIT", 1]]
+  Rendered home/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 131ms (Views: 112.6ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2017-11-26 00:02:33 -0800
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 11ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-26 00:02:33 -0800
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mPet Load (0.0ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  [1m[36mPet Load (0.0ms)[0m  [1m[34mSELECT "pets".* FROM "pets" WHERE "pets"."user_id" = ?[0m  [["user_id", 2]]
+  [1m[36mFavorite Load (0.0ms)[0m  [1m[34mSELECT  "favorites".* FROM "favorites" WHERE "favorites"."user_id" = ? ORDER BY "favorites"."id" ASC LIMIT ?[0m  [["user_id", 2], ["LIMIT", 1]]
+  Rendered home/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 147ms (Views: 130.4ms | ActiveRecord: 0.0ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2017-11-26 00:03:09 -0800
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"zDv0YH+Pi68XFxoXkfrLCa26lDHvSCFVUZ0L828dGRy32GqOyqQSSqCSqzdqMX670RC4/psf50Q3AZtb71flqg=="}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 9ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-26 00:03:09 -0800
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mPet Load (1.0ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  Rendered home/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 129ms (Views: 110.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2017-11-26 00:03:24 -0800
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering users/registrations/new.html.erb within layouts/application
+  Rendered users/shared/_links.html.erb (1.0ms)
+  Rendered users/registrations/new.html.erb within layouts/application (121.8ms)
+Completed 200 OK in 271ms (Views: 269.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2017-11-26 00:03:28 -0800
+Processing by Devise::SessionsController#new as HTML
+  Rendering users/sessions/new.html.erb within layouts/application
+  Rendered users/shared/_links.html.erb (0.0ms)
+  Rendered users/sessions/new.html.erb within layouts/application (31.3ms)
+Completed 200 OK in 163ms (Views: 158.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2017-11-26 00:03:30 -0800
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"uPvLc7TsiTSO8nIcULIa/OT3JA226nm2isB7AWlc5Nf+jpqhXZOaJMtSM6TjX89Wld4LSqiZiX3FwCO3mcRKjg==", "user"=>{"email"=>"selina@email.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "selina@email.com"], ["LIMIT", 1]]
+  [1m[35m (1.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (2.6ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["current_sign_in_at", "2017-11-26 08:03:30.531239"], ["sign_in_count", 2], ["updated_at", "2017-11-26 08:03:30.532457"], ["id", 2]]
+  [1m[35m (4.9ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 314ms (ActiveRecord: 8.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-26 00:03:30 -0800
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mPet Load (0.0ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  [1m[36mPet Load (0.0ms)[0m  [1m[34mSELECT "pets".* FROM "pets" WHERE "pets"."user_id" = ?[0m  [["user_id", 2]]
+  [1m[36mFavorite Load (0.0ms)[0m  [1m[34mSELECT  "favorites".* FROM "favorites" WHERE "favorites"."user_id" = ? ORDER BY "favorites"."id" ASC LIMIT ?[0m  [["user_id", 2], ["LIMIT", 1]]
+  Rendered home/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 126ms (Views: 110.9ms | ActiveRecord: 0.0ms)
+
+
