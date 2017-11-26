@@ -1,23 +1,24 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>Adoptdontshop</title>
-    <%= csrf_meta_tags %>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <title><%= content_for?(:title) ? yield(:title) : "foundation-rails" %></title>
+
+    <%= stylesheet_link_tag    "application" %>
+    <%= javascript_include_tag "vendor/modernizr" %>
+    <%= csrf_meta_tags %>
   </head>
 
   <body>
 
-    <% if notice %>
-      <p class="alert alert-success"><%= notice %></p>
-    <% end %>
-    <% if alert %>
-      <p class="alert alert-danger"><%= alert %></p>
-    <% end %>
-    <%= yield %>
+    <div class="row">
+      <div class="small-9 column">
+        <%= yield %>
+      </div>
+    </div>
+
+    <%= javascript_include_tag "application" %>
   </body>
-
-
 </html>

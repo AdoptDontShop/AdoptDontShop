@@ -19,15 +19,19 @@
 
 <%= link_to "Advanced Search", new_search_path %>
 
-<p>Pets:
-	<% @pets.each do |pet| %>
-		<p><%= link_to pet.name, pet %></p>
-		 <%= link_to image_tag(pet.image.url(:med)), pet %>
-		 <br>
-		 <br>
 
-	<% end %>
-</p>
+	<p>Pets:
+		<div class="small-9 column">
+		<% @pets.each do |pet| %>
+			<p><%= link_to pet.name, pet %></p>
+			 <%= link_to image_tag(pet.image.url(:med)), pet %>
+			 <br>
+			 <br>
+		<% end %>
+		</div>
+	</p>
+
+
 
 
 
@@ -48,7 +52,3 @@
 		<% end %>
 	<% end %>
 <%end %>
-
-
-
-
