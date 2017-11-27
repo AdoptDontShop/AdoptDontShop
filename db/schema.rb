@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171124231514) do
+ActiveRecord::Schema.define(version: 20171127065510) do
 
   create_table "favorites", force: :cascade do |t|
     t.datetime "created_at", null: false
@@ -34,6 +34,7 @@ ActiveRecord::Schema.define(version: 20171124231514) do
     t.integer "image_file_size"
     t.datetime "image_updated_at"
     t.integer "user_id"
+    t.boolean "adopted", default: false
     t.index ["user_id"], name: "index_pets_on_user_id"
   end
 

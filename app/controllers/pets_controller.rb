@@ -15,6 +15,7 @@ class PetsController < ApplicationController
 	def adopt
 		pet = Pet.find(params[:id])
 		pet.user_id = current_user.id
+		pet.adopted = true
 
 		pet.save
 

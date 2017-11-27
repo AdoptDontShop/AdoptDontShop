@@ -11,12 +11,14 @@
 <div class="pet-feed">
 	<p>Featured Pets:
 		<% @pets.each do |pet| %>
+			<% if pet.adopted == false %>
 			 <div class="pet-icons">
 				 <p><%= link_to image_tag(pet.image.url(:med)), pet %></p>
 			 	 <p><%= link_to pet.name, pet, class: "link-color" %></p>
 				 Personality: <%= pet.personality %>
 			 </div>
 			 <br>
+			 <%end %>
 		<% end %>
 	</p>
 </div>
