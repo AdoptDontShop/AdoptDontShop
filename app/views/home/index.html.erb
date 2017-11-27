@@ -3,13 +3,13 @@
 <%= button_to "Adopters Sign Up/Login", new_user_registration_path, :class => "button medium", :method => :get %>
 <%= button_to "Shelters Sign Up/Login", new_shelter_registration_path, :class => "button medium", :method => :get %>
 <% if user_signed_in? %>
+	<%= button_to "View Your Profile", user_path(current_user.id), :class => "button medium", :method => :get %>
 	<%= button_to "Logout", destroy_user_session_path, :class => "button medium", :method => :delete %>
 <%end %>
 
 <% if shelter_signed_in? %>
 	<%= button_to "Logout", destroy_shelter_session_path, :class => "button medium", :method => :delete %>
 <%end %>
-
 
 
 <%= form_tag pets_path, :method => 'get' do %>

@@ -10,6 +10,8 @@ devise_for :users
   get 'pets', to: "home#index", as: "pets"
   get 'pets/:id', to: "pets#show", as: "pet"
 
+  get 'users/:id', to: "users#show", as: "user"
+
   delete 'users/sign_out', to: redirect('root')
   delete 'shelters/sign_out', to: redirect('root')
 

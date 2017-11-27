@@ -1,0 +1,18 @@
+<h2>My Profile</h2>
+
+<% if user_signed_in? %>
+	My Pets:
+	<% current_user.pets.each do |pet| %>
+		<p><%= pet.name %><p>
+	<% end %>
+
+	<% if Favorite.where(:user_id => current_user.id).first %>
+	My Favorited Pets:
+	<% f = Favorite.where(:user_id => current_user.id)  %>
+		<% f.each do |fav| %>
+			<p>
+			<%= Pet.where(:id => fav[:pet_id]).first[:name] %>
+			</p>
+		<% end %>
+	<% end %>
+<%end %>
