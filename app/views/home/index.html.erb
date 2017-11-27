@@ -1,51 +1,35 @@
-<h3><center>Adopt Don't Shop</center></h3>
+<div class="search-info">
+	<div class="search-content">
+		<%= form_tag pets_path, :method => 'get' do %>
+	    <%= text_field_tag :search, params[:search], placeholder: "Search Pets" %>
+	    <%= submit_tag "Search", :class => "button radius expand" %>
+		<% end %>
+		<%= link_to "Advanced Search", new_search_path, class: "link-color" %>
+	</div>
+</div>
 
-<% if !shelter_signed_in? && ! user_signed_in? %>
-	<span style="float: right;"><%= button_to "Adopters Sign Up/Login", new_user_registration_path, :class => "button radius", :method => :get %></span>
-	<span style="float: left;"><%= button_to "Shelters Sign Up/Login", new_shelter_registration_path, :class => "button radius", :method => :get %></span>
-<% end %>
-<% if shelter_signed_in? %>
-	<span style="float: right;"><%= button_to "Add A Pet", new_pet_path, :class => "button radius", :method => :get %> </span>
-<% end %>
-<% if user_signed_in? %>
-	<span style="float: left;"><%= button_to "Logout", destroy_user_session_path, :class => "button radius", :method => :delete %></span>
-<%end %>
-
-<% if shelter_signed_in? %>
-	<span style="float: left;"><%= button_to "Logout", destroy_shelter_session_path, :class => "button radius", :method => :delete %></span>
-<%end %>
-
-
-
-<%= form_tag pets_path, :method => 'get' do %>
-    <%= text_field_tag :search, params[:search], placeholder: "Search Pets" %>
-    <%= submit_tag "Search" %>
-<% end %>
-
-<%= link_to "Advanced Search", new_search_path %>
-
-
-	<p>Pets:
-		<div class="small-9 column">
+<div class="pet-feed">
+	<p>Featured Pets:
 		<% @pets.each do |pet| %>
-			<p><%= link_to pet.name, pet %></p>
-			 <%= link_to image_tag(pet.image.url(:med)), pet %>
-			 <br>
+			 <div class="pet-icons">
+				 <p><%= link_to image_tag(pet.image.url(:med)), pet %></p>
+			 	 <p><%= link_to pet.name, pet, class: "link-color" %></p>
+				 Personality: <%= pet.personality %>
+			 </div>
 			 <br>
 		<% end %>
-		</div>
 	</p>
+</div>
 
-
-
-
-
-
+<div class="user-pets">
 <% if user_signed_in? %>
-	My Pets:
-	<% current_user.pets.each do |pet| %>
-		<p><%= pet.name %><p>
+	<% if current_user.pets.first %>
+		My Adopted Pets:
+		<% current_user.pets.each do |pet| %>
+			<p><%= pet.name %><p>
+		<% end %>
 	<% end %>
+	<br>
 
 	<% if Favorite.where(:user_id => current_user.id).first %>
 	My Favorited Pets:
@@ -57,3 +41,4 @@
 		<% end %>
 	<% end %>
 <%end %>
+</div>

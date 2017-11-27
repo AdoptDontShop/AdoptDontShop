@@ -15,3 +15,61 @@
  *= require foundation_and_overrides
 
  */
+
+ .top-bar {
+   margin-bottom: 30px;
+   background-color: #F26A60;
+ }
+
+ .pet-feed {
+   width: 70%;
+   margin: 0 auto;
+}
+
+.user-pets {
+  width: 70%;
+  margin-left: 14%;
+  margin-right: 15%;
+}
+
+.logout {
+    margin-right: 20px;
+}
+
+.button {
+  margin-bottom: 10px;
+  background-color: #F26A60;
+}
+
+.search-info {
+  background: url('banner.jpeg') no-repeat center center;
+  background-size:contain;
+}
+
+.search-content {
+  width: 70%;
+  margin-left: 14%;
+  margin-right: 15%;
+  height: 40%;
+  padding: 10%;
+  margin-top: 0;
+}
+
+p {
+  margin: 0px;
+}
+
+.link-color {
+  color: #3F7BDB;
+}
+
+.content {
+  width: 70%;
+  margin-left: 14%;
+  margin-right: 15%;
+}
+
+.pet-icons {
+  width: 15%;
+  display: inline-block;
+}

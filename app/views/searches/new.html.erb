@@ -1,3 +1,4 @@
+<div class="content">
 <h1>Advanced Search</h1>
 
 <%= form_for @search, html: {class: "pure form"} do |s| %>
@@ -41,8 +42,9 @@
 	<%= s.select :size, [['',''],['Big','big'],['Medium','medium'],['Small','small']] %>
 </div>
 
-<div class="action"><%= s.submit "Search", class: "pure-button pure-button-primary"%></div>
+<div class="action"><%= s.submit "Search", class: "button radius"%></div>
 
 <% end %>
 
 <p><%= link_to "Back", root_path%></p>
+</div>

@@ -3,9 +3,27 @@
     <li class="name">
       <h1><a href="/">Adopt Don't Shop</a></h1>
     </li>
-
     <li class="toggle-topbar">
-      <a href="#"><span>Menu</span></a>
+      <a href="#"><span>Login/Sign Up</span></a>
     </li>
   </ul>
+
+  <section class="top-bar-section">
+      <!-- Right Nav Section -->
+      <ul class="right">
+        <% if !shelter_signed_in? && ! user_signed_in? %>
+          <li><%= link_to "Log In as Adopter", new_user_session_path, style: "background-color: #F26A60;" %></li>
+          <li><%= link_to "Log In as Shelter", new_shelter_session_path, style: "background-color: #F26A60;" %></li>
+        <% end %>
+        <% if shelter_signed_in? %>
+        	<li><%= link_to "Add A Pet", new_pet_path, :method => :get, style: "background-color: #F26A60;" %> </li>
+        <% end %>
+
+        <% if user_signed_in? %>
+        	<li class="logout"><%= link_to "Logout", destroy_user_session_path, :method => :delete, style: "background-color: #F26A60;" %></li>
+        <%end %>
+        <% if shelter_signed_in? %>
+        	<li class="logout"><%= link_to "Logout", destroy_shelter_session_path, :method => :delete, style: "background-color: #F26A60;" %></li>
+        <%end %>
+      </ul>
 </nav>

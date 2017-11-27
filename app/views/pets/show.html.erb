@@ -1,15 +1,17 @@
-<h2>Name: <%= @pet.name if @pet.name %></h2>
-<%= image_tag(@pet.image.url(:med)) %>
+<div class="content">
+  <h2>Name: <%= @pet.name if @pet.name %></h2>
+  <%= image_tag(@pet.image.url(:med)) %>
 
-<h2>Species: <%= @pet.species%></h2>
-<h2>Activity Level: <%= @pet.activity_level%></h2>
-<h2>Personality: <%= @pet.personality %></h2>
-<h2>Size: <%= @pet.size%></h2>
+  <h2>Species: <%= @pet.species%></h2>
+  <h2>Activity Level: <%= @pet.activity_level%></h2>
+  <h2>Personality: <%= @pet.personality %></h2>
+  <h2>Size: <%= @pet.size%></h2>
 
 
 
-<% if user_signed_in? %>
-<%= button_to "Adopt this pet!", adopt_path(id: @pet), :class => "button medium", :method => :patch %>
+  <% if user_signed_in? %>
+  <%= button_to "Adopt this pet!", adopt_path(id: @pet), :class => "button medium radius", :method => :patch %>
 
-<%= button_to "Add to favorites", favorite_path(id: @pet), :class => "button medium", :method => :patch %>
-<% end %>
+  <%= button_to "Add to favorites", favorite_path(id: @pet), :class => "button medium radius", :method => :patch %>
+  <% end %>
+</div>

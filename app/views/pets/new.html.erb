@@ -1,15 +1,16 @@
-<%= simple_form_for :pets, html: { multipart: true } do |p| %>
-	<%= p.input :name, placeholder: 'Enter name' %>
-	<%= p.label :species %>
-	<%= p.select :species, [['Cat','Cat'],['Dog','Dog'],['Rabbit','Rabbit'],['Hamster','Hamster'],['Mouse','Mouse']] %>
-	<%= p.label :activity_level %>
-	<%= p.select :activity_level, [['High','High'],['Medium','Medium'],['Low','Low']]%>
-	<%= p.label :personality %>
-	<%= p.select :personality, [['Friendly','Friendly'],['Sassy','Sassy'],['Introverted','Introverted'],['Loud','Loud']]%>
-	<%= p.label :size %>
-	<%= p.select :size, [['Big','Big'],['Medium','Medium'],['Small','Small']] %>
-	<%= p.file_field :image %>
-	<%= p.button :submit %>
-<% end %>
-
-<p><%= link_to "Back", root_path%></p>
+<div class="content">
+	<%= simple_form_for :pets, html: { multipart: true } do |p| %>
+		<%= p.input :name, placeholder: 'Enter name' %>
+		<%= p.label :species %>
+		<%= p.select :species, [['Cat','Cat'],['Dog','Dog'],['Rabbit','Rabbit'],['Hamster','Hamster'],['Mouse','Mouse']] %>
+		<%= p.label :activity_level %>
+		<%= p.select :activity_level, [['High','High'],['Medium','Medium'],['Low','Low']]%>
+		<%= p.label :personality %>
+		<%= p.select :personality, [['Friendly','Friendly'],['Sassy','Sassy'],['Introverted','Introverted'],['Loud','Loud']]%>
+		<%= p.label :size %>
+		<%= p.select :size, [['Big','Big'],['Medium','Medium'],['Small','Small']] %>
+		<%= p.file_field :image %>
+		<%= p.button :submit, :class => "button radius"%>
+	<% end %>
+	<p><%= link_to "Back", root_path%></p>
+</div>
