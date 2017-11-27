@@ -20,6 +20,7 @@
         <% end %>
 
         <% if user_signed_in? %>
+          <li class="logout"><%= link_to "View Your Profile", user_path(current_user.id), :method => :get, style: "background-color: #F26A60;" %></li>
         	<li class="logout"><%= link_to "Logout", destroy_user_session_path, :method => :delete, style: "background-color: #F26A60;" %></li>
         <%end %>
         <% if shelter_signed_in? %>
