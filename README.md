@@ -1,24 +1,31 @@
-# README
+Title:​ Adopt Don’t Shop
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Team​ ​Members:​ Nitin, Selina, Wilson, Xin Yi
 
-Things you may want to cover:
+Demo​ ​Link:​ 
 
-* Ruby version
+Idea:​ ​An application where shelters can create and post new pets that are up for adoption and users can adopt and favorite these pets.
 
-* System dependencies
+Models​ ​and​ ​Description: User adopts pets, Shelters put pets up for adoption, and Pets get adopted
 
-* Configuration
+User
+- has name, email
 
-* Database creation
+Shelter
+- has name, email, pets
 
-* Database initialization
+Pet
+- belongs to an owner and a shelter
+- has name, type, favorited number, activity level, personality (social, quiet), size
 
-* How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
+Features:
+- Users and shelters can log in
+- Shelters can create new pet postings
+- Users can adopt and favorite pets
 
-* Deployment instructions
-
-* ...
+Division​ ​of​ ​Labor:
+- Nitin: Favorites logic, adopt logic in controller
+- Selina: Pictures 
+- Wilson: Creating Pet Form, search bar
+- Xin Yi: Devise Log In, Video Demo
