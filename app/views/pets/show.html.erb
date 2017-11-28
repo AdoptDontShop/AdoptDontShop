@@ -16,6 +16,9 @@
     <%= button_to "Adopt me!", adopt_path(id: @pet), :class => "button medium radius", :method => :patch %>
   	<% end %>
 
+    <% if Favorite.where(:user_id => current_user.id, :pet_id => @pet.id).first == nil %>
     <%= button_to "Add to favorites!", favorite_path(id: @pet), :class => "button medium radius", :method => :patch %>
+    <% end %>
+
   <% end %>
 </div>
