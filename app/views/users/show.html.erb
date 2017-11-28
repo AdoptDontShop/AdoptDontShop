@@ -1,20 +1,41 @@
-<h2>My Profile</h2>
 
+<div class="pet-feed">
+<h1>My Profile</h1>
 <% if user_signed_in? %>
-	<h3>My Pets:</h3>
-	<% current_user.pets.each do |pet| %>
-		<p><%= link_to image_tag(pet.image.url(:med)), pet %></p>
-		<p><%= pet.name %><p>
+
+	<% if current_user.pets.first %>
+		<h3>My Pets:</h3>
+		<table>
+		<% current_user.pets.in_groups_of(5, false) do |pet_rows| %>
+		  <tr>
+		    <% for pet in pet_rows %>
+		      <td class="pet-icon"><p><%= link_to image_tag(pet.image.url(:large)), pet %></p>
+					<h4><%= pet.name %></h4>
+					<p>Personality: <%= pet.personality %></p></td>
+		    <% end %>
+		  </tr>
+		<% end %>
+		</table>
 	<% end %>
+
 
 	<% if Favorite.where(:user_id => current_user.id).first %>
 	<h3>My Favorited Pets:</h3>
 	<% f = Favorite.where(:user_id => current_user.id)  %>
-		<% f.each do |fav| %>
-			<p>
-			<p><%= link_to image_tag(Pet.where(:id => fav[:pet_id]).first.image.url(:med)), Pet.where(:id => fav[:pet_id]).first %></p>
-			<%= Pet.where(:id => fav[:pet_id]).first[:name] %>			
-			</p>
-		<% end %>
+	<table>
+	<% f.in_groups_of(5, false) do |row_fav| %>
+	  <tr>
+	    <% for fav in row_fav %>
+	      <td class="pet-icon"><p>
+				<p><%= link_to image_tag(Pet.where(:id => fav[:pet_id]).first.image.url(:large)), Pet.where(:id => fav[:pet_id]).first %></p>
+				<h4><%= Pet.where(:id => fav[:pet_id]).first[:name] %></h4>
+				<p>Personality: <%= Pet.where(:id => fav[:pet_id]).first[:personality] %></p>
+				</p></td>
+	    <% end %>
+	  </tr>
+	<% end %>
+	</table>
 	<% end %>
 <%end %>
+
+</div>

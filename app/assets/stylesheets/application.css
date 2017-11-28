@@ -15,10 +15,28 @@
  *= require foundation_and_overrides
 
  */
+ h1 {
+   font-family: 'Open Sans', sans-serif;
+   font-weight: 700;
+ }
+
+ h2 {
+   font-family: 'Open Sans', sans-serif;
+   font-weight: 700;
+ }
+
+ h3 {
+   font-family: 'Open Sans', sans-serif;
+ }
 
  .top-bar {
    margin-bottom: 30px;
    background-color: #F26A60;
+ }
+
+ .name {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
  }
 
  .pet-feed {
@@ -28,12 +46,12 @@
 
 .user-pets {
   width: 70%;
-  margin-left: 14%;
-  margin-right: 15%;
+  margin: 0 auto;
 }
 
 .logout {
     margin-right: 20px;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .button {
@@ -57,6 +75,8 @@
 
 p {
   margin: 0px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
 }
 
 .link-color {
@@ -65,11 +85,29 @@ p {
 
 .content {
   width: 70%;
-  margin-left: 14%;
-  margin-right: 15%;
+  margin: 0 auto;
 }
 
-.pet-icons {
-  width: 15%;
-  display: inline-block;
+.pet-icon {
+  text-align: center;
+  padding: 36px;
+  margin: 36px;
+}
+
+table {
+  border:none;
+}
+
+.feature-title {
+  padding-top: 24px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 36px;
+}
+
+.pet-content{
+  width: 70%;
+  margin-left: 14%;
+  margin-right: 15%;
+  text-align: center;
 }

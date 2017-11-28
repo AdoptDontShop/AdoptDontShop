@@ -1,20 +1,21 @@
-<div class="content">
-  <h2>Name: <%= @pet.name if @pet.name %></h2>
-  <%= image_tag(@pet.image.url(:med)) %>
+<div class="pet-content">
+  <h2><%= @pet.name if @pet.name %></h2>
+  <%= image_tag(@pet.image.url(:extralarge)) %>
+<br>
+<br>
+  <h3><b>Species:</b> <%= @pet.species%> </h3>
+  <h3><b>Size:</b> <%= @pet.size%></h3>
+  <h3><b>Activity Level:</b> <%= @pet.activity_level%></h3>
+  <h3><b>Personality:</b> <%= @pet.personality %></h3>
 
-  <h2>Species: <%= @pet.species%></h2>
-  <h2>Activity Level: <%= @pet.activity_level%></h2>
-  <h2>Personality: <%= @pet.personality %></h2>
-  <h2>Size: <%= @pet.size%></h2>
 
 
-
+<br>
   <% if user_signed_in? %>
-
   	<% if @pet.adopted == false %>
-  <%= button_to "Adopt this pet!", adopt_path(id: @pet), :class => "button medium radius", :method => :patch %>
+    <%= button_to "Adopt me!", adopt_path(id: @pet), :class => "button medium radius", :method => :patch %>
   	<% end %>
 
-  <%= button_to "Add to favorites", favorite_path(id: @pet), :class => "button medium radius", :method => :patch %>
+    <%= button_to "Add to favorites!", favorite_path(id: @pet), :class => "button medium radius", :method => :patch %>
   <% end %>
 </div>

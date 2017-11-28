@@ -9,17 +9,19 @@
 </div>
 
 <div class="pet-feed">
-	<p>Featured Pets:
-		<% @pets.each do |pet| %>
-			 <div class="pet-icons">
-			 	<% if pet.adopted == false %>
-				 <p><%= link_to image_tag(pet.image.url(:med)), pet %></p>
-			 	 <p><%= link_to pet.name, pet, class: "link-color" %></p>
-				 Personality: <%= pet.personality %>
-				<% end %>
-			 </div>
-			 <br>
-		<% end %>
+	<p><div class="feature-title">Featured Pets:</div>
+		<table border="0">
+			<% @pets.in_groups_of(5, false) do |pet_row| %>
+			<tr>
+				<% for pet in pet_row %>
+					<% if pet.adopted == false %>
+					 <td class="pet-icon"><p><%= link_to image_tag(pet.image.url(:large)), pet %></p>
+					 <p><%= link_to pet.name, pet, class: "link-color" %></p>
+					 Personality: <%= pet.personality %></td>
+					<% end %>
+		    <% end %>
+			</tr>
+			<% end %>
+		</table>
 	</p>
 </div>
-
