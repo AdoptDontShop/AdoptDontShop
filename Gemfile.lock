@@ -118,6 +118,7 @@ GEM
       mime-types
       mimemagic (~> 0.3.0)
     pg (0.21.0)
+    pg (0.21.0-x86-mingw32)
     public_suffix (3.0.0)
     puma (3.10.0)
     rack (2.0.3)
