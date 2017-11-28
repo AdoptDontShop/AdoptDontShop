@@ -1,17 +1,19 @@
 <h2>My Profile</h2>
 
 <% if user_signed_in? %>
-	My Pets:
+	<h3>My Pets:</h3>
 	<% current_user.pets.each do |pet| %>
+		<p><%= link_to image_tag(pet.image.url(:med)), pet %></p>
 		<p><%= pet.name %><p>
 	<% end %>
 
 	<% if Favorite.where(:user_id => current_user.id).first %>
-	My Favorited Pets:
+	<h3>My Favorited Pets:</h3>
 	<% f = Favorite.where(:user_id => current_user.id)  %>
 		<% f.each do |fav| %>
 			<p>
-			<%= Pet.where(:id => fav[:pet_id]).first[:name] %>
+			<p><%= link_to image_tag(Pet.where(:id => fav[:pet_id]).first.image.url(:med)), Pet.where(:id => fav[:pet_id]).first %></p>
+			<%= Pet.where(:id => fav[:pet_id]).first[:name] %>			
 			</p>
 		<% end %>
 	<% end %>
