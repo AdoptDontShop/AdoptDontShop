@@ -33,3 +33,7 @@ User adopts pets, Shelters put pets up for adoption, and Pets get adopted
 - Wilson: Creating Pet Form, search bar
 - Xin Yi: Devise Log In, Video Demo
 
+![alt text](/README-images/Fourth.png)
+![alt text](/README-images/Third.png)
+![alt text](/README-images/First.png)
+![alt text](/README-images/Second.png)
