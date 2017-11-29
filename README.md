@@ -1,26 +1,26 @@
 # Title:​ Adopt Don’t Shop #
 
 # Team​ ​Members: #
-​ Nitin, Selina, Wilson, Xin Yi
+​ Nitin Sampath, Selina Feng, Wilson Wang, Xin Yi Chen
 
-# Demo​ # 
-​Link:​ 
+# Demo​ #
+​Link:​ https://drive.google.com/file/d/1x8sQxUVyl4eGXLIKwsxjvTWrbKD0IyWb/view?usp=sharing
 
-# Idea:​ # 
+# Idea:​ #
 ​An application where shelters can create and post new pets that are up for adoption and users can adopt and favorite these pets.
 
 # Models​ ​and​ ​Description: #
-User adopts pets, Shelters put pets up for adoption, and Pets get adopted
+User (Adopters) adopts and favorites pets, Shelters put pets up for adoption, and Pets get adopted
 
 # User #
-- has name, email
+- has name, email, pets
 
 # Shelter #
 - has name, email, pets
 
 # Pet #
 - belongs to an owner and a shelter
-- has name, type, favorited number, activity level, personality (social, quiet), size
+- has name, type, activity level, personality (loud, sassy), size
 
 # Features: #
 - Users and shelters can log in
@@ -28,10 +28,10 @@ User adopts pets, Shelters put pets up for adoption, and Pets get adopted
 - Users can adopt and favorite pets
 
 # Division​ ​of​ ​Labor: #
-- Nitin: Favorites logic, adopt logic in controller
-- Selina: Pictures 
-- Wilson: Creating Pet Form, search bar
-- Xin Yi: Devise Log In, Video Demo
+- Nitin: Favorites Logic, Adopt Logic in Controller
+- Selina: Pictures
+- Wilson: Creating Pet Form, Search bar
+- Xin Yi: Devise Log In, Styling, Video Demo
 
 ![alt text](/README-images/Fourth.png)
 ![alt text](/README-images/Third.png)
